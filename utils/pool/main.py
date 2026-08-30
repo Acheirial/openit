@@ -89,4 +89,6 @@ if __name__ == '__main__':
         proxy_list=list(proxy_list)
         proxies = makeclash(proxy_list)
         print("Merged proxies: " + str(len(proxies)))
+        if not proxies:
+            raise SystemExit('no proxies collected')
         push(proxies)

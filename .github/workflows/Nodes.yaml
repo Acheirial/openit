@@ -30,7 +30,7 @@ jobs:
     - name: etoneya
       run: cd ./utils/pool && python from_uri.py https://etoneya.baby/ etoneya.yaml || true
     - name: pool
-      run: cd ./utils/pool/ && timeout -k 30s 20m python main.py || true
+      run: cd ./utils/pool/ && timeout -k 30s 20m python main.py
     - name: clashcheck
       run: |
          chmod +x ./utils/clashcheck/fetch-mihomo.sh
