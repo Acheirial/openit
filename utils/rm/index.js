@@ -82,24 +82,18 @@ async function run(){
         }
     }
 
-    //去重时要先将对象转为字符串
+    let seenIp = new Set()
     for(let i=0;i<resList.length;i++){
-        stringList.push(JSON.stringify(resList[i]))
-    }
-
-    //去重
-    let afterList = Array.from(new Set(stringList))
-
-    //转回来
-    for(let i=0;i<afterList.length;i++){
-        finalList.push(JSON.parse(afterList[i]))
-    }
-
-    //批量测试国家
-    for(let i=0;i<finalList.length;i++){
-        let country = await location.get(finalList[i].address)
+        let ip = await location.resolve(resList[i].address)
+        let key = ip || resList[i].address
+        if(seenIp.has(key)){
+            continue
+        }
+        seenIp.add(key)
+        let country = ip ? location.countryOf(ip) : 'unknown'
         if(!urlCountryList[country]) country = 'unknown'
-        finalList[i].country = country
+        resList[i].country = country
+        finalList.push(resList[i])
     }
 
     //变回链接

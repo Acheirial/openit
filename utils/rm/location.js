@@ -12,23 +12,27 @@ function countryOf(ip){
 }
 
 module.exports={
-    async get(name){
+    countryOf,
+    async resolve(name){
         let domainReg = /[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+.?/g
         let ipReg = /((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)(\.((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)){3}/
         if(ipReg.test(name)){
-            return countryOf(name)
+            return name
         }else if(domainReg.test(name)){
             try{
                 let address = await resolver.resolve4(name);
-                if(address !== null){
-                    return countryOf(address[0])
+                if(address && address[0]){
+                    return address[0]
                 }
-                return 'unknown'
+                return null
             }catch(e){
-                return 'unknown'
+                return null
             }
-        }else{
-            return 'unknown'
         }
+        return null
+    },
+    async get(name){
+        let ip = await this.resolve(name)
+        return ip ? countryOf(ip) : 'unknown'
     }
 }
