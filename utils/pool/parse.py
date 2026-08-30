@@ -16,19 +16,33 @@ def parse(data_in):
             textdict[date] = [filename]
     return textdict
 
+def _fingerprint(node):
+    if not isinstance(node, dict):
+        return None
+    kind = node.get('type')
+    if not kind:
+        return None
+    return (
+        kind,
+        str(node.get('server') or ''),
+        str(node.get('port') or ''),
+        str(node.get('uuid') or node.get('password') or node.get('psk') or ''),
+        str(node.get('cipher') or ''),
+        str(node.get('network') or ''),
+    )
+
+
 def makeclash(dictin):
-    badprotocols = []
+    seen = set()
     proxies = []
     for x in dictin:
         for y in x:
             try:
-                if y in proxies:
-                    pass
-                else:
-                    if y['type'] in badprotocols:
-                        pass
-                    else:
-                        proxies.append(y)
-            except:
+                key = _fingerprint(y)
+                if not key or key in seen:
+                    continue
+                seen.add(key)
+                proxies.append(y)
+            except Exception:
                 continue
     return proxies
