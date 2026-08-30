@@ -4,6 +4,13 @@ on:
     - cron: '17 */6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: nodes
+  cancel-in-progress: false
+
 jobs:
   cs-job:
     name: Collecting & Speedtest
@@ -16,11 +23,6 @@ jobs:
         cache: 'pip'
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: init
-      run: |
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
     - name: requirements
       run: |
          pip install -r ./utils/pool/requirements.txt
@@ -31,7 +33,18 @@ jobs:
       run: cd ./utils/pool/ && timeout -k 30s 20m python main.py || true
     - name: clashcheck
       run: cd ./utils/clashcheck/ && python main.py
-    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
+    - name: upload pool
+      uses: actions/upload-artifact@v4
+      with:
+        name: pool-output
+        path: utils/pool/output.yaml
+        if-no-files-found: error
+    - name: upload alive
+      uses: actions/upload-artifact@v4
+      with:
+        name: alive-proxies
+        path: utils/clashcheck/data/check.yaml
+        if-no-files-found: error
 
   rr-job:
     name: Remove & Remark
@@ -42,15 +55,14 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 20
+    - uses: actions/download-artifact@v4
+      with:
+        name: alive-proxies
+        path: utils/clashcheck/data
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: init
-      run: |
-         git config pull.rebase false
-         git config --local user.name "GitHub Actions"
-         git config --local user.email "actions@github.com"
     - name: to-uri
-      run: python3 ./utils/pool/to_uri.py ./utils/pool/output.yaml ./utils/rm/rm2
+      run: python3 ./utils/pool/to_uri.py ./utils/clashcheck/data/check.yaml ./utils/rm/rm2
     - name: Remove & Remark
       run: |
          cd ./utils/rm/
@@ -66,7 +78,16 @@ jobs:
          cp ./url ./2
          cat 1 2 > 3 && rm 1 2
          base64 3 -w 0 > https && rm 3
-    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
+    - name: upload subscription
+      uses: actions/upload-artifact@v4
+      with:
+        name: subscription
+        path: |
+          url
+          https
+          .github/log
+          utils/pool/check
+        if-no-files-found: error
 
   et-job:
     name: Encode & Translate
@@ -74,6 +95,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/download-artifact@v4
+      with:
+        name: pool-output
+        path: utils/pool
+    - uses: actions/download-artifact@v4
+      with:
+        name: alive-proxies
+        path: utils/clashcheck/data
+    - uses: actions/download-artifact@v4
+      with:
+        name: subscription
+        path: .
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: init
@@ -88,7 +123,9 @@ jobs:
          python3 ./utils/subconverter/feed.py clash ./url ./utils/subconverter/generate.ini
          cd ./utils/subconverter
          ./subconverter -g --artifact "clash"
-         mv -f Clash.yaml ../../Clash.yaml || true
+         test -f Clash.yaml
+         mv -f Clash.yaml ../../Clash.yaml
          rm -f rm1 nodes.txt
          base64 -w 0 ../../url > ../../long
-    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
+    - name: push
+      run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh

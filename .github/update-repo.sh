@@ -1,11 +1,21 @@
 #!/bin/bash
-status_log=$(git status -sb)
-# 这里使用的是 main 分支，根据需求自行修改
-if [ "$status_log" == "## main...origin/main" ];then
+set -euo pipefail
+
+git restore --source=HEAD --worktree --staged -- utils/subconverter/generate.ini 2>/dev/null || true
+
+if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
   echo -e "\033[32mnothing to commit, working tree clean.\033[0m"
-else
-  git status -s && git add . && git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 订阅更新" && git pull origin main && git push origin main
-  if [ $? == 1 ];then
-    echo -e "\033[31mAutomatic merge failed; fix conflicts and then commit the result.\033[0m"
-  fi
+  exit 0
 fi
+
+git status -s
+git add -A
+git restore --staged --worktree -- utils/subconverter/generate.ini 2>/dev/null || true
+if git diff --cached --quiet; then
+  echo -e "\033[32mnothing to commit after excluding generate.ini.\033[0m"
+  exit 0
+fi
+
+git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 订阅更新"
+git pull --rebase origin main
+git push origin main
