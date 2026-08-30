@@ -16,14 +16,16 @@ if __name__ == '__main__':
         processes =[]
         sema = Semaphore(threads)
         time.sleep(5)
-        for i in tqdm(range(int(len(config['proxies']))), desc="Testing"):
+        proxies = config.get('proxies') or []
+        for i in tqdm(range(len(proxies)), desc="Testing"):
             sema.acquire()
-            p = Process(target=check, args=(alive,config['proxies'][i],apiurl,sema,timeout,testurl))
+            p = Process(target=check, args=(alive,proxies[i],apiurl,sema,timeout,testurl))
             p.start()
             processes.append(p)
         for p in processes:
-            p.join
+            p.join()
         time.sleep(5)
         alive=list(alive)
+        print("Alive proxies: " + str(len(alive)))
         push(alive,outfile)
         clean(clash)

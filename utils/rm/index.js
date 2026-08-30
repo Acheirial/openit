@@ -2,8 +2,8 @@ const fs = require('fs')
 const location = require('./location')
 const config = require('./config')
 
-//此处输入, 当前默认'./url'------↓
-let urls = fs.readFileSync('./url','utf8');
+//此处输入, 当前默认'./rm2'------↓
+let urls = fs.readFileSync('./rm2','utf8');
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))
 
 let urlList = urls.split('\n');

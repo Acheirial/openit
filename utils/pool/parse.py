@@ -1,18 +1,19 @@
 def parse(data_in):
     dtp = []
-    for x in data_in:
-        dtp.append(x.replace('data/', ''))
+    for x in data_in or []:
+        dtp.append(x.replace('data/', '', 1))
     dtpr1 = [ x for x in dtp if "/" in x]
     dtpr2 = [ x for x in dtpr1 if ".yaml" in x]
     textdict = {}
     for x in dtpr2:
-        date, filename = x.split('/')
+        parts = x.split('/')
+        if len(parts) != 2:
+            continue
+        date, filename = parts
         if date in textdict:
             textdict[date].append(filename)
         else:
-            textdict[date] = []
-            textdict[date].append(filename)
-
+            textdict[date] = [filename]
     return textdict
 
 def makeclash(dictin):

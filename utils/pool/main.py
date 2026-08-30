@@ -45,57 +45,48 @@ if __name__ == '__main__':
     with Manager() as manager:
         proxy_list = manager.list()
         current_date = time.strftime("%Y_%m_%d", time.localtime())
-        #print("Today is: " + current_date)
-        start = time.time() #time start
-        config = 'config.yaml'
-        with open(config, 'r') as reader:
+        start = time.time()
+        with open('config.yaml', 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
-            subscribe_links = config['sub']
-            subscribe_files = config['local']
-        directories, total = get_file_list()
-        data = parse(directories)
-        try:
-            sfiles = len(subscribe_links)
-            tfiles = len(subscribe_links) + len(data[current_date])
-            processes=[]
-            filenames = list()
-            filenames = data[current_date]
-        except KeyError:
-            print("Success: " + "find " + str(sfiles) + " Clash link")
-        else:
-            print("Success: " + "find " + str(tfiles) + " Clash link")
+            subscribe_links = config.get('sub') or []
+            subscribe_files = config.get('local') or []
+        tree = get_file_list()
+        filenames = []
+        if tree:
+            directories, total = tree
+            data = parse(directories) or {}
+            filenames = data.get(current_date) or []
+        print("Success: find " + str(len(subscribe_links) + len(subscribe_files) + len(filenames)) + " Clash link")
 
         processes=[]
-
-        try: #Process开启多线程
+        try:
             for i in subscribe_files:
                 p = Process(target=local, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
+            processes=[]
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
+            processes=[]
             for i in filenames:
                 p = Process(target=fetch, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
-            end = time.time() #time end
+            end = time.time()
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
-        except:
-            end = time.time() #time end
-            print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
+        except Exception as e:
+            end = time.time()
+            print("Collecting in " + "{:.2f}".format(end-start) + " seconds: " + str(e))
 
         proxy_list=list(proxy_list)
         proxies = makeclash(proxy_list)
+        print("Merged proxies: " + str(len(proxies)))
         push(proxies)
-    """
-    for i in tqdm(range(int(tfiles)), desc="Download"):
-        proxy_list.append(get_proxies(current_date, data[current_date][i]))
-    """

@@ -27,16 +27,18 @@
 
 
 **Base64**
-```https://openit.daycat.space/long```
+```https://raw.githubusercontent.com/Acheirial/openit/main/long```
 
 **小火箭**
-```https://openit.daycat.space/https```
+```https://raw.githubusercontent.com/Acheirial/openit/main/https```
 
 **Clash**
-```https://openit.daycat.space/clash```
+```https://raw.githubusercontent.com/Acheirial/openit/main/Clash.yaml```
 
 **Quanx**
-```https://openit.daycat.space/qx```
+```https://raw.githubusercontent.com/Acheirial/openit/main/Quanx.conf```
+
+本地文件：`long` / `https` / `Clash.yaml` / `Quanx.conf`。定时更新见 `.github/workflows/Nodes.yaml`。
 
 **不同订阅之间的区别**
 <br>**Base64** 订阅可在大多数翻墙软件中使用 
