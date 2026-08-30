@@ -1,7 +1,7 @@
 FROM python:3
 
 EXPOSE 80/tcp
-LABEL maintainer="yusteven@duck.com"
+LABEL maintainer="Acheirial"
 
 # init TimeZone
 ENV TZ=Asia/Shanghai \

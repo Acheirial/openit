@@ -1,11 +1,11 @@
 config → openit/utils/clashcheck/config/config.yaml
+测活只在 CI 或明确要求的环境跑。本地不要扫节点。
 
-== Run
 === Local Python 3.x
-$ git clone https://github.com/yu-steven/openit.git --single-branch --depth=1
+$ git clone https://github.com/Acheirial/openit.git --single-branch --depth=1
 $ cd openit/utils/clashcheck/ && ./start.sh
 === Docker Containers
-$ git clone https://github.com/yu-steven/openit.git --single-branch --depth=1
+$ git clone https://github.com/Acheirial/openit.git --single-branch --depth=1
 $ docker build -t clashcheck openit/utils/clashcheck
 $ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 
@@ -21,4 +21,4 @@ $ curl 0.0.0.0:80/README
 === Terminal
 $ open openit/utils/clashcheck/data/check.yaml
 
-ℹ️ https://github.com/yu-steven/openit#Dockerfile
+https://github.com/Acheirial/openit#Dockerfile

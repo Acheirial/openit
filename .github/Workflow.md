@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: long
-      run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/long
+      run: curl https://purge.jsdelivr.net/gh/Acheirial/openit@main/long
     - name: Clash.yaml
-      run: curl https://purge.jsdelivr.net/gh/git-yusteven/openit@main/Clash.yaml
+      run: curl https://purge.jsdelivr.net/gh/Acheirial/openit@main/Clash.yaml
 ```
 
 ## Base64 Encode 具体实现
@@ -152,4 +152,4 @@ jobs:
 ##### 调试时，点击绿框直接运行
 ##### [返回到CDN](#更新cdn的具体实现) /// [返回到Base64](#base64-encode-具体实现)
 
-![workflows](https://github.com/git-yusteven/openit/raw/main/images/workflows.jpg)
+![workflows](../images/workflows.jpg)

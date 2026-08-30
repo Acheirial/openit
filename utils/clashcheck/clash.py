@@ -52,7 +52,7 @@ def push(list, outfile):
 
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
-    print('Try to run Clash on '+ operating_system)
+    print('Try to run Clash-compatible core on '+ operating_system)
     if operating_system.startswith('Darwin'):
         if 'arm64' in operating_system:
             clashname='./clash-darwin-arm64'

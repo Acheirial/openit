@@ -1,5 +1,5 @@
 #!/bin/bash
-name=Openitsub
+name=Openit
 line=$(grep -cve '^$' url)
 time=$(date '+%Y.%m.%d %H:%M:%S')
 

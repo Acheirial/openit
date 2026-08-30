@@ -14,7 +14,7 @@ body:
     attributes:
       label: 出现问题的订阅链接
       description: 告诉我你使用的哪个订阅链接出现问题了🤔（包括旧的订阅链接）
-      placeholder: https://openitsub.xxx/example
+      placeholder: https://raw.githubusercontent.com/Acheirial/openit/main/Clash.yaml
     validations:
       required: true
   - type: dropdown
@@ -24,29 +24,24 @@ body:
       description: 可多选，不在范围内的和选择路由器的请在下方详细描述.
       multiple: true
       options:
-        - SS
-        - SSR
-        - 魔改ss
+        - Mihomo / Clash Meta
+        - Clash Verge Rev
+        - ClashMetaForAndroid
         - v2rayN
         - v2rayNG
         - Shadowrocket
         - Quantumult X
-        - ClashX
-        - ClashN
-        - Clash for Android
-        - Clash for Windows
         - Stash
         - Surge
-        - Qv2ray
-        - Matsuri
-        - OneClick
-        - SagerNet
-        - Kitsunebi
-        - Surfboard
+        - Loon
+        - NekoBox / SagerNet
+        - OpenClash
         - passwall
-        - openclash
-        - helloworld 
-        - shadowsocksR Plus+
+        - Clash for Windows（停更）
+        - ClashX（停更）
+        - Clash for Android（停更）
+        - Qv2ray（停更）
+        - SS / SSR
     validations:
       required: false
   - type: textarea
