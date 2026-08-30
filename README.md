@@ -32,7 +32,7 @@
 **小火箭**
 ```https://raw.githubusercontent.com/Acheirial/openit/main/https```
 
-**Clash**
+**Mihomo (Clash Meta)**
 ```https://raw.githubusercontent.com/Acheirial/openit/main/Clash.yaml```
 
 **Quanx**
@@ -41,9 +41,9 @@
 本地文件：`long` / `https` / `Clash.yaml` / `Quanx.conf`。定时更新见 `.github/workflows/Nodes.yaml`。
 
 **不同订阅之间的区别**
-<br>**Base64** 订阅可在大多数翻墙软件中使用 
-<br>**小火箭** 订阅可在Shadowrocket中使用 
-<br>**Clash** 订阅可在Clash系列软件中使用 
+<br>**Base64** 订阅可在大多数翻墙软件中使用
+<br>**小火箭** 订阅可在Shadowrocket中使用
+<br>**Mihomo** 订阅给 Clash Meta / Mihomo Alpha 用。文件名仍是 `Clash.yaml`，兼容旧 URL。
 <br>**Quanx** 订阅可在Quantumult X中使用
 
 <!--**节点备注里**-->
@@ -54,24 +54,21 @@
 ***
 ##### 为加快GitHub文件下载速度，已为所有文件进行加速，如不信任本仓库链接或者有更多软件需求请在[此处](#由于可能的更新不及时下面给出以上软件github托管地址以及最后更新时间--返回)选择要下载的文件
 ## Windows
-首推v2rayN和Clash，v2rayN支持格式众多；Clash需要[订阅转换](https://sub.tsutsu.one/)且英文界面需要汉化([Clash汉化补丁] / [教程](https://openit.daycat.space/tutorial/win-cfw-zh.html))配合下方的对应版本;SS和SSR只支持ss或ssr协议，在网上还是主流配置
+首推v2rayN和Mihomo。v2rayN支持格式众多；Clash 系请用 Mihomo Meta/Alpha（Clash for Windows / Clash Premium 已停更）。SS和SSR只支持ss或ssr协议。
 >**.7z文件如何解压？**
 可以使用Bandizip[^1]进行解压；以下Windows系统软件链接全部指向便携/绿色/文件夹版
-### [SS]｜[SSR]｜[v2rayN]｜[Clash]｜[Qv2ray]
- <!--教程｜SS｜SSR｜v2rayN｜Clash｜Qv2ray-->
+### [SS]｜[SSR]｜[v2rayN]｜[Mihomo]｜[Qv2ray]
 
 [ss]: https://cdn.jsdelivr.net/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip
 [ssr]: https://cdn.jsdelivr.net/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip
 [v2rayN]: https://cdn.jsdelivr.net/2dust/v2rayN/releases/download/5.38/v2rayN-Core.zip
-[clash]: https://cdn.jsdelivr.net/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7-win.7z
+[mihomo]: https://github.com/MetaCubeX/mihomo/releases
 [qv2ray]: https://cdn.jsdelivr.net/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-Windows.7z
-[Clash汉化补丁]: https://ghproxy.com/https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.20.7_CN/app.asar
 ## macOS
-首推Clash，界面美观，**只支持英文**且需要[订阅转换](https://sub.tsutsu.one/)！ClashX和Clash一样的内核，ClashX同样需要[订阅转换](https://sub.tsutsu.one/)但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用iPhone/iPad版的Shadowrocket & Quantumult X & Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)
-OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
+Clash 系请用 Mihomo Meta/Alpha。ClashX / Clash for Windows 已停更。M1 还可以用 Shadowrocket、Quantumult X。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
-### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
+### [SS][ss-NG]｜[Mihomo]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
  <!--｜SS｜Clash(intel)｜Clash(Arm)｜ClashX｜Qv2ray｜Surge｜v2rayX｜Shadowrocket(Arm)｜Quantumult X(Arm)｜Surge(Arm)｜ 教程-->
 ### Shadowrocket(Arm) *$2.99*
 [![点击跳转至Mac App Store][macos-black]][Shadowrocket]
@@ -83,9 +80,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [![点击跳转至Mac App Store][macos-black]][one-click]
 
 [ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
-[clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7.dmg
-[clash(Arm)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7-arm64.dmg
-[clashx]: https://ghproxy.com/https://github.com/yichengchen/clashX/releases/download/1.95.1/ClashX.dmg
+[mihomo]: https://github.com/MetaCubeX/mihomo/releases
 [qv2ray]: https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg
 [v2rayU]: https://ghproxy.com/https://github.com/yanue/V2rayU/releases/download/3.2.0/V2rayU.dmg
 [Surge(intel)]: https://nssurge.com/
@@ -99,9 +94,8 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 ##### [xxx.app 已损坏，无法打开，你应该将它移到废纸篓 / 打不开 xxx，因为它来自身份不明的开发者的解决方法](https://support.apple.com/zh-cn/guide/mac-help/mh40620/mac)
 
 ## Android
-首推 Github 的 ClashForAndroid (Premium内核版本),还有魔改ss和v2rayNG其次(蓝字是软件apk安装包地址,对应蓝字下方的是Google play地址)，魔改ss可以支持更多类型的节点；kitsunebi老牌翻墙工具；Sagernet是基于Xray-core的新翻墙工具；Matsuri(中文名“茉莉”)作为SagerNet的一个分支，功能强大，很多人在用；Surfboard是一个与Surge配置兼容的代理实用工具；SS与SSR支持自己的协议
+Clash 系请用 Mihomo / Clash Meta。ClashForAndroid Premium 已停更。其次 v2rayNG、SagerNet。
 
- <!--教程 ｜SS｜v2rayNG｜Clash｜Kitsunebi｜Surfboard｜SSR｜-->
 ### [SS][apk-ss]
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_black">
 <img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/google-play.svg" />
@@ -112,9 +106,9 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 <img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/google-play.svg" />
 </a>
 
-### [Clash][apk-clash]
-<a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash" target="_black">
-<img alt="轻触跳转至Google Play" width="150px" src="https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/google-play.svg" />
+### [Mihomo][apk-clash]
+<a href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases" target="_black">
+<img alt="轻触跳转至GitHub Releases" width="150px" src="https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/google-play.svg" />
 </a>
 
 ### [Matsuri][apk-Matsuri]
@@ -142,7 +136,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 
 [apk-ss]: https://d.apkpure.com/b/APK/com.github.shadowsocks?version=latest
 [apk-v2rayng]: https://d.apkpure.com/b/APK/com.v2ray.ang?version=latest
-[apk-clash]: https://ghproxy.com/https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-universal-release.apk
+[apk-clash]: https://github.com/MetaCubeX/ClashMetaForAndroid/releases
 [apk-Matsuri]: https://d.apkpure.com/b/APK/moe.matsuri.lite?version=latest
 [apk-SagerNet]: https://d.apkpure.com/b/APK/io.nekohasekai.sagernet?version=latest
 [apk-Kitsunebi]: https://d.apkpure.com/b/APK/fun.kitsunebi.kitsunebi4android?version=latest
@@ -154,7 +148,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 首推Shadowrocket(俗称小火箭)后起之秀，支持众多格式[如图](#shadowrocket支持的协议--返回)简单易用并支持分享节点([教程](https://openit.daycat.space/tutorial/ios-shadowrocket.html)); 
 Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quantumult上次更新在2020年，圈x更新则更频繁，功能上圈x更加专业，价格上圈x则更贵;
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则构造HTTP请求、HTTPS解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
-Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;
+Stash 吃 Clash/Mihomo 规则。Clash.yaml 按 Mihomo Meta 生成。
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
 当然也有为广大白嫖用户准备的OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
 以下软件顺序按照欢迎度从高到低排列

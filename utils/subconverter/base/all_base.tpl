@@ -1,239 +1,70 @@
 {% if request.target == "clash" or request.target == "clashr" %}
 
-port: {{ default(global.clash.http_port, "7890") }}
-socks-port: {{ default(global.clash.socks_port, "7891") }}
+mixed-port: {{ default(global.clash.mixed_port, "7890") }}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
-mode: Rule
+bind-address: "*"
+mode: rule
 log-level: {{ default(global.clash.log_level, "info") }}
-external-controller: '127.0.0.1:9090'
-{% if default(request.clash.dns, "") == "1" %}
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: strict
+external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
+
+geox-url:
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
 dns:
   enable: true
-  listen: :1053
-{% endif %}
-dns:
-  enable: true #是否启用dns false
   ipv6: false
-  # listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
     - "*.local"
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
-    - "stun.*.*.*"
     - "stun.*.*"
-    - miwifi.com
-    - music.163.com
-    - "*.music.163.com"
-    - "*.126.net"
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - y.qq.com
-    - "*.y.qq.com"
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - "*.xiami.com"
-    - "*.music.migu.cn"
-    - music.migu.cn
-    - netis.cc
-    - router.asus.com
-    - repeater.asus.com
-    - routerlogin.com
-    - routerlogin.net
-    - tendawifi.com
-    - tendawifi.net
-    - tplinklogin.net
-    - tplinkwifi.net
-    - tplinkrepeater.net
-    - "*.ntp.org.cn"
-    - "*.openwrt.pool.ntp.org"
+    - "stun.*.*.*"
+    - localhost.ptlogin2.qq.com
     - "*.msftconnecttest.com"
     - "*.msftncsi.com"
-    - localhost.ptlogin2.qq.com
-    - "*.*.*.srv.nintendo.net"
-    - "*.*.stun.playstation.net"
-    - "xbox.*.*.microsoft.com"
-    - "*.ipv6.microsoft.com"
-    - "*.*.xboxlive.com"
-    - speedtest.cros.wr.pvp.net
-  default-nameserver: #解析Dot/Doh域名的DNS
-    - 114.114.114.114
-    - 9.9.9.9
-  nameserver: #clash首次解析
-    - 1.2.4.8 #CNNIC sDNS
-    - 210.2.4.8 #CNNIC sDNS
-    - 223.5.5.5 #阿里DNS
-    - 223.6.6.6 #阿里DNS
-    - 52.80.52.52 #OneDNS
-    - 117.50.10.10 #OneDNS
-    - 180.76.76.76 #百度DNS
-    - 119.28.28.28 #腾讯DNS
-    - 119.29.29.29 #腾讯DNS
-    - 114.114.114.114 #114DNS
-    - 114.114.115.115 #114DNS
-    - 101.226.4.6 #360 DNS 派
-    - 218.30.118.6 #360 DNS 派
-    - 123.125.81.6 #360 DNS 派
-    - 140.207.198.6 #360 DNS 派
-    - 202.38.64.1 #中科大DNS
-    - 202.112.20.131 #中科大DNS
-    - 202.141.160.95 #中科大DNS
-    - 202.141.160.99 #中科大DNS
-    - 202.141.176.95 #中科大DNS
-    - 202.141.176.99 #中科大DNS
-    - tls://dot.pub:853 #腾讯DNS over TLS
-    - tls://1.12.12.12:853 #腾讯DNS over TLS(IP)
-    - tls://120.53.53.53:853 #腾讯DNS over TLS(IP)
-    - https://doh.pub/dns-query #腾讯DNS over HTTPS
-    - https://sm2.doh.pub/dns-query #腾讯DNS over HTTPS(国密)
-    - https://1.12.12.12/dns-query #腾讯DNS over HTTPS(IP)
-    - https://120.53.53.53/dns-query #腾讯DNS over HTTPS(IP)
-    - https://dns.alidns.com/dns-query #阿里DNS over HTTPS
-    - https://doh.dns.sb/dns-query #DNS.SB DNS over HTTPS
-    - https://dns.rubyfish.cn/dns-query #红鱼DNS over HTTPS
-  fallback: #遇到CN以外的ip和fallback-filter中的条件用如下DNS解析
-    - 9.9.9.9 #IBM DNS
-    - 149.112.112.112 #IBM DNS
-    - 8.8.4.4 #Google DNS
-    - 8.8.8.8 #Google DNS
-    - 1.0.0.1 #Cloudflare DNS
-    - 1.1.1.1 #Cloudflare DNS
-    - 208.67.220.220 #OpenDNS
-    - 208.67.220.222 #OpenDNS
-    - 208.67.222.220 #OpenDNS
-    - 208.67.222.222 #OpenDNS
-    - 195.46.39.39 #SafeDNS
-    - 195.46.39.40 #SafeDNS
-    - 168.95.1.1 #HiNet DNS
-    - 203.80.96.10 #HKBN DNS
-    - 168.95.192.1 #HiNet DNS
-    - 164.124.101.2 #LG U+ DNS
-    - 164.124.107.9 #LG U+ DNS
-    - 203.248.252.2 #LG U+ DNS
-    - 203.248.242.2 #LG U+ DNS
-    - 80.80.80.80 #freenom DNS
-    - 80.80.81.81 #freenom DNS
-    - 199.85.126.10 #norton DNS
-    - 199.85.127.10 #norton DNS
-    - 168.126.63.1 #KT olleh DNS
-    - 168.126.63.2 #KT olleh DNS
-    - 139.175.252.16 #Seednet DNS
-    - 139.175.55.244 #Seednet DNS
-    - 202.45.84.58 #和记环球电讯 DNS
-    - 202.45.84.59 #和记环球电讯 DNS
-    - 8.26.56.26 #Comodo SecureDNS
-    - 23.253.163.53 #Alternate DNS
-    - 77.88.8.1 #Yandex Public DNS
-    - 77.88.8.8 #Yandex Public DNS
-    - 89.233.43.71   #UncensoredDNS
-    - 91.239.100.100 #UncensoredDNS
-    - 198.101.242.72 #Alternate DNS
-    - 8.20.247.20 #Comodo SecureDNS
-    - 64.6.64.6 #Verisign Public DNS
-    - 64.6.65.6 #Verisign Public DNS
-    - 209.244.0.3 #Level3 Public DNS
-    - 209.244.0.4 #Level3 Public DNS
-    - 210.220.163.82 #SK Broadband DNS
-    - 219.250.36.130 #SK Broadband DNS
-    - 202.14.67.4 #Pacific SuperNet DNS
-    - 84.200.69.80 #DNS.WATCH Public DNS
-    - 84.200.70.40 #DNS.WATCH Public DNS
-    - 202.14.67.14 #Pacific SuperNet DNS
-    - 156.154.70.1 #Neustar Recursive DNS
-    - 156.154.71.1 #Neustar Recursive DNS
-    - 216.146.35.35 #ORACLE Dyn Public DNS
-    - 216.146.36.36 #ORACLE Dyn Public DNS
-    - 77.109.148.136 #xiala.net Public DNS
-    - 77.109.148.137 #xiala.net Public DNS
-    - 101.101.101.101 #TWNIC Quad101 Public DNS
-    - 101.102.103.104 #TWNIC Quad101 Public DNS
-    - 74.82.42.42 #Hurricane Electric Public DNS
-    - 66.220.18.42 #Hurricane Electric Public DNS
-    - https://dns.quad9.net/dns-query #IBM Doh
-    - https://dns9.quad9.net/dns-query #IBM Doh
-    - tls://dns.google:853 #Google Dot
-    - https://8.8.4.4/dns-query #Google Doh(IP)
-    - https://8.8.8.8/dns-query #Google Doh(IP)
-    - https://dns.google/dns-query #Google Doh
-    - tls://1.0.0.1:853 #Cloudflare Dot(IP)
-    - tls://1.1.1.1:853 #Cloudflare Dot(IP)
-    - tls://one.one.one.one #Cloudflare Dot
-    - tls://1dot1dot1dot1.cloudflare-dns.com #Cloudflare Dot
-    - https://1.0.0.1/dns-query #Cloudflare Doh(IP)
-    - https://1.1.1.1/dns-query #Cloudflare Doh(IP)
-    - https://cloudflare-dns.com/dns-query #Cloudflare Doh
-    - https://dns.daycat.space/dns-query #openit/daycat Doh
-    - https://dns.adguard.com/dns-query #AdGuard Doh
-    - https://dns-family.adguard.com/dns-query #AdGuard Doh
-    - https://dns-unfiltered.adguard.com/dns-query #AdGuard Doh
-    - tls://b.iqiq.io:853 #passcloud Dot 华北北京 BGP 节点
-    - tls://h.iqiq.io:853 #passcloud Dot 海南岛海口/三亚 BGP 节点
-    - tls://j.iqiq.io:853 #passcloud Dot 江西九江双线 BGP 节点
-    - tls://c.passcloud.xyz:853 #passcloud Dot 南方广州 BGP 节点
-    - tls://x.passcloud.xyz:853 #passcloud Dot 华东上海 BGP 节点
-    - https://a.passcloud.xyz/hk #passcloud Doh HK
-    - https://a.passcloud.xyz/am #passcloud Doh AM
-    - https://a.passcloud.xyz/us #passcloud Doh US
-    - https://a.passcloud.xyz/sz #passcloud Doh SZ
-    - https://a.passcloud.xyz/cdn #passcloud Doh CDN
-    - https://a.passcloud.xyz/dns-query #passcloud Doh Anycast
-    - https://worldwide.passcloud.xyz/dns-query #passcloud Doh Worldwide CDN
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
-    ipcidr: #nameserver中解析到这里的域名用fallback
+    ipcidr:
       - 240.0.0.0/4
-      - 127.0.0.1/8
-      - 0.0.0.0/32
-    domain: #这些域名直接fallback
-      - +.google.com
-      - +.github.com
-      - +.facebook.com
-      - +.twitter.com
-      - +.youtube.com
-      - +.google.cn
-      - +.googleapis.cn
-      - +.googleapis.com
-      - +.gvt1.com
-{% if local.clash.new_field_name == "true" %}
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+sniffer:
+  enable: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
 proxies: ~
 proxy-groups: ~
 rules: ~
-{% else %}
-Proxy: ~
-Proxy Group: ~
-Rule: ~
-{% endif %}
-cfw-bypass:
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
 
 {% endif %}
 {% if request.target == "surge" %}
