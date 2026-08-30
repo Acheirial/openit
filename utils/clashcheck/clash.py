@@ -185,8 +185,6 @@ def filter(config):
                 x = list[i]
                 authentication = ''
                 x['port'] = int(x['port'])
-                if isinstance(x.get('password'), str) and x['password'].isdigit():
-                    x['password'] = int(x['password'])
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
