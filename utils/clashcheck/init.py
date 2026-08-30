@@ -1,4 +1,5 @@
 import os
+import secrets
 import yaml
 import shutil
 import requests
@@ -32,18 +33,19 @@ def init():
     # set clash api url
     baseurl = '127.0.0.1:' + str(api_port)
     apiurl = 'http://' + baseurl
+    secret = secrets.token_urlsafe(24)
 
     # filter config files
     proxyconfig = filter(proxyconfig)
 
-    config = {'port': http_port, 'external-controller': baseurl, 'mode': 'global',
+    config = {'port': http_port, 'external-controller': baseurl, 'secret': secret, 'mode': 'global',
               'log-level': 'silent', 'proxies': proxyconfig['proxies']}
 
     with open('./temp/working.yaml', 'w') as file:
         file = yaml.dump(config, file)
 
     # return all variables
-    return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config
+    return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret
 
 def clean(clash):
     shutil.rmtree('./temp')

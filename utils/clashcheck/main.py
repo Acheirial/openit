@@ -9,7 +9,7 @@ from clash import push, checkenv, checkuse, pick_alive
 if __name__ == '__main__':
     with Manager() as manager:
         alive = manager.list()
-        http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config= init()
+        http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret = init()
         clashname, operating_system = checkenv()
         checkuse(clashname[2::], operating_system)
         clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
@@ -19,7 +19,7 @@ if __name__ == '__main__':
         proxies = config.get('proxies') or []
         for i in tqdm(range(len(proxies)), desc="Testing"):
             sema.acquire()
-            p = Process(target=check, args=(alive,proxies[i],apiurl,sema,timeout,testurl))
+            p = Process(target=check, args=(alive,proxies[i],apiurl,sema,timeout,testurl,secret))
             p.start()
             processes.append(p)
         for p in processes:
