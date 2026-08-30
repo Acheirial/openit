@@ -203,7 +203,6 @@ def filter(config):
                             if x['tls'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
-                        # authentication = 'userpass'
                     except:
                         continue
                 elif x['type'] == 'socks5':
@@ -218,9 +217,19 @@ def filter(config):
                             if x['skip-cert-verify'] not in [False, True]:
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
-                        # authentication = 'userpass'
                     except:
                         continue
+                elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard'):
+                    tags = {
+                        'vless': 'VLS',
+                        'hysteria': 'HY1',
+                        'hysteria2': 'HY2',
+                        'anytls': 'ATL',
+                        'tuic': 'TIC',
+                        'wireguard': 'WGD',
+                    }
+                    x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tags[x['type']]
+                    authentication = 'uuid' if x['type'] == 'vless' else 'password'
                 else:
                     continue
 

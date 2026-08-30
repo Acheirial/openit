@@ -50,10 +50,17 @@ async function run(){
                 resList.push({type: 'ssr', data: ssrData.replace(/remarks=.*?(?=&)/, "remarks={name}&"), address: ssrAddress})
                 break
             case 'https':
-                let httpsData = url.split('://')[1].split('#')[0];
-                let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
-                resList.push({type: 'https', data: httpsData, address: httpsAddress})
+            case 'http':
+            case 'socks5':
+            case 'socks': {
+                let scheme = url.split('://')[0]
+                let payload = url.split('://')[1].split('#')[0]
+                let hostpart = payload.includes('@') ? payload.split('@')[1] : payload
+                hostpart = hostpart.split('?')[0].split('/')[0]
+                let address = hostpart.includes(']:') ? hostpart.slice(1, hostpart.indexOf(']:')) : hostpart.split(':')[0]
+                resList.push({type: scheme, data: payload, address})
                 break
+            }
             case 'vless':
             case 'hysteria2':
             case 'hy2':
@@ -121,9 +128,12 @@ async function run(){
                 }catch(e){console.log('ssr node err')}
                 break
             case 'https':
+            case 'http':
+            case 'socks5':
+            case 'socks':
                 try{
-                urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
-                }catch(e){console.log('https node err')}
+                urlCountryList[finalList[i].country].push(item.type+'://'+item.data+'#'+encodeURIComponent(name.toString()))
+                }catch(e){console.log(item.type+' node err')}
                 break
             case 'vless':
             case 'hysteria2':

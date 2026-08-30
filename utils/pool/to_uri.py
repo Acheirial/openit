@@ -117,6 +117,37 @@ def encode_anytls(node):
     return f"anytls://{_q(node.get('password'))}@{_host(node)}{'?'+q if q else ''}{_remark(node)}"
 
 
+def _userinfo(node):
+    username = node.get('username') or node.get('user') or ''
+    password = '' if node.get('password') is None else str(node.get('password'))
+    if username or password:
+        return f'{_q(username)}:{_q(password)}@'
+    return ''
+
+
+def encode_http(node):
+    scheme = 'https' if node.get('tls') else 'http'
+    return f"{scheme}://{_userinfo(node)}{_host(node)}{_remark(node)}"
+
+
+def encode_socks5(node):
+    return f"socks5://{_userinfo(node)}{_host(node)}{_remark(node)}"
+
+
+def encode_tuic(node):
+    query = {}
+    if node.get('sni'):
+        query['sni'] = node['sni']
+    if node.get('congestion-controller'):
+        query['congestion_control'] = node['congestion-controller']
+    if node.get('udp-relay-mode'):
+        query['udp_relay_mode'] = node['udp-relay-mode']
+    q = urllib.parse.urlencode(query)
+    uuid = node.get('uuid') or node.get('user') or ''
+    return f"tuic://{_q(uuid)}:{_q(node.get('password'))}@{_host(node)}{'?'+q if q else ''}{_remark(node)}"
+
+
+
 def encode_ssr(node):
     password = __import__('base64').urlsafe_b64encode(str(node.get('password') or '').encode()).decode().rstrip('=')
     main = ':'.join([
@@ -147,6 +178,11 @@ ENCODERS = {
     'hysteria2': encode_hysteria2,
     'hysteria': encode_hysteria2,
     'anytls': encode_anytls,
+    'http': encode_http,
+    'https': encode_http,
+    'socks5': encode_socks5,
+    'socks': encode_socks5,
+    'tuic': encode_tuic,
 }
 
 
