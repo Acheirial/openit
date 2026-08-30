@@ -10,7 +10,7 @@ if __name__ == '__main__':
     alive = []
     http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret = init()
     clashname, operating_system = checkenv()
-    checkuse(clashname[2::], operating_system)
+    checkuse(clashname, operating_system)
     clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
     time.sleep(5)
     proxies = config.get('proxies') or []

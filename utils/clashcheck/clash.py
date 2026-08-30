@@ -153,18 +153,19 @@ def checkenv():
 
 
 def checkuse(clashname, operating_system):
-    pids = psutil.process_iter()
-    for pid in pids:
-        if(pid.name() == clashname):
-            if operating_system.startswith('Darwin'):
-                os.kill(pid.pid,9)
-            elif operating_system.startswith('Linux'):
-                os.kill(pid.pid,9)
-            elif operating_system.startswith('Windows'):
-                os.popen('taskkill.exe /pid:'+str(pid.pid))
-            else:
-                print(clashname, str(pid.pid) + " ← kill to continue")
-                exit(1)
+    cwd = os.path.abspath('.')
+    marker = os.path.join(cwd, 'temp', 'working.yaml')
+    for pid in psutil.process_iter(['pid', 'name', 'cmdline']):
+        try:
+            cmd = pid.info.get('cmdline') or []
+        except (psutil.Error, TypeError):
+            continue
+        if marker not in cmd and os.path.abspath(clashname) not in cmd:
+            continue
+        if operating_system.startswith('Windows'):
+            os.popen('taskkill.exe /pid:'+str(pid.pid))
+        else:
+            os.kill(pid.pid, 9)
 
 
 def filter(config):
