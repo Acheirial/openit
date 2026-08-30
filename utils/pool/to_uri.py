@@ -117,22 +117,6 @@ def encode_anytls(node):
     return f"anytls://{_q(node.get('password'))}@{_host(node)}{'?'+q if q else ''}{_remark(node)}"
 
 
-def _userinfo(node):
-    username = node.get('username') or node.get('user') or ''
-    password = '' if node.get('password') is None else str(node.get('password'))
-    if username or password:
-        return f'{_q(username)}:{_q(password)}@'
-    return ''
-
-
-def encode_http(node):
-    scheme = 'https' if node.get('tls') else 'http'
-    return f"{scheme}://{_userinfo(node)}{_host(node)}{_remark(node)}"
-
-
-def encode_socks5(node):
-    return f"socks5://{_userinfo(node)}{_host(node)}{_remark(node)}"
-
 
 def encode_tuic(node):
     query = {}
@@ -178,10 +162,6 @@ ENCODERS = {
     'hysteria2': encode_hysteria2,
     'hysteria': encode_hysteria2,
     'anytls': encode_anytls,
-    'http': encode_http,
-    'https': encode_http,
-    'socks5': encode_socks5,
-    'socks': encode_socks5,
     'tuic': encode_tuic,
 }
 

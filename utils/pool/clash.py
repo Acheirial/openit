@@ -109,30 +109,8 @@ def push(list):
                         authentication = 'psk'
                     except:
                         continue
-                elif x['type'] == 'http':
-                    try:
-                        if 'tls' in x:
-                            if x['tls'] not in [False, True]:
-                                continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
-                        # authentication = 'userpass'
-                    except:
-                        continue
-                elif x['type'] == 'socks5':
-                    try:
-                        if 'tls' in x:
-                            if x['tls'] not in [False, True]:
-                                continue
-                        if 'udp' in x:
-                            if x['udp'] not in [False, True]:
-                                continue
-                        if 'skip-cert-verify' in x:
-                            if x['skip-cert-verify'] not in [False, True]:
-                                continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
-                        # authentication = 'userpass'
-                    except:
-                        continue
+                elif x['type'] in ('http', 'https', 'socks5', 'socks'):
+                    continue
                 elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard', 'mieru'):
                     tag = {'vless': 'VLS', 'hysteria': 'HY1', 'hysteria2': 'HY2', 'anytls': 'ATL', 'tuic': 'TIC', 'wireguard': 'WGD', 'mieru': 'MRU'}[x['type']]
                     x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tag
