@@ -197,11 +197,6 @@ def filter(config):
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
                             continue
-                        if ip in iplist:
-                            continue
-                        else:
-                            iplist[ip] = []
-                            iplist[ip].append(x['port'])
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSS'
                         authentication = 'password'
                     except:
@@ -214,11 +209,6 @@ def filter(config):
                             continue
                         if x['protocol'] not in ssr_supported_protocol:
                             continue
-                        if ip in iplist:
-                            continue
-                        else:
-                            iplist[ip] = []
-                            iplist[ip].append(x['port'])
                         authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
                     except:
