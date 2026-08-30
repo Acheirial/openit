@@ -5,3 +5,5 @@ source: ../pool/output.yaml
 outfile: data/check.yaml
 test-url: https://www.gstatic.com/generate_204
 timeout: 3000
+# 测活只在 CI 跑。delay>1500ms 的丢掉，同 IP 只留一条。
+

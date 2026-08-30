@@ -4,7 +4,7 @@ from multiprocessing import Process, Manager, Semaphore
 from check import check
 from tqdm import tqdm
 from init import init, clean
-from clash import push, checkenv, checkuse
+from clash import push, checkenv, checkuse, pick_alive
 
 if __name__ == '__main__':
     with Manager() as manager:
@@ -27,5 +27,7 @@ if __name__ == '__main__':
         time.sleep(5)
         alive=list(alive)
         print("Alive proxies: " + str(len(alive)))
+        alive = pick_alive(alive)
+        print("Published proxies: " + str(len(alive)))
         push(alive,outfile)
         clean(clash)

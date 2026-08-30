@@ -10,6 +10,74 @@ from tqdm import tqdm
 from pathlib import Path
 
 
+PROTOCOL_RANK = {
+    'hysteria2': 0,
+    'hysteria': 1,
+    'anytls': 2,
+    'tuic': 3,
+    'vless': 4,
+    'trojan': 5,
+    'wireguard': 6,
+    'ss': 7,
+    'vmess': 8,
+    'ssr': 9,
+    'snell': 10,
+}
+
+
+def _server_key(proxy):
+    server = str(proxy.get('server') or '')
+    try:
+        return socket.gethostbyname(server)
+    except Exception:
+        return server
+
+
+def _bare_http_socks(proxy):
+    return proxy.get('type') in ('http', 'socks5', 'socks')
+
+
+def pick_alive(alive, max_delay=1500):
+    best = {}
+    dropped_bare = 0
+    dropped_slow = 0
+    dropped_dup = 0
+    kept = []
+    for proxy in alive:
+        if not isinstance(proxy, dict):
+            continue
+        if _bare_http_socks(proxy):
+            dropped_bare += 1
+            continue
+        delay = proxy.get('_delay')
+        try:
+            delay = int(delay)
+        except (TypeError, ValueError):
+            delay = max_delay
+        if delay <= 0 or delay > max_delay:
+            dropped_slow += 1
+            continue
+        rank = PROTOCOL_RANK.get(proxy.get('type'), 99)
+        key = _server_key(proxy)
+        current = best.get(key)
+        score = (rank, delay)
+        if current is None or score < current[0]:
+            if current is not None:
+                dropped_dup += 1
+            best[key] = (score, proxy)
+        else:
+            dropped_dup += 1
+    for _, proxy in sorted(best.values(), key=lambda item: item[0]):
+        node = dict(proxy)
+        node.pop('_delay', None)
+        kept.append(node)
+    print(
+        'Quality filter: kept %d, drop bare http/socks %d, slow %d, same-ip %d'
+        % (len(kept), dropped_bare, dropped_slow, dropped_dup)
+    )
+    return kept
+
+
 def push(list, outfile):
     country_count = {}
     count = 1
@@ -48,6 +116,7 @@ def push(list, outfile):
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
+
 
 
 def checkenv():
@@ -197,28 +266,8 @@ def filter(config):
                         authentication = 'psk'
                     except:
                         continue
-                elif x['type'] == 'http':
-                    try:
-                        if 'tls' in x:
-                            if x['tls'] not in [False, True]:
-                                continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'HTT'
-                    except:
-                        continue
-                elif x['type'] == 'socks5':
-                    try:
-                        if 'tls' in x:
-                            if x['tls'] not in [False, True]:
-                                continue
-                        if 'udp' in x:
-                            if x['udp'] not in [False, True]:
-                                continue
-                        if 'skip-cert-verify' in x:
-                            if x['skip-cert-verify'] not in [False, True]:
-                                continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
-                    except:
-                        continue
+                elif x['type'] in ('http', 'socks5', 'socks'):
+                    continue
                 elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard'):
                     tags = {
                         'vless': 'VLS',
