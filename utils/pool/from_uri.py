@@ -91,11 +91,116 @@ def parse_ssr(url):
         'udp': True,
     }
 
+def _hostport(authority):
+    host, port = authority.rsplit(':', 1)
+    return urllib.parse.unquote(host).strip('[]'), int(port.split('/')[0])
+
+
+def parse_hysteria2(url):
+    body = url.split('://', 1)[1].split('#', 1)[0]
+    if '@' not in body:
+        return None
+    password, rest = body.split('@', 1)
+    hostport, _, query = rest.partition('?')
+    host, port = _hostport(hostport)
+    params = urllib.parse.parse_qs(query)
+    node = {
+        'name': 'hysteria2',
+        'type': 'hysteria2',
+        'server': host,
+        'port': port,
+        'password': urllib.parse.unquote(password),
+        'skip-cert-verify': True,
+        'udp': True,
+    }
+    sni = params.get('sni') or params.get('peer')
+    if sni:
+        node['sni'] = sni[0]
+    if params.get('obfs'):
+        node['obfs'] = params['obfs'][0]
+    if params.get('obfs-password'):
+        node['obfs-password'] = params['obfs-password'][0]
+    return node
+
+
+def parse_anytls(url):
+    body = url[9:].split('#', 1)[0]
+    if '@' not in body:
+        return None
+    password, rest = body.split('@', 1)
+    hostport, _, query = rest.partition('?')
+    host, port = _hostport(hostport)
+    params = urllib.parse.parse_qs(query)
+    node = {
+        'name': 'anytls',
+        'type': 'anytls',
+        'server': host,
+        'port': port,
+        'password': urllib.parse.unquote(password),
+        'udp': True,
+        'skip-cert-verify': True,
+    }
+    sni = params.get('sni') or params.get('peer')
+    if sni:
+        node['sni'] = sni[0]
+    return node
+
+
+def parse_vless(url):
+    body = url[8:].split('#', 1)[0]
+    if '@' not in body:
+        return None
+    uuid, rest = body.split('@', 1)
+    hostport, _, query = rest.partition('?')
+    host, port = _hostport(hostport)
+    params = urllib.parse.parse_qs(query)
+    network = (params.get('type') or params.get('network') or ['tcp'])[0]
+    if network in ('splithttp', 'xhttp'):
+        network = 'xhttp'
+    node = {
+        'name': 'vless',
+        'type': 'vless',
+        'server': host,
+        'port': port,
+        'uuid': urllib.parse.unquote(uuid),
+        'udp': True,
+        'tls': (params.get('security') or ['none'])[0] in ('tls', 'reality'),
+        'network': network,
+        'skip-cert-verify': True,
+    }
+    sni = params.get('sni') or params.get('serverName')
+    if sni:
+        node['servername'] = sni[0]
+    flow = params.get('flow')
+    if flow:
+        node['flow'] = flow[0]
+    if network == 'ws':
+        node['ws-opts'] = {
+            'path': (params.get('path') or ['/'])[0],
+            'headers': {'Host': (params.get('host') or sni or [host])[0]},
+        }
+    elif network == 'grpc':
+        node['grpc-opts'] = {'grpc-service-name': (params.get('serviceName') or params.get('service-name') or [''])[0]}
+    elif network == 'xhttp':
+        node['xhttp-opts'] = {
+            'path': (params.get('path') or ['/'])[0],
+            'mode': (params.get('mode') or ['auto'])[0],
+            'host': (params.get('host') or sni or [host])[0],
+        }
+    pbk = params.get('pbk')
+    if pbk:
+        node['reality-opts'] = {'public-key': pbk[0], 'short-id': (params.get('sid') or [''])[0]}
+    return node
+
 
 PARSERS = {
     'ss': parse_ss,
     'trojan': parse_trojan,
     'ssr': parse_ssr,
+    'hysteria2': parse_hysteria2,
+    'hy2': parse_hysteria2,
+    'anytls': parse_anytls,
+    'vless': parse_vless,
 }
 
 

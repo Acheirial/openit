@@ -17,7 +17,7 @@ def parse(data_in):
     return textdict
 
 def makeclash(dictin):
-    badprotocols = ['vless']
+    badprotocols = []
     proxies = []
     for x in dictin:
         for y in x:

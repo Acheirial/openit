@@ -37,7 +37,7 @@ enable_filter = false
 #'''
 
 # Setting an external config file as default when none is specified, supports local files/URL
-# default_external_config = "config/example_external_config.toml"
+default_external_config = "config/rule.ini"
 
 # The file scope limit of the 'rule_base' options in external configs.
 base_path = "base"
@@ -289,6 +289,22 @@ target = "/sub?target=v2ray"
 [[aliases]]
 uri = "/trojan"
 target = "/sub?target=trojan"
+
+[[aliases]]
+uri = "/vless"
+target = "/sub?target=vless"
+
+[[aliases]]
+uri = "/hysteria2"
+target = "/sub?target=hysteria2"
+
+[[aliases]]
+uri = "/singbox"
+target = "/sub?target=singbox"
+
+[[aliases]]
+uri = "/stash"
+target = "/sub?target=stash"
 
 [[aliases]]
 uri = "/test"

@@ -133,9 +133,11 @@ def push(list):
                         # authentication = 'userpass'
                     except:
                         continue
+                elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard', 'mieru'):
+                    tag = {'vless': 'VLS', 'hysteria': 'HY1', 'hysteria2': 'HY2', 'anytls': 'ATL', 'tuic': 'TIC', 'wireguard': 'WGD', 'mieru': 'MRU'}[x['type']]
+                    x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tag
                 else:
                     continue
-
                 #if ip in iplist and x['port'] in iplist[ip]:
                 #    if country != 'CN':
                 #        continue

@@ -6,35 +6,29 @@ Resolver = dns.Resolver;
 resolver = new Resolver();
 resolver.setServers(config.dnsServers);
 
+function countryOf(ip){
+    let geo = geoip.lookup(ip);
+    return geo == null ? 'unknown' : geo.country
+}
+
 module.exports={
     async get(name){
         let domainReg = /[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+.?/g
         let ipReg = /((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)(\.((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)){3}/
         if(ipReg.test(name)){
-            let geo = geoip.lookup(name);
-            if(geo == null){
-                        return 'UN'
-                    }else{
-                        return geo.country
-                    }
+            return countryOf(name)
         }else if(domainReg.test(name)){
             try{
                 let address = await resolver.resolve4(name);
                 if(address !== null){
-                    let geo = geoip.lookup(address[0])
-                    if(geo == null){
-                        return 'UN'
-                    }else{
-                        return geo.country
-                    }
-                }else{
-                    return 'UN'
+                    return countryOf(address[0])
                 }
+                return 'unknown'
             }catch(e){
-                return 'UN'
+                return 'unknown'
             }
         }else{
-            return 'UN'
+            return 'unknown'
         }
     }
 }

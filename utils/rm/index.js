@@ -54,6 +54,20 @@ async function run(){
                 let httpsAddress = Buffer.from(httpsData.split('?')[0],"base64").toString('utf8').split('@')[1].split(':')[0]
                 resList.push({type: 'https', data: httpsData, address: httpsAddress})
                 break
+            case 'vless':
+            case 'hysteria2':
+            case 'hy2':
+            case 'anytls':
+            case 'tuic':
+            case 'hysteria': {
+                let scheme = url.split('://')[0]
+                let payload = url.split('://')[1].split('#')[0]
+                let hostpart = payload.includes('@') ? payload.split('@')[1] : payload
+                hostpart = hostpart.split('?')[0].split('/')[0]
+                let address = hostpart.includes(']:') ? hostpart.slice(1, hostpart.indexOf(']:')) : hostpart.split(':')[0]
+                resList.push({type: scheme, data: payload, address})
+                break
+            }
             default:
                 break
         }
@@ -74,7 +88,9 @@ async function run(){
 
     //批量测试国家
     for(let i=0;i<finalList.length;i++){
-        finalList[i].country = await location.get(finalList[i].address)
+        let country = await location.get(finalList[i].address)
+        if(!urlCountryList[country]) country = 'unknown'
+        finalList[i].country = country
     }
 
     //变回链接
@@ -108,6 +124,16 @@ async function run(){
                 try{
                 urlCountryList[finalList[i].country].push('https://'+item.data+'#'+encodeURIComponent(name.toString()))
                 }catch(e){console.log('https node err')}
+                break
+            case 'vless':
+            case 'hysteria2':
+            case 'hy2':
+            case 'anytls':
+            case 'tuic':
+            case 'hysteria':
+                try{
+                urlCountryList[finalList[i].country].push(item.type+'://'+item.data+'#'+encodeURIComponent(name.toString()))
+                }catch(e){console.log(item.type+' node err')}
                 break
             default:
                 break
