@@ -1,33 +1,30 @@
 import time
 import subprocess
-from multiprocessing import Process, Manager, Semaphore
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from check import check
 from tqdm import tqdm
 from init import init, clean
 from clash import push, checkenv, checkuse, pick_alive
 
 if __name__ == '__main__':
-    with Manager() as manager:
-        alive = manager.list()
-        http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret = init()
-        clashname, operating_system = checkenv()
-        checkuse(clashname[2::], operating_system)
-        clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
-        processes =[]
-        sema = Semaphore(threads)
-        time.sleep(5)
-        proxies = config.get('proxies') or []
-        for i in tqdm(range(len(proxies)), desc="Testing"):
-            sema.acquire()
-            p = Process(target=check, args=(alive,proxies[i],apiurl,sema,timeout,testurl,secret))
-            p.start()
-            processes.append(p)
-        for p in processes:
-            p.join()
-        time.sleep(5)
-        alive=list(alive)
-        print("Alive proxies: " + str(len(alive)))
-        alive = pick_alive(alive)
-        print("Published proxies: " + str(len(alive)))
-        push(alive,outfile)
-        clean(clash)
+    alive = []
+    http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret = init()
+    clashname, operating_system = checkenv()
+    checkuse(clashname[2::], operating_system)
+    clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
+    time.sleep(5)
+    proxies = config.get('proxies') or []
+    workers = max(1, int(threads))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [
+            pool.submit(check, alive, proxy, apiurl, timeout, testurl, secret)
+            for proxy in proxies
+        ]
+        for _ in tqdm(as_completed(futures), total=len(futures), desc="Testing"):
+            pass
+    time.sleep(5)
+    print("Alive proxies: " + str(len(alive)))
+    alive = pick_alive(alive)
+    print("Published proxies: " + str(len(alive)))
+    push(alive,outfile)
+    clean(clash)

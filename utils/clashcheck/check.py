@@ -1,7 +1,7 @@
 import requests
 import json
 
-def check(alive, proxy, apiurl, sema, timeout, testurl, secret=''):
+def check(alive, proxy, apiurl, timeout, testurl, secret=''):
     try:
         headers = {'Authorization': 'Bearer ' + secret} if secret else {}
         r = requests.get(url=apiurl + '/proxies/' + str(proxy['name']) + '/delay?url='+testurl+'&timeout=' + str(timeout), headers=headers, timeout=10)
@@ -13,4 +13,3 @@ def check(alive, proxy, apiurl, sema, timeout, testurl, secret=''):
             alive.append(node)
     except:
         pass
-    sema.release()
