@@ -32,7 +32,10 @@ jobs:
     - name: pool
       run: cd ./utils/pool/ && timeout -k 30s 20m python main.py || true
     - name: clashcheck
-      run: cd ./utils/clashcheck/ && python main.py
+      run: |
+         chmod +x ./utils/clashcheck/fetch-mihomo.sh
+         ./utils/clashcheck/fetch-mihomo.sh linux amd64
+         cd ./utils/clashcheck/ && python main.py
     - name: upload pool
       uses: actions/upload-artifact@v4
       with:

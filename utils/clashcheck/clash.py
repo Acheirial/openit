@@ -147,6 +147,9 @@ def checkenv():
     else:
         print('System is not supported.')
         exit(1)
+    if not os.path.exists(clashname):
+        print(clashname + ' missing. Run ./fetch-mihomo.sh first.')
+        exit(1)
 
     return clashname, operating_system
 

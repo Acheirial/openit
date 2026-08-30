@@ -119,7 +119,7 @@ Dreamacro Clash Premium 已停更，不要再下。
 
 # Dockerfile
 
-ClashCheck 容器。先改 [`utils/clashcheck/config/config.yaml`](./utils/clashcheck/config/config.yaml) 的 `source:`（默认本仓库节点池产物）。
+ClashCheck 容器。内核在构建时从 [Mihomo Releases](https://github.com/MetaCubeX/mihomo/releases) 下载，仓库不存 ELF。先改 [`utils/clashcheck/config/config.yaml`](./utils/clashcheck/config/config.yaml) 的 `source:`（默认本仓库节点池产物）。
 
 ```
 git clone https://github.com/Acheirial/openit.git --single-branch --depth=1

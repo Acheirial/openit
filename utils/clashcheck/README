@@ -3,7 +3,7 @@ config → openit/utils/clashcheck/config/config.yaml
 
 === Local Python 3.x
 $ git clone https://github.com/Acheirial/openit.git --single-branch --depth=1
-$ cd openit/utils/clashcheck/ && ./start.sh
+$ cd openit/utils/clashcheck && ./fetch-mihomo.sh && ./start.sh
 === Docker Containers
 $ git clone https://github.com/Acheirial/openit.git --single-branch --depth=1
 $ docker build -t clashcheck openit/utils/clashcheck

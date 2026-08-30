@@ -13,8 +13,8 @@ RUN ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime; \
 
 # init apache
 RUN apt update; \
-    apt install -y --no-install-recommends apache2; \
-    rm -rf /var/lib/apt/lists/* 
+    apt install -y --no-install-recommends apache2 curl ca-certificates gzip; \
+    rm -rf /var/lib/apt/lists/*
 
 ENV in_docker true
 WORKDIR /usr/src/clashcheck
@@ -23,8 +23,8 @@ WORKDIR /usr/src/clashcheck
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# copy all & make web pages
 COPY . .
+RUN chmod +x fetch-mihomo.sh start.sh && ./fetch-mihomo.sh linux amd64
 RUN rm -r /var/www/html; ln -s /usr/src/clashcheck/data /var/www/html
 
 # start apache & start clashcheck with while
