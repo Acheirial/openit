@@ -1,0 +1,94 @@
+name: Nodes
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  cs-job:
+    name: Collecting & Speedtest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: |
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: requirements
+      run: |
+         pip install -r ./utils/pool/requirements.txt
+         pip install -r ./utils/clashcheck/requirements.txt
+    - name: etoneya
+      run: cd ./utils/pool && python from_uri.py https://etoneya.baby/ etoneya.yaml || true
+    - name: pool
+      run: cd ./utils/pool/ && timeout -k 30s 20m python main.py || true
+    - name: clashcheck
+      run: cd ./utils/clashcheck/ && python main.py
+    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
+
+  rr-job:
+    name: Remove & Remark
+    needs: cs-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: |
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: to-uri
+      run: python3 ./utils/pool/to_uri.py ./utils/pool/output.yaml ./utils/rm/rm2
+    - name: Remove & Remark
+      run: |
+         cd ./utils/rm/
+         npm install
+         npm start
+    - name: url & https
+      run: |
+         chmod +x ./.github/url.sh
+         rm -f ./utils/rm/rm1 ./utils/rm/rm2
+         mv ./utils/rm/out ./url
+         base64 ./url -w 0 > ./utils/pool/check
+         ./.github/url.sh > ./1
+         cp ./url ./2
+         cat 1 2 > 3 && rm 1 2
+         base64 3 -w 0 > https && rm 3
+    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
+
+  et-job:
+    name: Encode & Translate
+    needs: rr-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: init
+      run: |
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: subconverter
+      run: |
+         chmod +x ./utils/subconverter/fetch-extended.sh ./utils/subconverter/subconverter
+         ./utils/subconverter/fetch-extended.sh
+         python3 ./utils/subconverter/feed.py clash ./url ./utils/subconverter/generate.ini
+         cd ./utils/subconverter
+         ./subconverter -g --artifact "clash"
+         mv -f Clash.yaml ../../Clash.yaml || true
+         rm -f rm1 nodes.txt
+         base64 -w 0 ../../url > ../../long
+    - run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh || true
