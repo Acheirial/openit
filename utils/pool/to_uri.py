@@ -117,6 +117,32 @@ def encode_anytls(node):
     return f"anytls://{_q(node.get('password'))}@{_host(node)}{'?'+q if q else ''}{_remark(node)}"
 
 
+def encode_wireguard(node):
+    query = {
+        'publickey': node.get('public-key') or node.get('publicKey'),
+        'privatekey': node.get('private-key') or node.get('privateKey'),
+        'ip': node.get('ip'),
+        'ipv6': node.get('ipv6'),
+        'reserved': node.get('reserved'),
+        'presharedkey': node.get('preshared-key') or node.get('preSharedKey'),
+        'mtu': node.get('mtu'),
+        'udp': 'true' if node.get('udp') else None,
+    }
+    if isinstance(query.get('reserved'), list):
+        query['reserved'] = ','.join(str(x) for x in query['reserved'])
+    q = urllib.parse.urlencode({k: v for k, v in query.items() if v not in (None, '')})
+    return f"wireguard://{_host(node)}{'?'+q if q else ''}{_remark(node)}"
+
+
+def encode_mieru(node):
+    query = {}
+    if node.get('transport'):
+        query['transport'] = node['transport']
+    if node.get('multiplexing'):
+        query['multiplexing'] = node['multiplexing']
+    q = urllib.parse.urlencode(query)
+    user = node.get('username') or node.get('user') or ''
+    return f"mieru://{_q(user)}:{_q(node.get('password'))}@{_host(node)}{'?'+q if q else ''}{_remark(node)}"
 
 def encode_tuic(node):
     query = {}
@@ -163,6 +189,8 @@ ENCODERS = {
     'hysteria': encode_hysteria2,
     'anytls': encode_anytls,
     'tuic': encode_tuic,
+    'wireguard': encode_wireguard,
+    'mieru': encode_mieru,
 }
 
 

@@ -66,7 +66,9 @@ async function run(){
             case 'hy2':
             case 'anytls':
             case 'tuic':
-            case 'hysteria': {
+            case 'hysteria':
+            case 'wireguard':
+            case 'mieru': {
                 let scheme = url.split('://')[0]
                 let payload = url.split('://')[1].split('#')[0]
                 let hostpart = payload.includes('@') ? payload.split('@')[1] : payload
@@ -141,6 +143,8 @@ async function run(){
             case 'anytls':
             case 'tuic':
             case 'hysteria':
+            case 'wireguard':
+            case 'mieru':
                 try{
                 urlCountryList[finalList[i].country].push(item.type+'://'+item.data+'#'+encodeURIComponent(name.toString()))
                 }catch(e){console.log(item.type+' node err')}

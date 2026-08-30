@@ -18,10 +18,11 @@ PROTOCOL_RANK = {
     'vless': 4,
     'trojan': 5,
     'wireguard': 6,
-    'ss': 7,
-    'vmess': 8,
-    'ssr': 9,
-    'snell': 10,
+    'mieru': 7,
+    'ss': 8,
+    'vmess': 9,
+    'ssr': 10,
+    'snell': 11,
 }
 
 
@@ -256,7 +257,7 @@ def filter(config):
                         continue
                 elif x['type'] in ('http', 'socks5', 'socks'):
                     continue
-                elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard'):
+                elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard', 'mieru'):
                     tags = {
                         'vless': 'VLS',
                         'hysteria': 'HY1',
@@ -264,6 +265,7 @@ def filter(config):
                         'anytls': 'ATL',
                         'tuic': 'TIC',
                         'wireguard': 'WGD',
+                        'mieru': 'MRU',
                     }
                     x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tags[x['type']]
                     authentication = 'uuid' if x['type'] == 'vless' else 'password'
