@@ -1,5 +1,10 @@
 #!/bin/bash
+set -euo pipefail
 name=Openit
+if [ ! -s url ]; then
+  echo "empty url" >&2
+  exit 1
+fi
 line=$(grep -cve '^$' url)
 time=$(date '+%Y.%m.%d %H:%M:%S')
 

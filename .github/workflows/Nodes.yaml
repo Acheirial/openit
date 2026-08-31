@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.12'
         cache: 'pip'
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
@@ -30,12 +30,18 @@ jobs:
     - name: etoneya
       run: cd ./utils/pool && python from_uri.py https://etoneya.baby/ etoneya.yaml || true
     - name: pool
-      run: cd ./utils/pool/ && timeout -k 30s 20m python main.py
+      run: |
+         cd ./utils/pool/
+         timeout -k 30s 20m python main.py || test -s output.yaml
     - name: clashcheck
       run: |
          chmod +x ./utils/clashcheck/fetch-mihomo.sh
-         ./utils/clashcheck/fetch-mihomo.sh linux amd64
-         cd ./utils/clashcheck/ && python main.py
+         if ./utils/clashcheck/fetch-mihomo.sh linux amd64; then
+           cd ./utils/clashcheck/ && python main.py || test -s data/check.yaml
+         else
+           echo "fetch-mihomo failed; keeping previous check.yaml"
+           test -s ./utils/clashcheck/data/check.yaml
+         fi
     - name: upload pool
       uses: actions/upload-artifact@v4
       with:
@@ -55,6 +61,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
     - uses: actions/setup-node@v4
       with:
         node-version: 20
@@ -65,17 +74,25 @@ jobs:
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: to-uri
-      run: python3 ./utils/pool/to_uri.py ./utils/clashcheck/data/check.yaml ./utils/rm/rm2
+      run: |
+         pip install 'PyYAML~=6.0'
+         python3 ./utils/pool/to_uri.py ./utils/clashcheck/data/check.yaml ./utils/rm/rm2
     - name: Remove & Remark
       run: |
          cd ./utils/rm/
-         npm install
-         npm start
+         npm install || true
+         npm start || true
     - name: url & https
       run: |
          chmod +x ./.github/url.sh
+         if [ ! -s ./utils/rm/out ]; then
+           echo "rm produced empty out; keeping checked-out url"
+           test -s ./url
+         else
+           mv -f ./utils/rm/out ./url
+         fi
          rm -f ./utils/rm/rm1 ./utils/rm/rm2
-         mv ./utils/rm/out ./url
+         test -s ./url
          base64 ./url -w 0 > ./utils/pool/check
          ./.github/url.sh > ./1
          cp ./url ./2
@@ -122,13 +139,16 @@ jobs:
     - name: subconverter
       run: |
          chmod +x ./utils/subconverter/fetch-extended.sh ./utils/subconverter/subconverter
-         ./utils/subconverter/fetch-extended.sh
-         python3 ./utils/subconverter/feed.py clash ./url ./utils/subconverter/generate.ini
-         cd ./utils/subconverter
-         ./subconverter -g --artifact "clash"
-         test -f Clash.yaml
-         mv -f Clash.yaml ../../Clash.yaml
-         rm -f rm1 nodes.txt
-         base64 -w 0 ../../url > ../../long
+         if ./utils/subconverter/fetch-extended.sh \
+            && python3 ./utils/subconverter/feed.py clash ./url ./utils/subconverter/generate.ini \
+            && (cd ./utils/subconverter && ./subconverter -g --artifact "clash" && test -f Clash.yaml); then
+           mv -f ./utils/subconverter/Clash.yaml ./Clash.yaml
+         else
+           echo "subconverter failed; keeping previous Clash.yaml"
+           test -s ./Clash.yaml
+         fi
+         rm -f ./utils/subconverter/rm1 ./utils/subconverter/nodes.txt
+         test -s ./url
+         base64 -w 0 ./url > ./long
     - name: push
       run: chmod +x ./.github/update-repo.sh && ./.github/update-repo.sh

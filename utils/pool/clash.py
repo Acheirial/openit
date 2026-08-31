@@ -7,7 +7,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from clashyaml import dump_clash, reality_ok
+from clashyaml import dump_clash, dump_clash_file, reality_ok, sanitize_proxy
 
 def push(list):
     ss_omit_ip_dupe = 0
@@ -118,6 +118,7 @@ def push(list):
                 elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard', 'mieru'):
                     if not reality_ok(x):
                         continue
+                    x = sanitize_proxy(x)
                     tag = {'vless': 'VLS', 'hysteria': 'HY1', 'hysteria2': 'HY2', 'anytls': 'ATL', 'tuic': 'TIC', 'wireguard': 'WGD', 'mieru': 'MRU'}[x['type']]
                     x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tag
                 else:
@@ -136,7 +137,7 @@ def push(list):
                 #    except:
                 #        iplist[ip] = []
                 #        iplist[ip].append(x['port'])
-
+                x = sanitize_proxy(x)
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
@@ -145,5 +146,4 @@ def push(list):
             except:
                 continue
 
-    with open('output.yaml', 'w') as writer:
-        dump_clash(clash, writer)
+    dump_clash_file(clash, 'output.yaml')

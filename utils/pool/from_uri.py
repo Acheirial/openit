@@ -1,8 +1,12 @@
+import sys
 import base64
 import urllib.parse
 import yaml
 import requests
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from clashyaml import dump_clash_file
 HEADERS = {'Accept': '*/*', 'User-Agent': 'Clash'}
 
 
@@ -232,11 +236,9 @@ def fetch(url):
 
 
 if __name__ == '__main__':
-    import sys
     src = sys.argv[1] if len(sys.argv) > 1 else 'https://etoneya.baby/'
     out = sys.argv[2] if len(sys.argv) > 2 else 'etoneya.yaml'
     text = fetch(src) if src.startswith('http') else open(src, encoding='utf-8').read()
     proxies = convert(text)
-    with open(out, 'w', encoding='utf-8') as writer:
-        yaml.dump({'proxies': proxies}, writer, sort_keys=False, allow_unicode=True)
+    dump_clash_file({'proxies': proxies}, out)
     print(f'Wrote {len(proxies)} proxies to {out}')

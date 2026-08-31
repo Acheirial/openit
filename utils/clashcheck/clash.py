@@ -11,7 +11,7 @@ from tqdm import tqdm
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from clashyaml import dump_clash, reality_ok
+from clashyaml import dump_clash, dump_clash_file, reality_ok, sanitize_proxy
 
 PROTOCOL_RANK = {
     'hysteria2': 0,
@@ -114,8 +114,7 @@ def push(list, outfile):
                 count = count + 1
             except:
                 continue
-    with open(outfile, 'w') as writer:
-        dump_clash(clash, writer)
+    dump_clash_file(clash, outfile)
 
 
 
@@ -274,6 +273,7 @@ def filter(config):
                     authentication = 'uuid' if x['type'] == 'vless' else 'password'
                 else:
                     continue
+                x = sanitize_proxy(x)
                 if not reality_ok(x):
                     continue
 

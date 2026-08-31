@@ -2,8 +2,12 @@ const fs = require('fs')
 const location = require('./location')
 const config = require('./config')
 
-//此处输入, 当前默认'./rm2'------↓
-let urls = fs.readFileSync('./rm2','utf8');
+let urls = ''
+try {
+    urls = fs.readFileSync('./rm2','utf8')
+} catch (e) {
+    urls = ''
+}
 let flags = JSON.parse(fs.readFileSync('./flags.json','utf8'))
 
 let urlList = urls.split('\n');
@@ -27,7 +31,11 @@ async function run(){
 
     //解析URL
     for(let i=0;i<urlList.length;i++){
-        let url = urlList[i];
+        let url = (urlList[i] || '').trim();
+        if(!url || !url.includes('://')){
+            continue
+        }
+        try {
         switch (url.split('://')[0]) {
             case 'vmess':
                 let vmessJSON = JSON.parse(Buffer.from(url.split('://')[1], 'base64').toString('utf-8'));
@@ -79,6 +87,9 @@ async function run(){
             }
             default:
                 break
+        }
+        } catch (e) {
+            continue
         }
     }
 
@@ -156,8 +167,11 @@ async function run(){
         }
     }
     console.log(`去重改名完成\n一共${urlList.length}个节点，去重${urlList.length-finalURLs.length}个节点，剩余${finalURLs.length}个节点`)
-    //此处输出, 当前默认'./out'
-    fs.writeFileSync('./out',finalURLs.join('\n'))
+    if(finalURLs.length === 0){
+        console.log('no URIs after Remove & Remark; not overwriting out')
+        return
+    }
+    fs.writeFileSync('./out',finalURLs.join('\n') + '\n')
 }
 
 run()

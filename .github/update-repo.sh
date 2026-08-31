@@ -38,5 +38,12 @@ if git diff --cached --quiet; then
 fi
 
 git commit -m "$(date '+%Y.%m.%d %H:%M:%S') 订阅更新"
-git pull --rebase origin main
-git push origin main
+for i in 1 2 3; do
+  if git pull --rebase origin main && git push origin main; then
+    exit 0
+  fi
+  git rebase --abort >/dev/null 2>&1 || true
+  sleep 5
+done
+echo "rebase/push failed after 3 attempts" >&2
+exit 1

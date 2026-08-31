@@ -3,7 +3,7 @@ import secrets
 import yaml
 import shutil
 import requests
-from clash import filter, dump_clash
+from clash import filter, dump_clash_file
 from yaml import SafeLoader
 
 def init():
@@ -41,8 +41,7 @@ def init():
     config = {'port': http_port, 'external-controller': baseurl, 'secret': secret, 'mode': 'global',
               'log-level': 'silent', 'proxies': proxyconfig['proxies']}
 
-    with open('./temp/working.yaml', 'w') as file:
-        dump_clash(config, file)
+    dump_clash_file(config, './temp/working.yaml')
 
     # return all variables
     return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret

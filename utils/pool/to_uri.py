@@ -225,4 +225,7 @@ if __name__ == '__main__':
         writer.write('\n'.join(urls))
         if urls:
             writer.write('\n')
-    print(f'Wrote {len(urls)} URIs to {out}')
+    if not urls:
+        print('no URIs encoded from ' + src)
+    else:
+        print(f'Wrote {len(urls)} URIs to {out}')
