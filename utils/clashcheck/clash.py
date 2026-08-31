@@ -1,4 +1,5 @@
 import os
+import sys
 import yaml
 import flag
 import socket
@@ -9,6 +10,8 @@ import requests
 from tqdm import tqdm
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from clashyaml import dump_clash, reality_ok
 
 PROTOCOL_RANK = {
     'hysteria2': 0,
@@ -111,9 +114,8 @@ def push(list, outfile):
                 count = count + 1
             except:
                 continue
-
     with open(outfile, 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False)
+        dump_clash(clash, writer)
 
 
 
@@ -271,6 +273,8 @@ def filter(config):
                     x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tags[x['type']]
                     authentication = 'uuid' if x['type'] == 'vless' else 'password'
                 else:
+                    continue
+                if not reality_ok(x):
                     continue
 
                 if authentication and ip in iplist and x['port'] in iplist[ip]:

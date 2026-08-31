@@ -3,7 +3,7 @@ import secrets
 import yaml
 import shutil
 import requests
-from clash import filter
+from clash import filter, dump_clash
 from yaml import SafeLoader
 
 def init():
@@ -42,12 +42,16 @@ def init():
               'log-level': 'silent', 'proxies': proxyconfig['proxies']}
 
     with open('./temp/working.yaml', 'w') as file:
-        file = yaml.dump(config, file)
+        dump_clash(config, file)
 
     # return all variables
     return http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret
 
 def clean(clash):
-    shutil.rmtree('./temp')
-    clash.terminate()
-    exit(0)
+    if clash is not None:
+        clash.terminate()
+        try:
+            clash.wait(timeout=5)
+        except Exception:
+            clash.kill()
+    shutil.rmtree('./temp', ignore_errors=True)

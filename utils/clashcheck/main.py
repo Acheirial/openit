@@ -8,11 +8,15 @@ from clash import push, checkenv, checkuse, pick_alive
 
 if __name__ == '__main__':
     alive = []
+    clash = None
     http_port, api_port, threads, source, timeout, outfile, proxyconfig, apiurl, testurl, config, secret = init()
     clashname, operating_system = checkenv()
     checkuse(clashname, operating_system)
     clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
     time.sleep(5)
+    if clash.poll() is not None:
+        clean(clash)
+        raise SystemExit('Mihomo failed to start')
     proxies = config.get('proxies') or []
     workers = max(1, int(threads))
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -26,5 +30,8 @@ if __name__ == '__main__':
     print("Alive proxies: " + str(len(alive)))
     alive = pick_alive(alive)
     print("Published proxies: " + str(len(alive)))
+    if not alive:
+        clean(clash)
+        raise SystemExit('no alive proxies')
     push(alive,outfile)
     clean(clash)

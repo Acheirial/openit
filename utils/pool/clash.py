@@ -1,9 +1,13 @@
+import sys
 import yaml
 import flag
 import socket
 import maxminddb
+from pathlib import Path
 from tqdm import tqdm
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from clashyaml import dump_clash, reality_ok
 
 def push(list):
     ss_omit_ip_dupe = 0
@@ -112,6 +116,8 @@ def push(list):
                 elif x['type'] in ('http', 'https', 'socks5', 'socks'):
                     continue
                 elif x['type'] in ('vless', 'hysteria', 'hysteria2', 'anytls', 'tuic', 'wireguard', 'mieru'):
+                    if not reality_ok(x):
+                        continue
                     tag = {'vless': 'VLS', 'hysteria': 'HY1', 'hysteria2': 'HY2', 'anytls': 'ATL', 'tuic': 'TIC', 'wireguard': 'WGD', 'mieru': 'MRU'}[x['type']]
                     x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + tag
                 else:
@@ -140,4 +146,4 @@ def push(list):
                 continue
 
     with open('output.yaml', 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False)
+        dump_clash(clash, writer)
