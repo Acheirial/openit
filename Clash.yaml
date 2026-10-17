@@ -56,349 +56,353 @@ sniffer:
     QUIC:
       ports: [443, 8443]
 proxies:
-  - {name: AE 1 → openit, server: 188.72.103.4, port: 443, client-fingerprint: chrome, encryption: none, network: xhttp, servername: ru.nnight.cfd, tls: true, type: vless, udp: true, uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c, xhttp-opts: {host: ru.nnight.cfd, mode: packet-up, path: /api/v4/media/session/poll}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: BE 1 → openit, server: 57.129.113.16, port: 8388, cipher: chacha20-ietf-poly1305, password: NcAXc0UZI6yQJE1p8QmOv8, type: ss, udp: true, tfo: false}
-  - {name: BG 1 → openit, server: 213.183.63.60, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, type: ss, udp: true, tfo: false}
+  - {name: BE 1 → openit, server: 57.131.48.45, port: 8388, cipher: aes-256-gcm, password: itzvpn@321, type: ss, udp: true, tfo: false}
+  - {name: BG 1 → openit, server: 94.156.250.148, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, type: ss, udp: true, tfo: false}
+  - {name: BG 2 → openit, server: 213.183.63.60, port: 9029, cipher: aes-256-cfb, password: dU3DSNS8wYPXzEKw, type: ss, udp: true, tfo: false}
   - {name: BR 1 → openit, server: 179.255.104.98, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: lh92eQnxIpeg2odHHDg0SrcczqwS4e8Y, skip-cert-verify: true, sni: dl1.yuanshicheng.com, type: hysteria2, up: "", tfo: false}
-  - {name: BR 10 → openit, server: sth.free-outline.giize.com, port: 1081, cipher: chacha20-ietf-poly1305, password: 6qmp91myp2jj13dt, type: ss, udp: true, tfo: false}
-  - {name: BR 2 → openit, server: 189.74.114.2, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: BR 3 → openit, server: outh.yandex-cloud.org, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f47cf0ee-4051-4bdd-ac46-9261942f6eab, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: BR 4 → openit, server: 189.74.114.37, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: BR 5 → openit, server: 189.74.114.38, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: BR 6 → openit, server: 189.74.106.163, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f47cf0ee-4051-4bdd-ac46-9261942f6eab, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 10 → openit, server: 189.74.106.164, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f47cf0ee-4051-4bdd-ac46-9261942f6eab, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 11 → openit, server: 189.74.118.4, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: r7Kp4mN9tQ2v}, network: grpc, servername: api.mediavolna.cc, tls: true, type: vless, udp: true, uuid: 082f5694-9019-4110-b67b-8125dbb9bab8, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: BR 12 → openit, server: api.mediavolna.cc, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: r7Kp4mN9tQ2v}, network: grpc, servername: api.mediavolna.cc, tls: true, type: vless, udp: true, uuid: 082f5694-9019-4110-b67b-8125dbb9bab8, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: BR 13 → openit, server: de-bots4.h1cloud.net, port: 25267, client-fingerprint: chrome, password: happybirthdaydaniel, skip-cert-verify: true, sni: t.me/FuckTheWall, type: trojan, udp: true, tfo: false}
+  - {name: BR 2 → openit, server: 191.215.46.37, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: b3a11068-1a7e-4643-85de-7c82cce46943, skip-cert-verify: true, sni: uk.shamanapp.online, type: hysteria2, up: "", tfo: false}
+  - {name: BR 3 → openit, server: 189.74.114.3, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f47cf0ee-4051-4bdd-ac46-9261942f6eab, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 4 → openit, server: 189.74.114.2, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 5 → openit, server: 189.74.114.39, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f47cf0ee-4051-4bdd-ac46-9261942f6eab, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 6 → openit, server: 189.74.114.37, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
   - {name: BR 7 → openit, server: 189.74.106.162, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: BR 8 → openit, server: 189.74.118.4, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: r7Kp4mN9tQ2v}, network: grpc, servername: api.mediavolna.cc, tls: true, type: vless, udp: true, uuid: 082f5694-9019-4110-b67b-8125dbb9bab8, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: BR 9 → openit, server: de-bots4.h1cloud.net, port: 25267, client-fingerprint: chrome, password: happybirthdaydaniel, skip-cert-verify: true, sni: t.me/FuckTheWall, type: trojan, udp: true, tfo: false}
+  - {name: BR 8 → openit, server: 189.74.106.163, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
+  - {name: BR 9 → openit, server: 189.74.114.38, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
   - {name: CH 1 → openit, server: 140.238.213.114, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 84a506ca5aca505696a454d828420b3f, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
-  - {name: CH 2 → openit, server: 178.83.185.156, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: CH 2 → openit, server: edge10.cyrionflare.com, port: 2052, encryption: none, network: tcp, type: vless, udp: true, uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: CH 3 → openit, server: edge10.cyrionflare.com, port: 2052, encryption: none, network: tcp, type: vless, udp: true, uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: CH 4 → openit, server: 178.83.185.156, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
   - {name: CL 1 → openit, server: 179.61.138.145, port: 36264, down: "", fingerprint: "", obfs: salamander, obfs-password: Telegram@vpnjey, password: Telegram%3Avpnjey, skip-cert-verify: true, sni: de2.jey.cc.cd, type: hysteria2, up: "", tfo: false}
   - {name: IE 1 → openit, server: 78.17.128.153, port: 35076, down: "", fingerprint: "", obfs: "", obfs-password: "", password: b4c8ee9caa74b7ba0a61, skip-cert-verify: true, sni: scrap.halyvanedorogo.ru, type: hysteria2, up: "", tfo: false}
-  - {name: IL 1 → openit, server: 149.88.23.202, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: IL 2 → openit, server: 149.88.23.207, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: IR 1 → openit, server: 31.59.211.71, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: pl9.aiage.work, tls: true, type: vless, udp: true, uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: IR 2 → openit, server: 91.107.247.173, port: 2083, client-fingerprint: chrome, encryption: none, network: ws, servername: sino.bestsellers1.site, tls: true, type: vless, udp: true, uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d, ws-opts: {headers: {Host: sino.bestsellers1.site, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: IR 3 → openit, server: 185.220.238.77, port: 11543, client-fingerprint: chrome, network: ws, password: HutaoCloud, skip-cert-verify: true, sni: 185.220.238.77, type: trojan, udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36"}, path: /api}, tfo: false}
-  - {name: IR 4 → openit, server: 31.57.190.71, port: 443, client-fingerprint: chrome, network: ws, password: humanity, skip-cert-verify: true, sni: www.pleadcourt.org, type: trojan, udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36"}, path: /assignment}, tfo: false}
-  - {name: IR 5 → openit, server: 195.238.126.20, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, type: ss, udp: true, tfo: false}
-  - {name: IR 6 → openit, server: 185.135.86.175, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, type: ss, udp: true, tfo: false}
-  - {name: IT 1 → openit, server: 188.114.98.0, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: skycitybox-bidarbash.sbs, tls: true, type: vless, udp: true, uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb, ws-opts: {headers: {Host: skycitybox-bidarbash.sbs, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}, path: /zoodi}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IE 2 → openit, server: 34.245.208.137, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IE 3 → openit, server: 34.253.212.171, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IR 1 → openit, server: 91.107.247.173, port: 2083, client-fingerprint: chrome, encryption: none, network: ws, servername: sino.bestsellers1.site, tls: true, type: vless, udp: true, uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d, ws-opts: {headers: {Host: sino.bestsellers1.site, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IR 2 → openit, server: ee-2e06d85dc0.shamanapp.online, port: 34451, client-fingerprint: chrome, encryption: none, network: xhttp, servername: ee-2e06d85dc0.shamanapp.online, tls: true, type: vless, udp: true, uuid: b3a11068-1a7e-4643-85de-7c82cce46943, xhttp-opts: {host: ee-2e06d85dc0.shamanapp.online, mode: stream-up, path: /ShamanXHTTP2026}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IR 3 → openit, server: 31.59.211.71, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: pl9.aiage.work, tls: true, type: vless, udp: true, uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: IR 4 → openit, server: 185.220.238.77, port: 11543, client-fingerprint: chrome, network: ws, password: HutaoCloud, skip-cert-verify: true, sni: 185.220.238.77, type: trojan, udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4"}, path: /api}, tfo: false}
+  - {name: IR 5 → openit, server: 195.238.126.20, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, type: ss, udp: true, tfo: false}
+  - {name: IR 6 → openit, server: 185.135.86.175, port: 9017, cipher: aes-256-cfb, password: HAVAdE3nXhqA5nHp, type: ss, udp: true, tfo: false}
+  - {name: IT 1 → openit, server: 188.114.98.0, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: skycitybox-bidarbash.sbs, tls: true, type: vless, udp: true, uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb, ws-opts: {headers: {Host: skycitybox-bidarbash.sbs, User-Agent: "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"}, path: /zoodi}, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: IT 2 → openit, server: 95.141.37.24, port: 18172, cipher: aes-128-gcm, password: b6af4bce5459c412a0d6dcdd6921259b, type: ss, udp: true, tfo: false}
-  - {name: IT 3 → openit, server: 91.201.65.122, port: 9002, cipher: aes-256-cfb, password: b8KkNDjEd5QqFyRm, type: ss, udp: true, tfo: false}
+  - {name: IT 3 → openit, server: 91.201.65.122, port: 9092, cipher: aes-256-cfb, password: TyNkGmp9hs6eGpDK, type: ss, udp: true, tfo: false}
   - {name: KH 1 → openit, server: 137.220.221.179, port: 443, encryption: none, network: tcp, type: vless, udp: true, uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: LT 1 → openit, server: 88.216.66.30, port: 8880, encryption: none, network: ws, type: vless, udp: true, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, ws-opts: {headers: {Host: vms.lifetime04.workers.dev, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: LV 1 → openit, server: 5.253.29.254, port: 10443, encryption: none, network: tcp, servername: 5.253.29.254, type: vless, udp: true, uuid: c7c27192-60a5-4ce1-b613-95270d82309d, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: LV 2 → openit, server: 185.255.179.166, port: 443, client-fingerprint: chrome, network: ws, password: humanity, skip-cert-verify: true, sni: www.calmlunch.com, type: trojan, udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"}, path: /assignment}, tfo: false}
-  - {name: NO 1 → openit, server: 84.247.155.196, port: 80, cipher: aes-256-gcm, password: 3eOFeNssde7PYYMv, type: ss, udp: true, tfo: false}
+  - {name: NO 1 → openit, server: 84.247.155.196, port: 443, cipher: aes-256-gcm, password: 3eOFeNssde7PYYMv, type: ss, udp: true, tfo: false}
   - {name: PA 1 → openit, server: 186.190.211.188, port: 443, client-fingerprint: chrome, encryption: none, network: tcp, servername: 186.190.211.188, tls: true, type: vless, udp: true, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: RO 1 → openit, server: 79.110.53.169, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: RO 2 → openit, server: 86.106.84.194, port: 13261, cipher: aes-128-gcm, password: 2bf536a4bd6008511734a505d248de2c, type: ss, udp: true, tfo: false}
-  - {name: RW 1 → openit, server: 160.25.74.91, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: u695098ue79dbcd4s783.gogocs.xyz, tls: true, type: vless, udp: true, uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: RW 2 → openit, server: 23.162.200.198, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: UA 1 → openit, server: 185.253.75.119, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: UA 2 → openit, server: 37.19.198.160, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: UA 3 → openit, server: 37.19.198.236, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: UA 4 → openit, server: 37.19.198.243, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: UA 5 → openit, server: 37.19.198.244, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: ZA 1 → openit, server: 151.101.173.81, port: 443, client-fingerprint: chrome, encryption: none, network: xhttp, servername: accounts.fastly.com, tls: true, type: vless, udp: true, uuid: a32eb03a-c0fe-434d-af9b-7a28070ab840, xhttp-opts: {host: dayka-unkepravber.net, mode: packet-up, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: ZA 2 → openit, server: 102.133.165.160, port: 16233, cipher: chacha20-ietf-poly1305, password: Xsy8Ox4yOV3xLlpxtjzs3X, type: ss, udp: true, tfo: false}
-  - {name: unknown 1 → openit, server: 23.170.40.39, port: 19512, down: "", fingerprint: "", obfs: "", obfs-password: "", password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb, skip-cert-verify: true, sni: us1.xiaoliyu.us, type: hysteria2, up: "", tfo: false}
+  - {name: UA 1 → openit, server: 185.253.75.119, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}, path: /fp=chrome}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: UA 2 → openit, server: 37.19.198.243, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: UA 3 → openit, server: 37.19.198.244, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: UA 4 → openit, server: 37.19.198.160, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: ZA 1 → openit, server: 102.133.165.160, port: 16233, cipher: chacha20-ietf-poly1305, password: Xsy8Ox4yOV3xLlpxtjzs3X, type: ss, udp: true, tfo: false}
+  - {name: unknown 1 → openit, server: vpn-tw-002.fastervpn.world, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: 127.0.0.1, type: hysteria2, up: "", tfo: false}
   - {name: unknown 2 → openit, server: 103.115.109.49, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: t.me, type: hysteria2, up: "", tfo: false}
-  - {name: unknown 3 → openit, server: 160.187.100.109, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
-  - {name: unknown 4 → openit, server: 194.113.194.231, port: 1443, fingerprint: "", password: b652305a-0c63-4527-8cb3-0ea582076124, skip-cert-verify: true, sni: ny.freeguard.org, type: anytls, udp: true, username: b652305a-0c63-4527-8cb3-0ea582076124, tfo: false}
-  - {name: unknown 5 → openit, server: 136.175.179.94, port: 8444, encryption: none, network: tcp, type: vless, udp: true, uuid: eae4af7f-0a0c-4af9-8f5f-b7dd403e59d5, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: unknown 6 → openit, server: 138.199.43.159, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: unknown 7 → openit, server: 138.199.42.68, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: unknown 3 → openit, server: 194.113.194.231, port: 1443, fingerprint: "", password: b652305a-0c63-4527-8cb3-0ea582076124, skip-cert-verify: true, sni: ny.freeguard.org, type: anytls, udp: true, username: b652305a-0c63-4527-8cb3-0ea582076124, tfo: false}
+  - {name: unknown 4 → openit, server: 138.199.43.159, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: unknown 5 → openit, server: 138.199.42.68, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
   - {name: 🇦🇺 AU 1 → openit, server: 202.61.205.86, port: 4433, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45, skip-cert-verify: true, sni: de1.xiaoliyu.cyou, type: hysteria2, up: "", tfo: false}
   - {name: 🇨🇦 CA 1 → openit, server: 142.249.37.90, port: 44356, down: "", fingerprint: "", obfs: "", obfs-password: "", password: dongtaiwang.com, skip-cert-verify: true, sni: hy2.561891.xyz, type: hysteria2, up: "", tfo: false}
   - {name: 🇨🇦 CA 2 → openit, server: 47.131.250.125, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: simple-molly.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇨🇦 CA 3 → openit, server: 51.79.64.198, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, type: ss, udp: true, tfo: false}
-  - {name: 🇨🇦 CA 4 → openit, server: 138.197.141.58, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇨🇦 CA 5 → openit, server: 185.213.23.63, port: 990, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, type: ss, udp: true, tfo: false}
-  - {name: 🇨🇦 CA 6 → openit, server: 67.220.95.3, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: 🇨🇦 CA 7 → openit, server: 165.154.195.38, port: 35034, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc, xudp: true, tfo: false}
-  - {name: 🇨🇳 CN 1 → openit, server: 39.108.113.127, port: 10086, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397, ws-opts: {headers: {}, path: /}, xudp: true, tfo: false}
-  - {name: 🇨🇳 TW 1 → openit, server: 684616s4.df6h451rh.xin, port: 443, fingerprint: "", password: ec74bb6a86c2, skip-cert-verify: true, sni: px.ads.linkedin.com, type: anytls, udp: true, username: ec74bb6a86c2, tfo: false}
-  - {name: 🇨🇳 TW 2 → openit, server: 98416548.df6h451rh.xin, port: 443, fingerprint: "", password: 0324fbc29561, skip-cert-verify: true, sni: images.ctfassets.net, type: anytls, udp: true, username: 0324fbc29561, tfo: false}
+  - {name: 🇨🇦 CA 3 → openit, server: 138.197.141.58, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇨🇦 CA 4 → openit, server: 185.213.23.63, port: 990, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, type: ss, udp: true, tfo: false}
+  - {name: 🇨🇳 TW 1 → openit, server: er8u54dh.df6h451rh.xin, port: 443, fingerprint: "", password: ec74bb6a86c2, skip-cert-verify: true, sni: px.ads.linkedin.com, type: anytls, udp: true, username: ec74bb6a86c2, tfo: false}
+  - {name: 🇨🇳 TW 2 → openit, server: 107.155.57.51, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
   - {name: 🇨🇳 TW 3 → openit, server: 107.155.57.11, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇨🇳 TW 4 → openit, server: 107.155.57.51, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇩🇪 DE 1 → openit, server: 173.212.201.85, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: gf1%3Agfhysteria2024, skip-cert-verify: true, sni: www.docker.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇩🇪 DE 2 → openit, server: 51.44.167.227, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: vpn-fr-001.fastervpn.world, type: hysteria2, up: "", tfo: false}
+  - {name: 🇩🇪 DE 1 → openit, server: 51.44.167.227, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: vpn-fr-001.fastervpn.world, type: hysteria2, up: "", tfo: false}
+  - {name: 🇩🇪 DE 2 → openit, server: vpn-fr-001.fastervpn.world, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: vpn-fr-001.fastervpn.world, type: hysteria2, up: "", tfo: false}
   - {name: 🇩🇪 DE 3 → openit, server: 50.7.87.150, port: 54183, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 082f5694-9019-4110-b67b-8125dbb9bab8, skip-cert-verify: true, sni: outh.yandex-cloud.org, type: hysteria2, up: "", tfo: false}
-  - {name: 🇩🇪 DE 4 → openit, server: 157.230.101.36, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇩🇪 DE 5 → openit, server: 84.235.244.108, port: 22573, encryption: none, network: ws, type: vless, udp: true, uuid: 39947382-3212-41c9-bc3a-589574ac8b23, ws-opts: {headers: {Host: uae.unixzone.us, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇩🇪 DE 6 → openit, server: free.sahanwickramasinghe.me, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda, ws-opts: {headers: {Host: free.sahanwickramasinghe.me, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇩🇪 DE 7 → openit, server: 8.209.74.72, port: 20001, cipher: chacha20-ietf-poly1305, password: PWpjPo3tqhPN4yRZ, type: ss, udp: true, tfo: false}
-  - {name: 🇩🇪 DE 8 → openit, server: 37.148.203.124, port: 12238, cipher: aes-128-gcm, password: 6163d9d532e40f417dd8ebb5f9716495, type: ss, udp: true, tfo: false}
+  - {name: 🇩🇪 DE 4 → openit, server: 3.124.195.79, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇩🇪 DE 5 → openit, server: uae.unixzone.us, port: 22573, encryption: none, network: ws, type: vless, udp: true, uuid: 39947382-3212-41c9-bc3a-589574ac8b23, ws-opts: {headers: {Host: uae.unixzone.us, User-Agent: "Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇩🇪 DE 6 → openit, server: free.sahanwickramasinghe.me, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda, ws-opts: {headers: {Host: free.sahanwickramasinghe.me, User-Agent: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇩🇪 DE 7 → openit, server: 37.148.203.124, port: 12238, cipher: aes-128-gcm, password: 6163d9d532e40f417dd8ebb5f9716495, type: ss, udp: true, tfo: false}
+  - {name: 🇩🇪 DE 8 → openit, server: 8.209.74.72, port: 20001, cipher: chacha20-ietf-poly1305, password: PWpjPo3tqhPN4yRZ, type: ss, udp: true, tfo: false}
   - {name: 🇩🇪 DE 9 → openit, server: 213.202.208.199, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, type: ss, udp: true, tfo: false}
-  - {name: 🇫🇷 FR 1 → openit, server: 51.77.217.70, port: 33128, down: "", fingerprint: "", obfs: salamander, obfs-password: ChY5QQQT3ZtUdNT8, password: capadmbd5f18bd%3AjX4BuciLLIqLvzJZsHpoXtc2, skip-cert-verify: true, sni: vpn.local, type: hysteria2, up: "", tfo: false}
-  - {name: 🇫🇷 FR 2 → openit, server: 62.210.124.146, port: 22000, down: "", fingerprint: "", obfs: "", obfs-password: "", password: dongtaiwang.com, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇫🇷 FR 3 → openit, server: 45.12.63.96, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: studiofeed}, network: grpc, servername: studio.10media.top, tls: true, type: vless, udp: true, uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇫🇷 FR 4 → openit, server: edge-lab-b.10media.top, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: swedenfeed}, network: grpc, servername: edge-lab-b.10media.top, tls: true, type: vless, udp: true, uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇩🇰 DK 1 → openit, server: 158.173.24.73, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇩🇰 DK 2 → openit, server: 158.173.20.171, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇩🇰 DK 3 → openit, server: 158.173.20.208, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇫🇷 FR 1 → openit, server: 62.210.124.146, port: 22000, down: "", fingerprint: "", obfs: "", obfs-password: "", password: dongtaiwang.com, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇫🇷 FR 2 → openit, server: 51.77.217.70, port: 8446, down: "", fingerprint: "", obfs: salamander, obfs-password: ChY5QQQT3ZtUdNT8, password: capadmbd5f18bd%3AjX4BuciLLIqLvzJZsHpoXtc2, skip-cert-verify: true, sni: vpn.local, type: hysteria2, up: "", tfo: false}
+  - {name: 🇫🇷 FR 3 → openit, server: 149.202.57.89, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: rgiw5k0gg5-1492025789-direct.kheibarr.com, tls: true, type: vless, udp: true, uuid: 126fdbae-bb34-5882-a40c-fb60c5ea4afb, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇫🇷 FR 4 → openit, server: 45.12.63.96, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: studiofeed}, network: grpc, servername: studio.10media.top, tls: true, type: vless, udp: true, uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: 🇫🇷 FR 5 → openit, server: 51.222.200.165, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, type: ss, udp: true, tfo: false}
-  - {name: 🇫🇷 FR 6 → openit, server: 51.222.136.236, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, type: ss, udp: true, tfo: false}
-  - {name: 🇫🇷 FR 7 → openit, server: 51.83.192.80, port: 8388, cipher: aes-256-gcm, password: itzvpn@321, type: ss, udp: true, tfo: false}
-  - {name: 🇫🇷 FR 8 → openit, server: 145.239.55.210, port: 80, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: 067fcd63-b215-4abd-8529-ae929a9971a9, ws-opts: {headers: {Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.}, path: /}, xudp: true, tfo: false}
+  - {name: 🇫🇷 FR 6 → openit, server: 51.83.192.80, port: 8388, cipher: aes-256-gcm, password: itzvpn@321, type: ss, udp: true, tfo: false}
   - {name: 🇬🇧 GB 1 → openit, server: 144.24.46.175, port: 8443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: pbgLTkd5276SN1sZ, skip-cert-verify: true, sni: 144.24.46.175, type: hysteria2, up: "", tfo: false}
-  - {name: 🇬🇧 GB 10 → openit, server: 2.27.109.179, port: 45464, client-fingerprint: chrome, password: XuMweB2PWs, skip-cert-verify: true, sni: 2.27.109.179.sslip.io, type: trojan, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 11 → openit, server: 82.38.31.48, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 12 → openit, server: 82.38.31.9, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 13 → openit, server: 82.38.31.149, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 14 → openit, server: 82.38.31.176, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 15 → openit, server: 82.38.31.203, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 16 → openit, server: 82.38.31.54, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 17 → openit, server: 82.38.31.49, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 18 → openit, server: 82.38.31.2, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 19 → openit, server: 82.38.31.217, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 10 → openit, server: 159.65.51.189, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 11 → openit, server: 109.176.19.244, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: snip.edgeoneai.cc.cd, tls: true, type: vless, udp: true, uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5, ws-opts: {headers: {Host: snip.edgeoneai.cc.cd, User-Agent: "Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 12 → openit, server: node-uk.connectsuite.org, port: 8443, client-fingerprint: chrome, encryption: none, network: tcp, tls: true, type: vless, udp: true, uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 13 → openit, server: 2.27.109.179, port: 45464, client-fingerprint: chrome, password: XuMweB2PWs, skip-cert-verify: true, sni: 2.27.109.179.sslip.io, type: trojan, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 14 → openit, server: 146.70.61.37, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 15 → openit, server: 31.76.11.83, port: 15731, cipher: chacha20-ietf-poly1305, password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 16 → openit, server: 82.38.31.3, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 17 → openit, server: 82.38.31.36, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 18 → openit, server: 82.38.31.178, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 19 → openit, server: 82.38.31.47, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
   - {name: 🇬🇧 GB 2 → openit, server: 138.3.208.26, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 184cdec28da5a09450803c8debcd2cc9, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇬🇧 GB 20 → openit, server: 82.38.31.162, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 21 → openit, server: 82.38.31.28, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 22 → openit, server: 82.38.31.82, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 23 → openit, server: 82.38.31.157, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 24 → openit, server: 82.38.31.7, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 25 → openit, server: 82.38.31.66, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 26 → openit, server: 82.38.31.187, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 27 → openit, server: 31.76.11.83, port: 15731, cipher: chacha20-ietf-poly1305, password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 28 → openit, server: 82.38.31.155, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 29 → openit, server: 82.38.31.62, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 20 → openit, server: 82.38.31.66, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 21 → openit, server: 82.38.31.42, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 22 → openit, server: 82.38.31.34, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 23 → openit, server: 82.38.31.35, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 24 → openit, server: 82.38.31.156, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 25 → openit, server: 82.38.31.218, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 26 → openit, server: 82.38.31.175, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 27 → openit, server: 82.38.31.220, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 28 → openit, server: 82.38.31.176, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 29 → openit, server: 82.38.31.182, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
   - {name: 🇬🇧 GB 3 → openit, server: gb2.xiaoliyu.cyou, port: 4430, fingerprint: "", password: 5b4f91fa-e64f-4af0-a5c2-b27ac8b52939, skip-cert-verify: true, sni: "", type: anytls, udp: true, username: 5b4f91fa-e64f-4af0-a5c2-b27ac8b52939, tfo: false}
-  - {name: 🇬🇧 GB 30 → openit, server: 82.38.31.213, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 30 → openit, server: 82.38.31.162, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
   - {name: 🇬🇧 GB 31 → openit, server: 82.38.31.219, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 32 → openit, server: 82.38.31.10, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 33 → openit, server: 82.38.31.13, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 34 → openit, server: 82.38.31.174, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 35 → openit, server: 82.38.31.61, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 36 → openit, server: 82.38.31.208, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 37 → openit, server: 82.38.31.3, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 38 → openit, server: 82.38.31.156, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 39 → openit, server: 82.38.31.183, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 4 → openit, server: 141.144.207.185, port: 62145, encryption: none, network: tcp, type: vless, udp: true, uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 40 → openit, server: 82.38.31.184, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 41 → openit, server: 82.38.31.11, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 42 → openit, server: 82.38.31.35, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 43 → openit, server: 82.38.31.175, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 44 → openit, server: 82.38.31.192, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 45 → openit, server: 82.38.31.34, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 32 → openit, server: 82.38.31.201, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 33 → openit, server: 82.38.31.216, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 34 → openit, server: 82.38.31.191, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 35 → openit, server: 82.38.31.82, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 36 → openit, server: 82.38.31.155, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 37 → openit, server: 82.38.31.202, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 38 → openit, server: 82.38.31.39, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 39 → openit, server: 82.38.31.171, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 4 → openit, server: 3.8.150.222, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 40 → openit, server: 82.38.31.48, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 41 → openit, server: 82.38.31.183, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 42 → openit, server: 82.38.31.215, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 43 → openit, server: 82.38.31.49, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 44 → openit, server: 82.38.31.194, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 45 → openit, server: 82.38.31.69, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
   - {name: 🇬🇧 GB 46 → openit, server: 82.38.31.185, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 47 → openit, server: 82.38.31.42, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 48 → openit, server: 82.38.31.36, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 49 → openit, server: 82.38.31.47, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 5 → openit, server: test.keoplentuio.xyz, port: 2053, encryption: none, network: tcp, type: vless, udp: true, uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 50 → openit, server: 82.38.31.201, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 51 → openit, server: 82.38.31.220, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 52 → openit, server: 82.38.31.69, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 53 → openit, server: 82.38.31.212, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 54 → openit, server: 82.38.31.206, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 55 → openit, server: 82.38.31.207, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 56 → openit, server: 82.38.31.193, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 57 → openit, server: 82.38.31.26, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 58 → openit, server: 82.38.31.200, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 59 → openit, server: 82.38.31.195, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 6 → openit, server: test.keoplentuio.xyz, port: 2053, encryption: none, network: tcp, type: vless, udp: true, uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 60 → openit, server: 82.38.31.39, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 61 → openit, server: 82.38.31.179, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 62 → openit, server: 82.38.31.198, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 63 → openit, server: 82.38.31.218, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 64 → openit, server: 82.110.60.9, port: 19999, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 65 → openit, server: 82.38.31.202, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 66 → openit, server: 82.38.31.171, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 67 → openit, server: 146.70.61.18, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 68 → openit, server: 82.38.31.190, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 69 → openit, server: 82.38.31.186, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 7 → openit, server: 159.65.51.189, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 70 → openit, server: 82.38.31.214, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 71 → openit, server: 141.98.101.181, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 72 → openit, server: 146.70.61.37, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 73 → openit, server: 82.38.31.205, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 74 → openit, server: 82.38.31.194, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 75 → openit, server: 82.38.31.204, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 76 → openit, server: 82.38.31.189, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 77 → openit, server: 82.38.31.178, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 78 → openit, server: 82.38.31.181, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 79 → openit, server: 82.38.31.210, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 8 → openit, server: node-uk.connectsuite.org, port: 8443, client-fingerprint: chrome, encryption: none, network: tcp, tls: true, type: vless, udp: true, uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 80 → openit, server: 82.38.31.199, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 81 → openit, server: 82.38.31.211, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 82 → openit, server: 82.38.31.17, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 83 → openit, server: 82.38.31.216, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 84 → openit, server: 82.38.31.16, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 85 → openit, server: 82.38.31.46, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 86 → openit, server: 82.38.31.18, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 87 → openit, server: 82.38.31.215, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 88 → openit, server: 82.38.31.170, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 89 → openit, server: 82.38.31.191, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 9 → openit, server: 2.26.225.89, port: 8443, client-fingerprint: chrome, encryption: none, network: tcp, servername: pl.flen-vpn.xyz, tls: true, type: vless, udp: true, uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇬🇧 GB 90 → openit, server: 82.38.31.182, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇬🇧 GB 91 → openit, server: 84.17.41.2, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: 🇭🇰 HK 1 → openit, server: 202.146.222.29, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: https://t.me/wangcai2, type: hysteria2, up: "", tfo: false}
-  - {name: 🇭🇰 HK 2 → openit, server: 202.146.222.174, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: https://t.me/oneclickvpnkeys, type: hysteria2, up: "", tfo: false}
+  - {name: 🇬🇧 GB 47 → openit, server: 82.38.31.157, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 48 → openit, server: 82.38.31.192, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 49 → openit, server: 82.38.31.217, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 5 → openit, server: 141.144.207.185, port: 62145, encryption: none, network: tcp, type: vless, udp: true, uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 50 → openit, server: 82.38.31.189, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 51 → openit, server: 82.38.31.10, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 52 → openit, server: 82.38.31.26, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 53 → openit, server: 82.38.31.174, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 54 → openit, server: 82.38.31.212, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 55 → openit, server: 82.38.31.46, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 56 → openit, server: 82.38.31.207, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 57 → openit, server: 82.38.31.204, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 58 → openit, server: 82.38.31.184, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 59 → openit, server: 82.38.31.186, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 6 → openit, server: 2.26.225.89, port: 8443, client-fingerprint: chrome, encryption: none, network: tcp, servername: pl.flen-vpn.xyz, tls: true, type: vless, udp: true, uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 60 → openit, server: 82.38.31.199, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 61 → openit, server: 82.38.31.181, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 62 → openit, server: 82.38.31.190, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 63 → openit, server: 82.38.31.198, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 64 → openit, server: 82.38.31.18, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 65 → openit, server: 82.38.31.187, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 66 → openit, server: 82.38.31.206, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 67 → openit, server: 82.38.31.28, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 68 → openit, server: 82.38.31.159, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 69 → openit, server: 82.38.31.2, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 7 → openit, server: rrr.soreanapanel.com, port: 25566, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 3c1dbb51-4160-4f9f-839e-218272142eaf, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 70 → openit, server: 82.38.31.200, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 71 → openit, server: 82.38.31.54, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 72 → openit, server: 82.38.31.61, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 73 → openit, server: 82.38.31.208, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 74 → openit, server: 82.38.31.193, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 75 → openit, server: 82.38.31.7, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 76 → openit, server: 82.38.31.62, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 77 → openit, server: 82.38.31.16, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 78 → openit, server: 82.38.31.13, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 79 → openit, server: 82.110.60.9, port: 19999, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 8 → openit, server: 31.77.126.2, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 80 → openit, server: 82.38.31.170, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 81 → openit, server: 82.38.31.179, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 82 → openit, server: 82.38.31.214, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 83 → openit, server: 146.70.61.18, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 84 → openit, server: 82.38.31.11, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 85 → openit, server: 82.38.31.180, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 86 → openit, server: 82.38.31.203, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 87 → openit, server: 82.38.31.9, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 88 → openit, server: 82.38.31.205, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 89 → openit, server: 82.38.31.211, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 9 → openit, server: connect.wecantos.site, port: 10000, encryption: none, network: tcp, type: vless, udp: true, uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇬🇧 GB 90 → openit, server: 82.38.31.195, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 91 → openit, server: 82.38.31.210, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇬🇧 GB 92 → openit, server: 82.38.31.149, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇭🇰 HK 1 → openit, server: 202.146.222.174, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: https://t.me/oneclickvpnkeys, type: hysteria2, up: "", tfo: false}
+  - {name: 🇭🇰 HK 2 → openit, server: 202.146.222.29, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: https://t.me/wangcai2, type: hysteria2, up: "", tfo: false}
   - {name: 🇭🇰 HK 3 → openit, server: nas.aizhzo.com, port: 5010, down: "", fingerprint: "", obfs: salamander, obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9, password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
-  - {name: 🇭🇰 HK 4 → openit, server: 56481.df6h451rh.xin, port: 443, fingerprint: "", password: ec74bb6a86c2, skip-cert-verify: true, sni: images.ctfassets.net, type: anytls, udp: true, username: ec74bb6a86c2, tfo: false}
-  - {name: 🇭🇰 HK 5 → openit, server: 23.251.121.242, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇭🇰 HK 4 → openit, server: 45.202.240.4, port: 33091, fingerprint: "", password: 776b4834-caaf-4006-ab21-409e958867af, skip-cert-verify: true, sni: www.bing.com, type: anytls, udp: true, username: 776b4834-caaf-4006-ab21-409e958867af, tfo: false}
+  - {name: 🇭🇰 HK 5 → openit, server: 654968169.df6h451rh.xin, port: 443, fingerprint: "", password: 0324fbc29561, skip-cert-verify: true, sni: images.ctfassets.net, type: anytls, udp: true, username: 0324fbc29561, tfo: false}
+  - {name: 🇭🇰 HK 6 → openit, server: 56481.df6h451rh.xin, port: 443, fingerprint: "", password: ec74bb6a86c2, skip-cert-verify: true, sni: images.ctfassets.net, type: anytls, udp: true, username: ec74bb6a86c2, tfo: false}
+  - {name: 🇭🇰 HK 7 → openit, server: 23.251.121.242, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇮🇳 IN 1 → openit, server: 203.202.232.211, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /fp=chrome}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇮🇳 IN 2 → openit, server: pphfree2.mvpnpvpn.de5.net, port: 52351, cipher: aes-256-gcm, password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=, type: ss, udp: true, tfo: false}
   - {name: 🇯🇵 JP 1 → openit, server: 45.32.10.7, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 96ab5cd282733fd4c312a61f972f330a, skip-cert-verify: true, sni: vp3.yysyy.online, type: hysteria2, up: "", tfo: false}
-  - {name: 🇯🇵 JP 2 → openit, server: svip.skycon808.com, port: 24318, fingerprint: "", password: 87c6ad7b-e450-44a8-8088-bc2234d43de1, skip-cert-verify: true, sni: hk08.jdddyy01.cc, type: anytls, udp: true, username: 87c6ad7b-e450-44a8-8088-bc2234d43de1, tfo: false}
-  - {name: 🇯🇵 JP 3 → openit, server: 43.129.80.179, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇯🇵 JP 4 → openit, server: 43.174.193.1, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇯🇵 JP 5 → openit, server: 43.201.100.203, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: optimum-snapper.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇯🇵 JP 6 → openit, server: seoul02.zgjok.com, port: 443, alterId: "0", cipher: auto, network: ws, servername: seoul02.zgjok.com, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 1a1e5196-eab4-4772-9012-65c27f19a524, ws-opts: {headers: {Host: seoul02.zgjok.com}, path: /}, xudp: true, tfo: false}
-  - {name: 🇰🇷 KR 1 → openit, server: svip.skycon808.com, port: 47531, fingerprint: "", password: 87c6ad7b-e450-44a8-8088-bc2234d43de1, skip-cert-verify: true, sni: tw15.swiftrelay.cc, type: anytls, udp: true, username: 87c6ad7b-e450-44a8-8088-bc2234d43de1, tfo: false}
-  - {name: 🇰🇷 KR 2 → openit, server: 49.254.204.134, port: 1774, cipher: aes-256-cfb, password: 1234!@#$, type: ss, udp: true, tfo: false}
-  - {name: 🇰🇷 KR 3 → openit, server: 49.254.204.133, port: 1774, cipher: aes-256-cfb, password: 1234!@#$, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 1 → openit, server: 109.235.49.234, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: dd50a499-7e43-4589-8490-f3b9c2451473, skip-cert-verify: true, sni: tcp-reset-club.net, type: hysteria2, up: "", tfo: false}
-  - {name: 🇳🇱 NL 10 → openit, server: 193.29.139.225, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 11 → openit, server: 193.29.139.151, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 12 → openit, server: 193.29.139.212, port: 8080, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 13 → openit, server: 193.29.139.188, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 14 → openit, server: 193.29.139.204, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 15 → openit, server: 193.29.139.168, port: 8080, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 16 → openit, server: 193.29.139.202, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 17 → openit, server: 109.201.152.181, port: 443, cipher: aes-128-cfb, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 18 → openit, server: 193.29.139.147, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 19 → openit, server: 193.29.139.223, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 2 → openit, server: 132.226.226.189, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 1671a252e2a97dc2bda4e515475931da, skip-cert-verify: true, sni: 132.226.226.189, type: hysteria2, up: "", tfo: false}
-  - {name: 🇳🇱 NL 20 → openit, server: 193.29.139.234, port: 8080, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 3 → openit, server: 188.164.248.216, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇳🇱 NL 4 → openit, server: 62.105.220.106, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: s170.gogocs.xyz, tls: true, type: vless, udp: true, uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇳🇱 NL 5 → openit, server: 193.29.139.235, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 6 → openit, server: 193.29.139.198, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 7 → openit, server: 193.29.139.132, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 8 → openit, server: 193.29.139.179, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇳🇱 NL 9 → openit, server: 193.29.139.197, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
-  - {name: 🇵🇱 PL 1 → openit, server: 54.36.174.140, port: 443, cipher: chacha20-ietf-poly1305, password: e5c65ph, type: ss, udp: true, tfo: false}
-  - {name: 🇵🇱 PL 2 → openit, server: pl134.vpnbook.com, port: 443, cipher: chacha20-ietf-poly1305, password: e5c65ph, type: ss, udp: true, tfo: false}
-  - {name: 🇵🇱 PL 3 → openit, server: 54.37.131.126, port: 80, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3, ws-opts: {headers: {Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.}, path: /}, xudp: true, tfo: false}
+  - {name: 🇯🇵 JP 2 → openit, server: 103.85.27.30, port: 45087, encryption: none, network: tcp, type: vless, udp: true, uuid: 5d0f8977-ca64-46b8-d8a4-12cafa375de8, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇯🇵 JP 3 → openit, server: 43.203.219.68, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇯🇵 JP 4 → openit, server: 43.129.80.179, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇯🇵 JP 5 → openit, server: funagfrdfs.alixxplay.com, port: 54528, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, reality-opts: {public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo, short-id: "54cca3c1c1c7"}, servername: www.apple.com, tls: true, type: vless, udp: true, uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇯🇵 JP 6 → openit, server: 43.201.100.203, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: optimum-snapper.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇰🇷 KR 1 → openit, server: 13.124.9.166, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇰🇷 KR 2 → openit, server: 49.254.204.133, port: 1774, cipher: aes-256-cfb, password: 1234!@#$, type: ss, udp: true, tfo: false}
+  - {name: 🇰🇷 KR 3 → openit, server: 211.178.105.134, port: 6123, cipher: aes-256-cfb, password: qwerREWQ@@, type: ss, udp: true, tfo: false}
+  - {name: 🇰🇷 KR 4 → openit, server: 218.237.185.234, port: 4652, cipher: aes-256-cfb, password: qwerREWQ@@, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 1 → openit, server: 51.15.19.206, port: 8443, down: "", fingerprint: "", obfs: salamander, obfs-password: HysteriaHowdy, password: HowdyHysteria2023w0W, skip-cert-verify: true, sni: vk.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇳🇱 NL 10 → openit, server: 193.29.139.235, port: 443, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 11 → openit, server: 193.29.139.202, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 12 → openit, server: 193.29.139.197, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 13 → openit, server: 193.29.139.198, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 14 → openit, server: 193.29.139.132, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 15 → openit, server: 193.29.139.225, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 16 → openit, server: 109.201.152.181, port: 443, cipher: aes-128-cfb, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 17 → openit, server: 193.29.139.147, port: 8080, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 18 → openit, server: 193.29.139.234, port: 8080, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 19 → openit, server: 193.29.139.151, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 2 → openit, server: 109.235.49.234, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: dd50a499-7e43-4589-8490-f3b9c2451473, skip-cert-verify: true, sni: tcp-reset-club.net, type: hysteria2, up: "", tfo: false}
+  - {name: 🇳🇱 NL 20 → openit, server: 193.29.139.188, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 3 → openit, server: 132.226.226.189, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 1671a252e2a97dc2bda4e515475931da, skip-cert-verify: true, sni: 132.226.226.189, type: hysteria2, up: "", tfo: false}
+  - {name: 🇳🇱 NL 4 → openit, server: 188.164.248.216, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇳🇱 NL 5 → openit, server: 62.105.220.106, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, servername: s170.gogocs.xyz, tls: true, type: vless, udp: true, uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇳🇱 NL 6 → openit, server: 193.29.139.179, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 7 → openit, server: 193.29.139.168, port: 8080, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 8 → openit, server: 193.29.139.212, port: 8080, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, type: ss, udp: true, tfo: false}
+  - {name: 🇳🇱 NL 9 → openit, server: 193.29.139.204, port: 8080, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, type: ss, udp: true, tfo: false}
+  - {name: 🇵🇱 PL 1 → openit, server: 83.168.91.16, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: framefeed}, network: grpc, servername: pl-exit-02.10media.top, tls: true, type: vless, udp: true, uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇵🇱 PL 2 → openit, server: 54.36.174.140, port: 443, cipher: chacha20-ietf-poly1305, password: e5c65ph, type: ss, udp: true, tfo: false}
+  - {name: 🇵🇱 PL 3 → openit, server: pl134.vpnbook.com, port: 443, cipher: chacha20-ietf-poly1305, password: e5c65ph, type: ss, udp: true, tfo: false}
   - {name: 🇷🇺 RU 1 → openit, server: 95.140.147.245, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU, skip-cert-verify: true, sni: nl1server.rabstvo.shop, type: hysteria2, up: "", tfo: false}
-  - {name: 🇷🇺 RU 2 → openit, server: 5.129.235.85, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: gf1%3Agfhysteria2024, skip-cert-verify: true, sni: www.linux.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇷🇺 RU 3 → openit, server: 194.87.118.184, port: 2053, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794, skip-cert-verify: true, sni: 194.87.118.184, type: hysteria2, up: "", tfo: false}
-  - {name: 🇷🇺 RU 4 → openit, server: 37.9.4.112, port: 17701, down: "", fingerprint: "", obfs: salamander, obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce, password: 56ff50da-a238-4646-95ab-dd159634bd87, skip-cert-verify: true, sni: ru03.arpanet-cdn.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇷🇺 RU 10 → openit, server: 217.30.10.44, port: 9095, cipher: aes-256-cfb, password: N7j3pdTYkKmsy8CR, type: ss, udp: true, tfo: false}
+  - {name: 🇷🇺 RU 11 → openit, server: 176.32.32.108, port: 18443, cipher: aes-256-gcm, password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa, type: ss, udp: true, tfo: false}
+  - {name: 🇷🇺 RU 12 → openit, server: 194.87.196.107, port: 18443, cipher: aes-256-gcm, password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE, type: ss, udp: true, tfo: false}
+  - {name: 🇷🇺 RU 2 → openit, server: 194.87.118.184, port: 2053, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794, skip-cert-verify: true, sni: 194.87.118.184, type: hysteria2, up: "", tfo: false}
+  - {name: 🇷🇺 RU 3 → openit, server: 77.232.139.128, port: 11592, down: "", fingerprint: "", obfs: salamander, obfs-password: eba1b4766d2a26d6c167e2d2e9efabf4, password: 033dc6b532, skip-cert-verify: true, sni: srv-8718e6.frd21.ru, type: hysteria2, up: "", tfo: false}
+  - {name: 🇷🇺 RU 4 → openit, server: 194.87.143.165, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c, ws-opts: {headers: {Host: 194.87.143.165, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: 🇷🇺 RU 5 → openit, server: tg1.cdnphotos.org, port: 443, client-fingerprint: chrome, encryption: none, network: xhttp, servername: tg1.cdnphotos.org, tls: true, type: vless, udp: true, uuid: f04cc810-aaf2-4a7b-8cad-356cdd30d394, xhttp-opts: {host: tg1.cdnphotos.org, mode: auto, path: /api/v1/}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇷🇺 RU 6 → openit, server: randomquaint.net, port: 2053, client-fingerprint: chrome, encryption: none, network: xhttp, servername: randomquaint.net, tls: true, type: vless, udp: true, uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d, xhttp-opts: {host: randomquaint.net, mode: auto, path: /api/v1/upload}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇷🇺 RU 7 → openit, server: 185.164.175.81, port: 19999, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, type: ss, udp: true, tfo: false}
-  - {name: 🇷🇺 RU 8 → openit, server: 217.30.10.44, port: 9095, cipher: aes-256-cfb, password: N7j3pdTYkKmsy8CR, type: ss, udp: true, tfo: false}
+  - {name: 🇷🇺 RU 6 → openit, server: 185.125.50.181, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: degrpc}, network: grpc, servername: de-game.pink-service.ru, tls: true, type: vless, udp: true, uuid: ee3de8a9-ce8a-4316-b128-101d0816df4d, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇷🇺 RU 7 → openit, server: 78.159.250.84, port: 2053, client-fingerprint: chrome, encryption: none, network: xhttp, servername: summerculture.net, tls: true, type: vless, udp: true, uuid: 2c634977-584e-4e1f-b501-1b70c77a6743, xhttp-opts: {host: summerculture.net, mode: auto, path: /api/v1/upload}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇷🇺 RU 8 → openit, server: 78.159.246.85, port: 2053, client-fingerprint: chrome, encryption: none, network: xhttp, servername: fitindoor.net, tls: true, type: vless, udp: true, uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d, xhttp-opts: {host: fitindoor.net, mode: auto, path: /api/v1/upload}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇷🇺 RU 9 → openit, server: 185.164.175.81, port: 19999, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, type: ss, udp: true, tfo: false}
   - {name: 🇸🇬 SG 1 → openit, server: 8.211.175.236, port: 8443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: u63SxILNwtrQZ7Y1ZrFaZfsA, skip-cert-verify: true, sni: 8.211.175.236, type: hysteria2, up: "", tfo: false}
-  - {name: 🇸🇬 SG 10 → openit, server: 68.183.227.45, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 11 → openit, server: 68.183.227.4, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 2 → openit, server: 45.118.133.249, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: free.nadun.store, tls: true, type: vless, udp: true, uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b, ws-opts: {headers: {Host: free.nadun.store, User-Agent: "Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇸🇬 SG 10 → openit, server: 68.183.235.122, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 2 → openit, server: vpn-sg-001.fastervpn.world, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: qQe1z5kU8kN6SlKnDt9Ru3Qp, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
   - {name: 🇸🇬 SG 3 → openit, server: glorious-glider.rooster465.autos, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: glorious-glider.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 4 → openit, server: 18.141.136.8, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: musical-mouse.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 5 → openit, server: 3.1.252.137, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: brave-tomcat.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 6 → openit, server: 139.180.220.175, port: 8388, cipher: aes-256-gcm, password: qpSevKaUXYQKvSjp, type: ss, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 7 → openit, server: 128.199.172.224, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 8 → openit, server: 68.183.235.122, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇸🇬 SG 9 → openit, server: 68.183.227.236, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 1 → openit, server: 66.94.121.46, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: gf1%3Agfhysteria2024, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 10 → openit, server: 152.67.200.82, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 3d7634af8cb2c6cb4bac1c0efad8b43d, skip-cert-verify: true, sni: 152-67-200-82.liao.kdns.fr, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 100 → openit, server: 169.150.210.233, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 101 → openit, server: 130.49.189.158, port: 43558, cipher: chacha20-ietf-poly1305, password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 102 → openit, server: 67.159.18.34, port: 17001, cipher: aes-256-gcm, password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 103 → openit, server: 139.84.166.47, port: 8388, cipher: aes-256-gcm, password: GEdoeeqLZtkJRgSa, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 104 → openit, server: 206.1.99.116, port: 1080, cipher: chacha20-ietf-poly1305, password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 105 → openit, server: 154.36.158.197, port: 8388, cipher: aes-256-gcm, password: BeaUf9c0AEWH40Pu, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 106 → openit, server: 169.197.142.22, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 107 → openit, server: 172.66.203.67, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db, ws-opts: {headers: {Host: vmess.lbw666.dpdns.org}, path: /ws}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 108 → openit, server: 38.91.107.49, port: 18000, alterId: "0", cipher: auto, network: tcp, skip-cert-verify: false, tls: false, type: vmess, udp: true, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 109 → openit, server: www.shopify.com, port: 443, alterId: "0", cipher: auto, network: ws, servername: guanwang.awsno.com, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a, ws-opts: {headers: {Host: guanwang.awsno.com}, path: /hls/cctv5phd.m3u8}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 11 → openit, server: 208.69.78.217, port: 33133, down: "", fingerprint: "", obfs: salamander, obfs-password: mbQXP2ASuHbF6ZPq, password: capadm96216165%3AnXUv9sPkKFsDMmhZ7jbE28sw, skip-cert-verify: true, sni: vpn.local, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 110 → openit, server: guanwang.awsno.com, port: 443, alterId: "0", cipher: auto, network: ws, servername: guanwang.awsno.com, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a, ws-opts: {headers: {Host: guanwang.awsno.com}, path: /hls/cctv5phd.m3u8}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 111 → openit, server: 47.76.57.83, port: 443, alterId: "0", cipher: auto, network: ws, servername: vah4urdzl3jdx5r2.v.3dns.vip, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3, ws-opts: {headers: {Host: vah4urdzl3jdx5r2.v.3dns.vip}, path: /ws-vmess}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 112 → openit, server: i2psm3knof5qjjix.v.3dns.vip, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3, ws-opts: {headers: {Host: i2psm3knof5qjjix.v.3dns.vip}, path: /ws-vmess}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 113 → openit, server: uk2-2.998998.best, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627, ws-opts: {early-data-header-name: Sec-WebSocket-Protocol, headers: {Host: server3.9966338.xyz}, max-early-data: 2560, path: /waetasiuofguiwer}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 114 → openit, server: 172.67.195.146, port: 443, alterId: "0", cipher: auto, network: ws, servername: aus.lovehk.xyz, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49, ws-opts: {headers: {Host: aus.lovehk.xyz}, path: /Sydney3}, xudp: true, tfo: false}
-  - {name: 🇺🇸 US 12 → openit, server: 138.2.73.238, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f87376e17da040ed04c9665ce8972930, skip-cert-verify: true, sni: 138.2.73.238, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 13 → openit, server: 138.2.89.249, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: 309502c4a8df10b46fb976d4a8c43f42, password: d042d150716709bb778cc73889cddb02, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 14 → openit, server: ees92.shhflow.xyz, port: 5443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 43212c32-01f2-4356-b216-67dc1c178262, skip-cert-verify: true, sni: ees92.shhflow.xyz, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 15 → openit, server: hy2.aspidnet.xyz, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3, password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 16 → openit, server: 2.56.177.182, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU, skip-cert-verify: true, sni: fi1server.rabstvo.shop, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 17 → openit, server: 162.249.125.133, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: c1b4086fea89914496c7e10967a419216566, password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s, skip-cert-verify: true, sni: hy2-new.aspidnet.xyz, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 18 → openit, server: 137.23.2.56, port: 20000, down: "", fingerprint: "", obfs: salamander, obfs-password: b42d90fa667942aebc734d60, password: b42d90fa667942aebc734d60, skip-cert-verify: true, sni: rmgyvpn.rest, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 19 → openit, server: 137.131.171.249, port: 20000, down: "", fingerprint: "", obfs: salamander, obfs-password: CyG0RFxMjzs41uQD4OLuHQ==, password: CyG0RFxMjzs41uQD4OLuHQ==, skip-cert-verify: true, sni: rmgyvpn.rest, type: hysteria2, up: "", tfo: false}
+  - {name: 🇸🇬 SG 4 → openit, server: 54.151.181.75, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: moral-basilisk.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 5 → openit, server: 18.141.136.8, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: musical-mouse.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 6 → openit, server: 68.183.227.236, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 7 → openit, server: 68.183.227.45, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 8 → openit, server: 128.199.172.224, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇸🇬 SG 9 → openit, server: 68.183.227.4, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 1 → openit, server: 155.117.19.17, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6, password: 5fa748137b6d822308eea4611f474ad5, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 10 → openit, server: 130.49.161.70, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3, password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR, skip-cert-verify: true, sni: hy2.aspidnet.xyz, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 100 → openit, server: 137.184.174.93, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 101 → openit, server: 15.204.247.175, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 102 → openit, server: 149.22.87.204, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 103 → openit, server: 149.22.87.240, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 104 → openit, server: 149.22.87.241, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 105 → openit, server: 149.102.132.184, port: 80, cipher: aes-256-gcm, password: g5h5jleTRSyO3Rk4, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 106 → openit, server: 209.46.102.22, port: 8388, cipher: chacha20-ietf-poly1305, password: 1hhrqrokj3ag, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 107 → openit, server: 132.243.175.144, port: 8388, cipher: chacha20-ietf-poly1305, password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 108 → openit, server: 64.176.2.21, port: 8388, cipher: aes-256-gcm, password: xBStBEVqvGwHPocc, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 109 → openit, server: 141.164.45.187, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 11 → openit, server: 152.70.237.123, port: 2053, down: "", fingerprint: "", obfs: "", obfs-password: "", password: maintell, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 110 → openit, server: 169.150.210.233, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 111 → openit, server: 64.74.163.67, port: 18764, cipher: aes-128-gcm, password: 4efe1af272e7292139b889f6a63ee071, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 112 → openit, server: 130.49.189.158, port: 43558, cipher: chacha20-ietf-poly1305, password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 113 → openit, server: 67.159.18.34, port: 17001, cipher: aes-256-gcm, password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 114 → openit, server: 15.204.246.107, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 115 → openit, server: 15.204.246.132, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 116 → openit, server: guanwang.awsno.com, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a, ws-opts: {headers: {Host: guanwang.awsno.com}, path: /hls/cctv5phd.m3u8}, xudp: true, tfo: false}
+  - {name: 🇺🇸 US 117 → openit, server: 172.66.203.67, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db, ws-opts: {headers: {Host: vmess.lbw666.dpdns.org}, path: /ws}, xudp: true, tfo: false}
+  - {name: 🇺🇸 US 118 → openit, server: 172.67.137.209, port: 443, alterId: "0", cipher: auto, network: ws, skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49, ws-opts: {headers: {Host: ukl.lovehk.xyz}, path: /London31}, xudp: true, tfo: false}
+  - {name: 🇺🇸 US 12 → openit, server: vpn-hk-004.fastervpn.world, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: vpn-hk-004.fastervpn.world, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 13 → openit, server: ees92.shhflow.xyz, port: 5443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 43212c32-01f2-4356-b216-67dc1c178262, skip-cert-verify: true, sni: ees92.shhflow.xyz, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 14 → openit, server: 2.56.177.182, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU, skip-cert-verify: true, sni: fi1server.rabstvo.shop, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 15 → openit, server: 137.23.2.56, port: 20000, down: "", fingerprint: "", obfs: salamander, obfs-password: b42d90fa667942aebc734d60, password: b42d90fa667942aebc734d60, skip-cert-verify: true, sni: rmgyvpn.rest, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 16 → openit, server: 138.2.89.249, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: 309502c4a8df10b46fb976d4a8c43f42, password: d042d150716709bb778cc73889cddb02, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 17 → openit, server: 104.165.205.42, port: 8443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 990c8eb6-4c4e-4277-8602-79af8402cdd0, skip-cert-verify: true, sni: speedtestmark.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 18 → openit, server: 162.249.125.133, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: c1b4086fea89914496c7e10967a419216566, password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s, skip-cert-verify: true, sni: hy2-new.aspidnet.xyz, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 19 → openit, server: 138.2.73.238, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: f87376e17da040ed04c9665ce8972930, skip-cert-verify: true, sni: 138.2.73.238, type: hysteria2, up: "", tfo: false}
   - {name: 🇺🇸 US 2 → openit, server: 155.248.209.237, port: 33333, down: "", fingerprint: "", obfs: "", obfs-password: "", password: bce6c821-200d-421f-bf3d-7159e5246ea0, skip-cert-verify: true, sni: 155.248.209.237, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 20 → openit, server: 24.233.8.109, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: c8827ab99e316c5bd414e21afa915ddf, password: 8294f130408299df8cab08c80bf6f819, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 20 → openit, server: 150-230-252-217.liao.kdns.fr, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 9cfc9458e48c028ec03ff86ebc71c744, skip-cert-verify: true, sni: 150-230-252-217.liao.kdns.fr, type: hysteria2, up: "", tfo: false}
   - {name: 🇺🇸 US 21 → openit, server: 137.23.27.143, port: 20000, down: "", fingerprint: "", obfs: salamander, obfs-password: a34f3990b69f44bfa0d32385, password: a34f3990b69f44bfa0d32385, skip-cert-verify: true, sni: rmgyvpn.rest, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 22 → openit, server: 104.18.41.190, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 23 → openit, server: 104.16.215.234, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 24 → openit, server: 172.67.76.40, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 25 → openit, server: 104.18.37.127, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 26 → openit, server: 172.64.150.28, port: 2082, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 27 → openit, server: 104.25.3.123, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 28 → openit, server: 104.17.162.11, port: 2082, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 29 → openit, server: 104.16.231.20, port: 2082, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 22 → openit, server: 152.67.200.82, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 3d7634af8cb2c6cb4bac1c0efad8b43d, skip-cert-verify: true, sni: 152-67-200-82.liao.kdns.fr, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 23 → openit, server: 24.233.8.109, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: c8827ab99e316c5bd414e21afa915ddf, password: 8294f130408299df8cab08c80bf6f819, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 24 → openit, server: 206.1.96.108, port: 7443, down: "", fingerprint: "", obfs: salamander, obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq, password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r, skip-cert-verify: true, sni: me17.msjia8844.site, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 25 → openit, server: 152.67.115.203, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7, password: 633bc3be486b646190661ac2387c150a, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 26 → openit, server: starlink-ft.251313.xyz, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: https%3A%2F%2Fxship.top, skip-cert-verify: true, sni: xship.top, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 27 → openit, server: 208.69.78.217, port: 21178, down: "", fingerprint: "", obfs: salamander, obfs-password: mbQXP2ASuHbF6ZPq, password: capadm96216165%3AnXUv9sPkKFsDMmhZ7jbE28sw, skip-cert-verify: true, sni: vpn.local, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 28 → openit, server: svip.skycon808.com, port: 24318, fingerprint: "", password: 87c6ad7b-e450-44a8-8088-bc2234d43de1, skip-cert-verify: true, sni: hk08.jdddyy01.cc, type: anytls, udp: true, username: 87c6ad7b-e450-44a8-8088-bc2234d43de1, tfo: false}
+  - {name: 🇺🇸 US 29 → openit, server: 67.209.184.133, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, reality-opts: {public-key: Tp015Ga5LodBwKs4z7Wz4hTvqeh8-4q1EQPZqvZfWR0, short-id: "ad09494d431b2b92"}, servername: www.bing.com, tls: true, type: vless, udp: true, uuid: 96ebc166-565c-474f-9712-7990b55c368a, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: 🇺🇸 US 3 → openit, server: 163.192.14.135, port: 50160, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 099830134df5ac3a04a4b21d39b8c395, skip-cert-verify: true, sni: css.rbxcdn.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 30 → openit, server: 172.66.0.162, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 31 → openit, server: 104.17.44.17, port: 8080, encryption: none, network: ws, servername: hhlfy.twiladaphne.ndjp.net, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 32 → openit, server: vl.cocopon.top, port: 2053, client-fingerprint: chrome, encryption: none, network: ws, servername: vl.cocopon.top, tls: true, type: vless, udp: true, uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f, ws-opts: {headers: {Host: vl.cocopon.top, User-Agent: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 33 → openit, server: 104.18.35.15, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 34 → openit, server: 172.64.158.170, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 35 → openit, server: 8.35.211.236, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a, ws-opts: {headers: {Host: kkkk-83j.pages.dev, User-Agent: "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 36 → openit, server: 104.21.1.236, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: cf-socks.caoyuwu.eu.org, tls: true, type: vless, udp: true, uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5, ws-opts: {headers: {Host: cf-socks.caoyuwu.eu.org, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 37 → openit, server: 104.18.35.86, port: 2082, encryption: none, network: ws, servername: hhlfy.twiladaphne.ndjp.net, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"}, path: /fp}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 38 → openit, server: 104.18.0.181, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 39 → openit, server: 104.26.4.2, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 4 → openit, server: 155.117.19.17, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6, password: 5fa748137b6d822308eea4611f474ad5, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 40 → openit, server: 104.17.154.123, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 41 → openit, server: 172.64.150.43, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: snip.edgeoneai.cc.cd, tls: true, type: vless, udp: true, uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5, ws-opts: {headers: {Host: snip.edgeoneai.cc.cd, User-Agent: "Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 42 → openit, server: ccc.010304.xyz, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 43 → openit, server: 104.18.47.140, port: 2096, client-fingerprint: chrome, encryption: none, network: ws, servername: rainfall0705.cc.cd, tls: true, type: vless, udp: true, uuid: 341832cc-ba98-425b-8225-b3db621a0da3, ws-opts: {headers: {Host: rainfall0705.cc.cd, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 44 → openit, server: 172.64.146.66, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: jjkkll.ccwu.cc, tls: true, type: vless, udp: true, uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c, ws-opts: {headers: {Host: jjkkll.ccwu.cc, User-Agent: "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 45 → openit, server: cf.090227.xyz, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 46 → openit, server: 172.67.152.148, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: cf-socks.caoyuwu.eu.org, tls: true, type: vless, udp: true, uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5, ws-opts: {headers: {Host: cf-socks.caoyuwu.eu.org, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 47 → openit, server: 172.67.155.65, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 48 → openit, server: 140.82.20.24, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 49 → openit, server: 176.122.183.26, port: 42346, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, reality-opts: {public-key: fk0_CYMC_RKIbBDwS-lagle8Jm-hnvkSlV_7P0nBagM, short-id: "3f8ced2bf06b8448"}, servername: www.amazon.com, tls: true, type: vless, udp: true, uuid: d5bc1380-2afd-4c7e-bacd-54e7833b0140, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 5 → openit, server: 129.213.91.185, port: 35013, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 4291c983-c520-46ac-82cc-48f14bef573f, skip-cert-verify: true, sni: 129.213.91.185, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 50 → openit, server: 104.243.33.154, port: 45299, encryption: none, network: tcp, type: vless, udp: true, uuid: 261f011c-e97a-4d72-b596-e6329b50b47b, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 51 → openit, server: 104.21.91.244, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 52 → openit, server: 104.24.11.68, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 53 → openit, server: 107.189.26.160, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 54 → openit, server: 170.114.45.6, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 55 → openit, server: 170.114.46.6, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 56 → openit, server: 104.21.70.228, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 57 → openit, server: 104.16.10.100, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 58 → openit, server: 104.21.5.75, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 59 → openit, server: 104.16.10.189, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 30 → openit, server: 104.18.0.181, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 31 → openit, server: 104.18.35.86, port: 8080, encryption: none, network: ws, servername: hhlfy.twiladaphne.ndjp.net, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"}, path: /sg-melbi}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 32 → openit, server: 104.16.215.234, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 33 → openit, server: 172.64.150.28, port: 2082, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 34 → openit, server: 104.17.148.22, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: snip.edgeoneai.cc.cd, tls: true, type: vless, udp: true, uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5, ws-opts: {headers: {Host: snip.edgeoneai.cc.cd, User-Agent: "Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 35 → openit, server: 104.17.154.123, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 36 → openit, server: 104.25.3.123, port: 8080, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 37 → openit, server: 104.17.44.17, port: 8080, encryption: none, network: ws, servername: hhlfy.twiladaphne.ndjp.net, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 38 → openit, server: 172.64.150.43, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: snip.edgeoneai.cc.cd, tls: true, type: vless, udp: true, uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5, ws-opts: {headers: {Host: snip.edgeoneai.cc.cd, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 39 → openit, server: 172.66.0.162, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 4 → openit, server: 129.213.91.185, port: 35013, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 4291c983-c520-46ac-82cc-48f14bef573f, skip-cert-verify: true, sni: 129.213.91.185, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 40 → openit, server: 172.64.158.170, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 41 → openit, server: 104.18.37.127, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 42 → openit, server: cf.090227.xyz, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 43 → openit, server: 104.18.41.190, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 44 → openit, server: 172.67.155.65, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 45 → openit, server: 104.16.231.20, port: 2082, encryption: none, network: ws, type: vless, udp: true, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, ws-opts: {headers: {Host: hhlfy.twiladaphne.ndjp.net, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 46 → openit, server: 140.82.20.24, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 47 → openit, server: cf.130519.xyz, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /cart/docs/www/proxyip=108.160.132.132}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 48 → openit, server: 104.26.4.2, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 49 → openit, server: 172.67.76.40, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 5 → openit, server: 66.94.121.46, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: gf1%3Agfhysteria2024, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 50 → openit, server: 104.21.91.244, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 51 → openit, server: ccc.010304.xyz, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 52 → openit, server: 104.18.35.15, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: lucasjow.us.ci, tls: true, type: vless, udp: true, uuid: e6df2095-a73c-4043-8693-8d5a03686870, ws-opts: {headers: {Host: lucasjow.us.ci, User-Agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 53 → openit, server: 35.90.209.22, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 54 → openit, server: 172.64.146.66, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: jjkkll.ccwu.cc, tls: true, type: vless, udp: true, uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c, ws-opts: {headers: {Host: jjkkll.ccwu.cc, User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 55 → openit, server: 104.243.33.154, port: 45299, encryption: none, network: tcp, type: vless, udp: true, uuid: 261f011c-e97a-4d72-b596-e6329b50b47b, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 56 → openit, server: 152.69.195.67, port: 47878, encryption: none, network: tcp, type: vless, udp: true, uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 57 → openit, server: 18.171.245.198, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 58 → openit, server: platform117.golnamakcert.top, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4, ws-opts: {headers: {Host: platform117.halalkhor.info, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"}, path: /platform117}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 59 → openit, server: 18.100.47.39, port: 443, encryption: none, h2-opts: {path: /}, network: h2, type: vless, udp: true, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, xudp: true, skip-cert-verify: true, tfo: false}
   - {name: 🇺🇸 US 6 → openit, server: vpn-us-001.fastervpn.world, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: vpn-us-001.fastervpn.world, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 60 → openit, server: 104.16.10.10, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 61 → openit, server: 104.16.10.235, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 62 → openit, server: platform117.golnamakcert.top, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4, ws-opts: {headers: {Host: platform117.halalkhor.info, User-Agent: "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"}, path: /platform117}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 63 → openit, server: milo.rubinaz.xyz, port: 8080, encryption: none, network: tcp, type: vless, udp: true, uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 64 → openit, server: 172.67.185.60, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a, ws-opts: {headers: {Host: hk.lovehk.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36"}, path: /HK001}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 65 → openit, server: 155.103.71.142, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 66 → openit, server: 104.21.13.197, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a, ws-opts: {headers: {Host: hk.lovehk.xyz, User-Agent: "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: /HK001}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 67 → openit, server: news.zoom.us, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 68 → openit, server: 216.173.67.59, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 69 → openit, server: sparkling-block-a4bb.grootzporhs.workers.dev, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: a3c96f80-4007-4881-acd5-966dd6b86fe9, ws-opts: {headers: {Host: sparkling-block-a4bb.grootzporhs.workers.dev, User-Agent: "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
-  - {name: 🇺🇸 US 7 → openit, server: 13.36.234.11, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: 13.36.234.11, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 70 → openit, server: 66.23.203.21, port: 59689, client-fingerprint: chrome, password: ae7eb4dwyaz25pxwgq59, skip-cert-verify: true, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 71 → openit, server: pure-kodiak.rooster465.autos, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: pure-kodiak.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 72 → openit, server: 3.34.192.47, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: central-jawfish.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 73 → openit, server: 3.34.131.153, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: pretty-rat.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 74 → openit, server: 3.35.207.188, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: main-fawn.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 75 → openit, server: noted-cougar.rooster465.autos, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: noted-cougar.rooster465.autos, type: trojan, udp: true, tfo: false}
-  - {name: 🇺🇸 US 76 → openit, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 77 → openit, server: 216.105.168.18, port: 443, cipher: chacha20-ietf-poly1305, password: bQZl7HDxSabr1FurTYQHFU, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 78 → openit, server: 156.146.38.169, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 79 → openit, server: 156.146.38.168, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 8 → openit, server: 152.70.237.123, port: 2053, down: "", fingerprint: "", obfs: "", obfs-password: "", password: maintell, skip-cert-verify: true, sni: "", type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 80 → openit, server: 156.146.38.167, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 81 → openit, server: 156.146.38.170, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 82 → openit, server: 107.151.182.197, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 83 → openit, server: 107.151.182.253, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 84 → openit, server: 198.98.53.130, port: 443, cipher: chacha20-ietf-poly1305, password: eDfN7SODQceIOmIAbtJJtK, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 60 → openit, server: 170.114.45.6, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 61 → openit, server: 170.114.46.6, port: 80, encryption: none, network: ws, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 62 → openit, server: 104.16.10.100, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 63 → openit, server: 104.16.10.235, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 64 → openit, server: 104.21.70.228, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 65 → openit, server: 104.21.5.75, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 66 → openit, server: 104.16.10.10, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 67 → openit, server: 104.16.10.189, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 68 → openit, server: 104.24.11.68, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 69 → openit, server: 104.16.10.2, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: v2ray.simspeedup.com, tls: true, type: vless, udp: true, uuid: 3c52e091-6714-4915-949f-2149fe69951b, ws-opts: {headers: {Host: v2ray.simspeedup.com, User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"}, path: /ws}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 7 → openit, server: 104.168.6.236, port: 44443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: 64c05afc-ce81-4ba0-b697-afa04da1427e, skip-cert-verify: true, sni: bing.com, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 70 → openit, server: game.jafarghasemivip.ir, port: 8443, client-fingerprint: chrome, encryption: none, network: tcp, servername: game.jafarghasemivip.ir, tls: true, type: vless, udp: true, uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 71 → openit, server: 72.56.241.230, port: 443, client-fingerprint: chrome, encryption: none, grpc-opts: {grpc-service-name: api.v1.StreamService}, network: grpc, reality-opts: {public-key: SCQ-mhDUvmeQzJvctQYDDSha1R_rggGFkWK_9IRuvH4, short-id: "aabbccdd"}, servername: max.ru, tls: true, type: vless, udp: true, uuid: 88b744bb-8ac7-484e-a376-136193452a2c, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 72 → openit, server: 155.103.71.142, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 73 → openit, server: 141.193.213.20, port: 8443, client-fingerprint: chrome, encryption: none, network: ws, servername: u.srilankangrill.online, tls: true, type: vless, udp: true, uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2, ws-opts: {headers: {Host: u.srilankangrill.online, User-Agent: "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 74 → openit, server: 47.77.196.79, port: 443, client-fingerprint: chrome, encryption: none, flow: xtls-rprx-vision, network: tcp, reality-opts: {public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo, short-id: "1a"}, servername: www.amazon.com, tls: true, type: vless, udp: true, uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 75 → openit, server: 216.173.67.59, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: ccc.010304.xyz, tls: true, type: vless, udp: true, uuid: d342d11e-d224-4463-b982-532309285094, ws-opts: {headers: {Host: ccc.010304.xyz, User-Agent: "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 76 → openit, server: 104.21.0.87, port: 443, client-fingerprint: chrome, encryption: none, network: ws, servername: jp3.yohototo.top, tls: true, type: vless, udp: true, uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4, ws-opts: {headers: {Host: jp3.yohototo.top, User-Agent: "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: /tyxyws}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 77 → openit, server: sparkling-block-a4bb.grootzporhs.workers.dev, port: 443, client-fingerprint: chrome, encryption: none, network: ws, tls: true, type: vless, udp: true, uuid: a3c96f80-4007-4881-acd5-966dd6b86fe9, ws-opts: {headers: {Host: sparkling-block-a4bb.grootzporhs.workers.dev, User-Agent: "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17"}, path: /}, xudp: true, skip-cert-verify: true, tfo: false}
+  - {name: 🇺🇸 US 78 → openit, server: 66.23.203.21, port: 59689, client-fingerprint: chrome, password: ae7eb4dwyaz25pxwgq59, skip-cert-verify: true, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 79 → openit, server: 3.35.207.188, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: main-fawn.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 8 → openit, server: 13.36.234.11, port: 443, down: "", fingerprint: "", obfs: "", obfs-password: "", password: H7mP2xY9kJ4nQ8wR5tF6vB3z, skip-cert-verify: true, sni: 13.36.234.11, type: hysteria2, up: "", tfo: false}
+  - {name: 🇺🇸 US 80 → openit, server: 3.34.131.153, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: pretty-rat.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 81 → openit, server: 3.34.192.47, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: central-jawfish.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 82 → openit, server: pure-kodiak.rooster465.autos, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: pure-kodiak.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 83 → openit, server: noted-cougar.rooster465.autos, port: 443, client-fingerprint: chrome, password: UX82473651, skip-cert-verify: true, sni: noted-cougar.rooster465.autos, type: trojan, udp: true, tfo: false}
+  - {name: 🇺🇸 US 84 → openit, server: 216.105.168.18, port: 443, cipher: chacha20-ietf-poly1305, password: hCCWOcIsK5wrFz4OX70rWf, type: ss, udp: true, tfo: false}
   - {name: 🇺🇸 US 85 → openit, server: 173.244.56.6, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
   - {name: 🇺🇸 US 86 → openit, server: 173.244.56.9, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 87 → openit, server: 15.204.247.206, port: 4444, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 88 → openit, server: 15.204.246.132, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 89 → openit, server: 149.22.87.240, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 87 → openit, server: 156.146.38.167, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 88 → openit, server: 107.151.182.253, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 89 → openit, server: 156.146.38.169, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
   - {name: 🇺🇸 US 9 → openit, server: 152.67.75.161, port: 443, down: "", fingerprint: "", obfs: salamander, obfs-password: c13f29db6a638ad2b211b9ce2669ef27, password: 3a702d4d1de4949005d8431220e040fb, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, up: "", tfo: false}
-  - {name: 🇺🇸 US 90 → openit, server: 149.22.87.241, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 91 → openit, server: 149.22.87.204, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 92 → openit, server: 137.184.174.93, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 93 → openit, server: 149.102.132.184, port: 443, cipher: aes-256-gcm, password: g5h5jleTRSyO3Rk4, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 94 → openit, server: 209.46.102.22, port: 8388, cipher: chacha20-ietf-poly1305, password: 1hhrqrokj3ag, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 95 → openit, server: 132.243.175.144, port: 8388, cipher: chacha20-ietf-poly1305, password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 96 → openit, server: 216.128.168.190, port: 8388, cipher: aes-256-gcm, password: owVdNnQcdPgthSyX, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 97 → openit, server: 15.204.233.41, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 98 → openit, server: 141.164.45.187, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, type: ss, udp: true, tfo: false}
-  - {name: 🇺🇸 US 99 → openit, server: 140.82.63.79, port: 8388, cipher: chacha20-ietf-poly1305, password: ZoZtfPOyVvmKARUN, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 90 → openit, server: 156.146.38.170, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 91 → openit, server: 156.146.38.168, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 92 → openit, server: 107.151.182.197, port: 8080, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 93 → openit, server: 149.22.95.183, port: 443, cipher: aes-128-gcm, password: shadowsocks, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 94 → openit, server: 205.209.109.194, port: 17277, cipher: aes-128-gcm, password: 94ef75a1dbab19c5b9bc8e20a06078c0, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 95 → openit, server: 198.98.53.130, port: 443, cipher: chacha20-ietf-poly1305, password: eDfN7SODQceIOmIAbtJJtK, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 96 → openit, server: 64.177.90.30, port: 8388, cipher: aes-256-gcm, password: BWyPPTusFKhGgzKh, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 97 → openit, server: 18.226.185.149, port: 443, cipher: aes-256-cfb, password: amazonskr05, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 98 → openit, server: 3.16.81.126, port: 443, cipher: aes-256-cfb, password: amazonskr05, type: ss, udp: true, tfo: false}
+  - {name: 🇺🇸 US 99 → openit, server: 15.204.247.206, port: 4444, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, type: ss, udp: true, tfo: false}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -416,11 +420,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - AE 1 → openit
       - BE 1 → openit
       - BG 1 → openit
+      - BG 2 → openit
       - BR 1 → openit
       - BR 10 → openit
+      - BR 11 → openit
+      - BR 12 → openit
+      - BR 13 → openit
       - BR 2 → openit
       - BR 3 → openit
       - BR 4 → openit
@@ -431,10 +438,12 @@ proxy-groups:
       - BR 9 → openit
       - CH 1 → openit
       - CH 2 → openit
+      - CH 3 → openit
+      - CH 4 → openit
       - CL 1 → openit
       - IE 1 → openit
-      - IL 1 → openit
-      - IL 2 → openit
+      - IE 2 → openit
+      - IE 3 → openit
       - IR 1 → openit
       - IR 2 → openit
       - IR 3 → openit
@@ -445,42 +454,27 @@ proxy-groups:
       - IT 2 → openit
       - IT 3 → openit
       - KH 1 → openit
-      - LT 1 → openit
-      - LV 1 → openit
-      - LV 2 → openit
       - NO 1 → openit
       - PA 1 → openit
       - RO 1 → openit
-      - RO 2 → openit
-      - RW 1 → openit
-      - RW 2 → openit
       - UA 1 → openit
       - UA 2 → openit
       - UA 3 → openit
       - UA 4 → openit
-      - UA 5 → openit
       - ZA 1 → openit
-      - ZA 2 → openit
       - unknown 1 → openit
       - unknown 2 → openit
       - unknown 3 → openit
       - unknown 4 → openit
       - unknown 5 → openit
-      - unknown 6 → openit
-      - unknown 7 → openit
       - 🇦🇺 AU 1 → openit
       - 🇨🇦 CA 1 → openit
       - 🇨🇦 CA 2 → openit
       - 🇨🇦 CA 3 → openit
       - 🇨🇦 CA 4 → openit
-      - 🇨🇦 CA 5 → openit
-      - 🇨🇦 CA 6 → openit
-      - 🇨🇦 CA 7 → openit
-      - 🇨🇳 CN 1 → openit
       - 🇨🇳 TW 1 → openit
       - 🇨🇳 TW 2 → openit
       - 🇨🇳 TW 3 → openit
-      - 🇨🇳 TW 4 → openit
       - 🇩🇪 DE 1 → openit
       - 🇩🇪 DE 2 → openit
       - 🇩🇪 DE 3 → openit
@@ -490,14 +484,15 @@ proxy-groups:
       - 🇩🇪 DE 7 → openit
       - 🇩🇪 DE 8 → openit
       - 🇩🇪 DE 9 → openit
+      - 🇩🇰 DK 1 → openit
+      - 🇩🇰 DK 2 → openit
+      - 🇩🇰 DK 3 → openit
       - 🇫🇷 FR 1 → openit
       - 🇫🇷 FR 2 → openit
       - 🇫🇷 FR 3 → openit
       - 🇫🇷 FR 4 → openit
       - 🇫🇷 FR 5 → openit
       - 🇫🇷 FR 6 → openit
-      - 🇫🇷 FR 7 → openit
-      - 🇫🇷 FR 8 → openit
       - 🇬🇧 GB 1 → openit
       - 🇬🇧 GB 10 → openit
       - 🇬🇧 GB 11 → openit
@@ -589,11 +584,16 @@ proxy-groups:
       - 🇬🇧 GB 9 → openit
       - 🇬🇧 GB 90 → openit
       - 🇬🇧 GB 91 → openit
+      - 🇬🇧 GB 92 → openit
       - 🇭🇰 HK 1 → openit
       - 🇭🇰 HK 2 → openit
       - 🇭🇰 HK 3 → openit
       - 🇭🇰 HK 4 → openit
       - 🇭🇰 HK 5 → openit
+      - 🇭🇰 HK 6 → openit
+      - 🇭🇰 HK 7 → openit
+      - 🇮🇳 IN 1 → openit
+      - 🇮🇳 IN 2 → openit
       - 🇯🇵 JP 1 → openit
       - 🇯🇵 JP 2 → openit
       - 🇯🇵 JP 3 → openit
@@ -603,6 +603,7 @@ proxy-groups:
       - 🇰🇷 KR 1 → openit
       - 🇰🇷 KR 2 → openit
       - 🇰🇷 KR 3 → openit
+      - 🇰🇷 KR 4 → openit
       - 🇳🇱 NL 1 → openit
       - 🇳🇱 NL 10 → openit
       - 🇳🇱 NL 11 → openit
@@ -627,6 +628,9 @@ proxy-groups:
       - 🇵🇱 PL 2 → openit
       - 🇵🇱 PL 3 → openit
       - 🇷🇺 RU 1 → openit
+      - 🇷🇺 RU 10 → openit
+      - 🇷🇺 RU 11 → openit
+      - 🇷🇺 RU 12 → openit
       - 🇷🇺 RU 2 → openit
       - 🇷🇺 RU 3 → openit
       - 🇷🇺 RU 4 → openit
@@ -634,9 +638,9 @@ proxy-groups:
       - 🇷🇺 RU 6 → openit
       - 🇷🇺 RU 7 → openit
       - 🇷🇺 RU 8 → openit
+      - 🇷🇺 RU 9 → openit
       - 🇸🇬 SG 1 → openit
       - 🇸🇬 SG 10 → openit
-      - 🇸🇬 SG 11 → openit
       - 🇸🇬 SG 2 → openit
       - 🇸🇬 SG 3 → openit
       - 🇸🇬 SG 4 → openit
@@ -663,6 +667,10 @@ proxy-groups:
       - 🇺🇸 US 112 → openit
       - 🇺🇸 US 113 → openit
       - 🇺🇸 US 114 → openit
+      - 🇺🇸 US 115 → openit
+      - 🇺🇸 US 116 → openit
+      - 🇺🇸 US 117 → openit
+      - 🇺🇸 US 118 → openit
       - 🇺🇸 US 12 → openit
       - 🇺🇸 US 13 → openit
       - 🇺🇸 US 14 → openit
@@ -765,11 +773,14 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - AE 1 → openit
       - BE 1 → openit
       - BG 1 → openit
+      - BG 2 → openit
       - BR 1 → openit
       - BR 10 → openit
+      - BR 11 → openit
+      - BR 12 → openit
+      - BR 13 → openit
       - BR 2 → openit
       - BR 3 → openit
       - BR 4 → openit
@@ -780,10 +791,12 @@ proxy-groups:
       - BR 9 → openit
       - CH 1 → openit
       - CH 2 → openit
+      - CH 3 → openit
+      - CH 4 → openit
       - CL 1 → openit
       - IE 1 → openit
-      - IL 1 → openit
-      - IL 2 → openit
+      - IE 2 → openit
+      - IE 3 → openit
       - IR 1 → openit
       - IR 2 → openit
       - IR 3 → openit
@@ -794,42 +807,27 @@ proxy-groups:
       - IT 2 → openit
       - IT 3 → openit
       - KH 1 → openit
-      - LT 1 → openit
-      - LV 1 → openit
-      - LV 2 → openit
       - NO 1 → openit
       - PA 1 → openit
       - RO 1 → openit
-      - RO 2 → openit
-      - RW 1 → openit
-      - RW 2 → openit
       - UA 1 → openit
       - UA 2 → openit
       - UA 3 → openit
       - UA 4 → openit
-      - UA 5 → openit
       - ZA 1 → openit
-      - ZA 2 → openit
       - unknown 1 → openit
       - unknown 2 → openit
       - unknown 3 → openit
       - unknown 4 → openit
       - unknown 5 → openit
-      - unknown 6 → openit
-      - unknown 7 → openit
       - 🇦🇺 AU 1 → openit
       - 🇨🇦 CA 1 → openit
       - 🇨🇦 CA 2 → openit
       - 🇨🇦 CA 3 → openit
       - 🇨🇦 CA 4 → openit
-      - 🇨🇦 CA 5 → openit
-      - 🇨🇦 CA 6 → openit
-      - 🇨🇦 CA 7 → openit
-      - 🇨🇳 CN 1 → openit
       - 🇨🇳 TW 1 → openit
       - 🇨🇳 TW 2 → openit
       - 🇨🇳 TW 3 → openit
-      - 🇨🇳 TW 4 → openit
       - 🇩🇪 DE 1 → openit
       - 🇩🇪 DE 2 → openit
       - 🇩🇪 DE 3 → openit
@@ -839,14 +837,15 @@ proxy-groups:
       - 🇩🇪 DE 7 → openit
       - 🇩🇪 DE 8 → openit
       - 🇩🇪 DE 9 → openit
+      - 🇩🇰 DK 1 → openit
+      - 🇩🇰 DK 2 → openit
+      - 🇩🇰 DK 3 → openit
       - 🇫🇷 FR 1 → openit
       - 🇫🇷 FR 2 → openit
       - 🇫🇷 FR 3 → openit
       - 🇫🇷 FR 4 → openit
       - 🇫🇷 FR 5 → openit
       - 🇫🇷 FR 6 → openit
-      - 🇫🇷 FR 7 → openit
-      - 🇫🇷 FR 8 → openit
       - 🇬🇧 GB 1 → openit
       - 🇬🇧 GB 10 → openit
       - 🇬🇧 GB 11 → openit
@@ -938,11 +937,16 @@ proxy-groups:
       - 🇬🇧 GB 9 → openit
       - 🇬🇧 GB 90 → openit
       - 🇬🇧 GB 91 → openit
+      - 🇬🇧 GB 92 → openit
       - 🇭🇰 HK 1 → openit
       - 🇭🇰 HK 2 → openit
       - 🇭🇰 HK 3 → openit
       - 🇭🇰 HK 4 → openit
       - 🇭🇰 HK 5 → openit
+      - 🇭🇰 HK 6 → openit
+      - 🇭🇰 HK 7 → openit
+      - 🇮🇳 IN 1 → openit
+      - 🇮🇳 IN 2 → openit
       - 🇯🇵 JP 1 → openit
       - 🇯🇵 JP 2 → openit
       - 🇯🇵 JP 3 → openit
@@ -952,6 +956,7 @@ proxy-groups:
       - 🇰🇷 KR 1 → openit
       - 🇰🇷 KR 2 → openit
       - 🇰🇷 KR 3 → openit
+      - 🇰🇷 KR 4 → openit
       - 🇳🇱 NL 1 → openit
       - 🇳🇱 NL 10 → openit
       - 🇳🇱 NL 11 → openit
@@ -976,6 +981,9 @@ proxy-groups:
       - 🇵🇱 PL 2 → openit
       - 🇵🇱 PL 3 → openit
       - 🇷🇺 RU 1 → openit
+      - 🇷🇺 RU 10 → openit
+      - 🇷🇺 RU 11 → openit
+      - 🇷🇺 RU 12 → openit
       - 🇷🇺 RU 2 → openit
       - 🇷🇺 RU 3 → openit
       - 🇷🇺 RU 4 → openit
@@ -983,9 +991,9 @@ proxy-groups:
       - 🇷🇺 RU 6 → openit
       - 🇷🇺 RU 7 → openit
       - 🇷🇺 RU 8 → openit
+      - 🇷🇺 RU 9 → openit
       - 🇸🇬 SG 1 → openit
       - 🇸🇬 SG 10 → openit
-      - 🇸🇬 SG 11 → openit
       - 🇸🇬 SG 2 → openit
       - 🇸🇬 SG 3 → openit
       - 🇸🇬 SG 4 → openit
@@ -1012,6 +1020,10 @@ proxy-groups:
       - 🇺🇸 US 112 → openit
       - 🇺🇸 US 113 → openit
       - 🇺🇸 US 114 → openit
+      - 🇺🇸 US 115 → openit
+      - 🇺🇸 US 116 → openit
+      - 🇺🇸 US 117 → openit
+      - 🇺🇸 US 118 → openit
       - 🇺🇸 US 12 → openit
       - 🇺🇸 US 13 → openit
       - 🇺🇸 US 14 → openit
@@ -1119,6 +1131,8 @@ proxy-groups:
       - 🇭🇰 HK 3 → openit
       - 🇭🇰 HK 4 → openit
       - 🇭🇰 HK 5 → openit
+      - 🇭🇰 HK 6 → openit
+      - 🇭🇰 HK 7 → openit
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1155,6 +1169,10 @@ proxy-groups:
       - 🇺🇸 US 112 → openit
       - 🇺🇸 US 113 → openit
       - 🇺🇸 US 114 → openit
+      - 🇺🇸 US 115 → openit
+      - 🇺🇸 US 116 → openit
+      - 🇺🇸 US 117 → openit
+      - 🇺🇸 US 118 → openit
       - 🇺🇸 US 12 → openit
       - 🇺🇸 US 13 → openit
       - 🇺🇸 US 14 → openit
@@ -1260,7 +1278,6 @@ proxy-groups:
       - 🇨🇳 TW 1 → openit
       - 🇨🇳 TW 2 → openit
       - 🇨🇳 TW 3 → openit
-      - 🇨🇳 TW 4 → openit
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1269,7 +1286,6 @@ proxy-groups:
     proxies:
       - 🇸🇬 SG 1 → openit
       - 🇸🇬 SG 10 → openit
-      - 🇸🇬 SG 11 → openit
       - 🇸🇬 SG 2 → openit
       - 🇸🇬 SG 3 → openit
       - 🇸🇬 SG 4 → openit
@@ -1287,14 +1303,18 @@ proxy-groups:
       - 🇰🇷 KR 1 → openit
       - 🇰🇷 KR 2 → openit
       - 🇰🇷 KR 3 → openit
+      - 🇰🇷 KR 4 → openit
   - name: 🌍 其他地区
     type: select
     proxies:
-      - AE 1 → openit
       - BE 1 → openit
       - BG 1 → openit
+      - BG 2 → openit
       - BR 1 → openit
       - BR 10 → openit
+      - BR 11 → openit
+      - BR 12 → openit
+      - BR 13 → openit
       - BR 2 → openit
       - BR 3 → openit
       - BR 4 → openit
@@ -1305,10 +1325,12 @@ proxy-groups:
       - BR 9 → openit
       - CH 1 → openit
       - CH 2 → openit
+      - CH 3 → openit
+      - CH 4 → openit
       - CL 1 → openit
       - IE 1 → openit
-      - IL 1 → openit
-      - IL 2 → openit
+      - IE 2 → openit
+      - IE 3 → openit
       - IR 1 → openit
       - IR 2 → openit
       - IR 3 → openit
@@ -1319,31 +1341,19 @@ proxy-groups:
       - IT 2 → openit
       - IT 3 → openit
       - KH 1 → openit
-      - LT 1 → openit
-      - LV 1 → openit
-      - LV 2 → openit
       - NO 1 → openit
       - PA 1 → openit
       - RO 1 → openit
-      - RO 2 → openit
-      - RW 1 → openit
-      - RW 2 → openit
       - UA 1 → openit
       - UA 2 → openit
       - UA 3 → openit
       - UA 4 → openit
-      - UA 5 → openit
       - ZA 1 → openit
-      - ZA 2 → openit
       - 🇦🇺 AU 1 → openit
       - 🇨🇦 CA 1 → openit
       - 🇨🇦 CA 2 → openit
       - 🇨🇦 CA 3 → openit
       - 🇨🇦 CA 4 → openit
-      - 🇨🇦 CA 5 → openit
-      - 🇨🇦 CA 6 → openit
-      - 🇨🇦 CA 7 → openit
-      - 🇨🇳 CN 1 → openit
       - 🇩🇪 DE 1 → openit
       - 🇩🇪 DE 2 → openit
       - 🇩🇪 DE 3 → openit
@@ -1353,14 +1363,15 @@ proxy-groups:
       - 🇩🇪 DE 7 → openit
       - 🇩🇪 DE 8 → openit
       - 🇩🇪 DE 9 → openit
+      - 🇩🇰 DK 1 → openit
+      - 🇩🇰 DK 2 → openit
+      - 🇩🇰 DK 3 → openit
       - 🇫🇷 FR 1 → openit
       - 🇫🇷 FR 2 → openit
       - 🇫🇷 FR 3 → openit
       - 🇫🇷 FR 4 → openit
       - 🇫🇷 FR 5 → openit
       - 🇫🇷 FR 6 → openit
-      - 🇫🇷 FR 7 → openit
-      - 🇫🇷 FR 8 → openit
       - 🇬🇧 GB 1 → openit
       - 🇬🇧 GB 10 → openit
       - 🇬🇧 GB 11 → openit
@@ -1452,6 +1463,9 @@ proxy-groups:
       - 🇬🇧 GB 9 → openit
       - 🇬🇧 GB 90 → openit
       - 🇬🇧 GB 91 → openit
+      - 🇬🇧 GB 92 → openit
+      - 🇮🇳 IN 1 → openit
+      - 🇮🇳 IN 2 → openit
       - 🇳🇱 NL 1 → openit
       - 🇳🇱 NL 10 → openit
       - 🇳🇱 NL 11 → openit
@@ -1476,6 +1490,9 @@ proxy-groups:
       - 🇵🇱 PL 2 → openit
       - 🇵🇱 PL 3 → openit
       - 🇷🇺 RU 1 → openit
+      - 🇷🇺 RU 10 → openit
+      - 🇷🇺 RU 11 → openit
+      - 🇷🇺 RU 12 → openit
       - 🇷🇺 RU 2 → openit
       - 🇷🇺 RU 3 → openit
       - 🇷🇺 RU 4 → openit
@@ -1483,17 +1500,21 @@ proxy-groups:
       - 🇷🇺 RU 6 → openit
       - 🇷🇺 RU 7 → openit
       - 🇷🇺 RU 8 → openit
+      - 🇷🇺 RU 9 → openit
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - AE 1 → openit
       - BE 1 → openit
       - BG 1 → openit
+      - BG 2 → openit
       - BR 1 → openit
       - BR 10 → openit
+      - BR 11 → openit
+      - BR 12 → openit
+      - BR 13 → openit
       - BR 2 → openit
       - BR 3 → openit
       - BR 4 → openit
@@ -1504,10 +1525,12 @@ proxy-groups:
       - BR 9 → openit
       - CH 1 → openit
       - CH 2 → openit
+      - CH 3 → openit
+      - CH 4 → openit
       - CL 1 → openit
       - IE 1 → openit
-      - IL 1 → openit
-      - IL 2 → openit
+      - IE 2 → openit
+      - IE 3 → openit
       - IR 1 → openit
       - IR 2 → openit
       - IR 3 → openit
@@ -1518,42 +1541,27 @@ proxy-groups:
       - IT 2 → openit
       - IT 3 → openit
       - KH 1 → openit
-      - LT 1 → openit
-      - LV 1 → openit
-      - LV 2 → openit
       - NO 1 → openit
       - PA 1 → openit
       - RO 1 → openit
-      - RO 2 → openit
-      - RW 1 → openit
-      - RW 2 → openit
       - UA 1 → openit
       - UA 2 → openit
       - UA 3 → openit
       - UA 4 → openit
-      - UA 5 → openit
       - ZA 1 → openit
-      - ZA 2 → openit
       - unknown 1 → openit
       - unknown 2 → openit
       - unknown 3 → openit
       - unknown 4 → openit
       - unknown 5 → openit
-      - unknown 6 → openit
-      - unknown 7 → openit
       - 🇦🇺 AU 1 → openit
       - 🇨🇦 CA 1 → openit
       - 🇨🇦 CA 2 → openit
       - 🇨🇦 CA 3 → openit
       - 🇨🇦 CA 4 → openit
-      - 🇨🇦 CA 5 → openit
-      - 🇨🇦 CA 6 → openit
-      - 🇨🇦 CA 7 → openit
-      - 🇨🇳 CN 1 → openit
       - 🇨🇳 TW 1 → openit
       - 🇨🇳 TW 2 → openit
       - 🇨🇳 TW 3 → openit
-      - 🇨🇳 TW 4 → openit
       - 🇩🇪 DE 1 → openit
       - 🇩🇪 DE 2 → openit
       - 🇩🇪 DE 3 → openit
@@ -1563,14 +1571,15 @@ proxy-groups:
       - 🇩🇪 DE 7 → openit
       - 🇩🇪 DE 8 → openit
       - 🇩🇪 DE 9 → openit
+      - 🇩🇰 DK 1 → openit
+      - 🇩🇰 DK 2 → openit
+      - 🇩🇰 DK 3 → openit
       - 🇫🇷 FR 1 → openit
       - 🇫🇷 FR 2 → openit
       - 🇫🇷 FR 3 → openit
       - 🇫🇷 FR 4 → openit
       - 🇫🇷 FR 5 → openit
       - 🇫🇷 FR 6 → openit
-      - 🇫🇷 FR 7 → openit
-      - 🇫🇷 FR 8 → openit
       - 🇬🇧 GB 1 → openit
       - 🇬🇧 GB 10 → openit
       - 🇬🇧 GB 11 → openit
@@ -1662,11 +1671,16 @@ proxy-groups:
       - 🇬🇧 GB 9 → openit
       - 🇬🇧 GB 90 → openit
       - 🇬🇧 GB 91 → openit
+      - 🇬🇧 GB 92 → openit
       - 🇭🇰 HK 1 → openit
       - 🇭🇰 HK 2 → openit
       - 🇭🇰 HK 3 → openit
       - 🇭🇰 HK 4 → openit
       - 🇭🇰 HK 5 → openit
+      - 🇭🇰 HK 6 → openit
+      - 🇭🇰 HK 7 → openit
+      - 🇮🇳 IN 1 → openit
+      - 🇮🇳 IN 2 → openit
       - 🇯🇵 JP 1 → openit
       - 🇯🇵 JP 2 → openit
       - 🇯🇵 JP 3 → openit
@@ -1676,6 +1690,7 @@ proxy-groups:
       - 🇰🇷 KR 1 → openit
       - 🇰🇷 KR 2 → openit
       - 🇰🇷 KR 3 → openit
+      - 🇰🇷 KR 4 → openit
       - 🇳🇱 NL 1 → openit
       - 🇳🇱 NL 10 → openit
       - 🇳🇱 NL 11 → openit
@@ -1700,6 +1715,9 @@ proxy-groups:
       - 🇵🇱 PL 2 → openit
       - 🇵🇱 PL 3 → openit
       - 🇷🇺 RU 1 → openit
+      - 🇷🇺 RU 10 → openit
+      - 🇷🇺 RU 11 → openit
+      - 🇷🇺 RU 12 → openit
       - 🇷🇺 RU 2 → openit
       - 🇷🇺 RU 3 → openit
       - 🇷🇺 RU 4 → openit
@@ -1707,9 +1725,9 @@ proxy-groups:
       - 🇷🇺 RU 6 → openit
       - 🇷🇺 RU 7 → openit
       - 🇷🇺 RU 8 → openit
+      - 🇷🇺 RU 9 → openit
       - 🇸🇬 SG 1 → openit
       - 🇸🇬 SG 10 → openit
-      - 🇸🇬 SG 11 → openit
       - 🇸🇬 SG 2 → openit
       - 🇸🇬 SG 3 → openit
       - 🇸🇬 SG 4 → openit
@@ -1736,6 +1754,10 @@ proxy-groups:
       - 🇺🇸 US 112 → openit
       - 🇺🇸 US 113 → openit
       - 🇺🇸 US 114 → openit
+      - 🇺🇸 US 115 → openit
+      - 🇺🇸 US 116 → openit
+      - 🇺🇸 US 117 → openit
+      - 🇺🇸 US 118 → openit
       - 🇺🇸 US 12 → openit
       - 🇺🇸 US 13 → openit
       - 🇺🇸 US 14 → openit
