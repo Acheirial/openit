@@ -1,40 +1,6 @@
 proxies:
 - name: '🇺🇸 US 1'
   type: 'hysteria2'
-  server: '206.189.229.48'
-  port: 443
-  password: 'YV1sd3tfCZngTtnvRmy7'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.microsoft.com'
-  obfs: 'salamander'
-  obfs-password: 'ZuPf4OcXKvotJdDxlTus'
-- name: '🇺🇸 US 2'
-  type: 'hysteria2'
-  server: 'vpn-us-004.fastervpn.world'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: 'vpn-us-004.fastervpn.world'
-- name: '🇺🇸 US 3'
-  type: 'hysteria2'
-  server: '35.207.53.51'
-  port: 20999
-  password: 'MZKlrFbG73bKvCDe8VPul5PR9xQm'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.apple.com'
-- name: '🇺🇸 US 4'
-  type: 'hysteria2'
-  server: '38.76.150.108'
-  port: 36712
-  password: 'AIcYjw5Oc9Rrrr9SGDUBbBIC'
-  skip-cert-verify: true
-  udp: true
-  sni: '38.76.150.108'
-- name: '🇺🇸 US 5'
-  type: 'hysteria2'
   server: '155.117.19.17'
   port: 443
   password: '5fa748137b6d822308eea4611f474ad5'
@@ -43,23 +9,97 @@ proxies:
   sni: 'www.bing.com'
   obfs: 'salamander'
   obfs-password: 'a39ca173b57ac7021b08bf3e3de9f1f6'
+- name: '🇺🇸 US 2'
+  type: 'hysteria2'
+  server: '38.76.150.108'
+  port: 36712
+  password: 'AIcYjw5Oc9Rrrr9SGDUBbBIC'
+  skip-cert-verify: true
+  udp: true
+  sni: '38.76.150.108'
+- name: '🇺🇸 US 3'
+  type: 'hysteria2'
+  server: '47.89.232.46'
+  port: 8443
+  password: '4afd4e1b1b0edd429b10d800a1cf64a7'
+  skip-cert-verify: true
+  udp: true
+  sni: 'hysteria2.local'
+- name: '🇺🇸 US 4'
+  type: 'hysteria2'
+  server: '66.94.121.46'
+  port: 443
+  password: 'gf1:gfhysteria2024'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.broadcom.com'
+- name: '🇺🇸 US 5'
+  type: 'hysteria2'
+  server: '206.189.229.48'
+  port: 443
+  password: 'YV1sd3tfCZngTtnvRmy7'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.microsoft.com'
+  obfs: 'salamander'
+  obfs-password: 'ZuPf4OcXKvotJdDxlTus'
 - name: '🇺🇸 US 6'
   type: 'hysteria2'
-  server: '198.2.222.208'
+  server: '45.86.74.193'
   port: 443
-  password: '92bd8c68-6434-11ee-b644-f23c91cfbbc9'
+  password: '3a17ce52-4547-45aa-9820-a7d03ad5faca'
   skip-cert-verify: true
   udp: true
-  sni: '5333a9dd-tmm5c0-tonrqx-1khwf.los.hyhuawei.com'
-- name: '🇸🇪 SE 7'
+  sni: 'media.embrofree.org'
+- name: '🇺🇸 US 7'
+  password: 'https://xship.best'
+  port: 443
+  server: 'starlink-ft.251313.xyz'
+  skip-cert-verify: true
+  sni: 'xship.top'
   type: 'hysteria2'
-  server: '50.7.38.243'
-  port: 443
-  password: 'd4ca9415f0eac7897472e1e5b86d2e96'
+  x-toolall-mihomo: true
+- name: '🇯🇵 JP 8'
+  type: 'hysteria2'
+  server: '138.3.208.26'
+  port: 50160
+  password: '184cdec28da5a09450803c8debcd2cc9'
   skip-cert-verify: true
   udp: true
-  sni: 'promo.betust.net'
-- name: '🇪🇸 ES 8'
+  sni: '1'
+- name: '🇯🇵 JP 9'
+  type: 'hysteria2'
+  server: '8.211.175.236'
+  port: 8443
+  password: 'u63SxILNwtrQZ7Y1ZrFaZfsA'
+  skip-cert-verify: true
+  udp: true
+  sni: 'bing.com'
+- name: '🇯🇵 JP 10'
+  type: 'hysteria2'
+  server: '8.209.247.109'
+  port: 443
+  password: 'usqmqUKJFIlCmvkCNSY64L3k'
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸 US 11'
+  password: 'oracle_hy2_pass_2026'
+  port: 8443
+  server: '129.225.181.46'
+  skip-cert-verify: true
+  sni: 'bing.com'
+  tls: false
+  type: 'hysteria2'
+  region: '🇯🇵218802'
+- name: '🇷🇺 RU 12'
+  type: 'hysteria2'
+  server: '5.129.235.85'
+  port: 443
+  password: 'gf1:gfhysteria2024'
+  skip-cert-verify: true
+  udp: true
+  sni: 't.me'
+- name: '🇪🇸 ES 13'
   type: 'hysteria2'
   server: '212.34.137.105'
   port: 443
@@ -67,31 +107,7 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'shorts.blog-forme.ru'
-- name: '🇷🇺 RU 9'
-  type: 'hysteria2'
-  server: '5.129.235.85'
-  port: 443
-  password: 'gf1:gfhysteria2024'
-  skip-cert-verify: true
-  udp: true
-  sni: 'vk.com'
-- name: '🇫🇷 FR 10'
-  type: 'hysteria2'
-  server: '62.210.124.146'
-  port: 22000
-  password: 'dongtaiwang.com'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.microsoft.com'
-- name: '🇺🇸 US 11'
-  type: 'hysteria2'
-  server: '9.247.54.188'
-  port: 443
-  password: '146d567c-6335-4e63-a8aa-7ec068642440'
-  skip-cert-verify: true
-  udp: true
-  sni: 'nl1.obxodvpn.us'
-- name: '🇫🇷 FR 12'
+- name: '🇫🇷 FR 14'
   type: 'hysteria2'
   server: '13.36.234.11'
   port: 443
@@ -99,17 +115,7 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: '13.36.234.11'
-- name: '🇺🇸 US 13'
-  type: 'hysteria2'
-  server: '130.49.161.70'
-  port: 443
-  password: 'p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR'
-  skip-cert-verify: true
-  udp: true
-  sni: 'hy2.aspidnet.xyz'
-  obfs: 'salamander'
-  obfs-password: 'rG07s3COMIEvdnQipRyWzx_H_2xygNC3'
-- name: '🇮🇷 IR 14'
+- name: '🇮🇷 IR 15'
   type: 'hysteria2'
   server: '94.183.164.119'
   port: 24403
@@ -117,7 +123,79 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'docs.blog-forme.ru'
-- name: '🇨🇭 CH 15'
+- name: '🇷🇴 RO 16'
+  type: 'hysteria2'
+  server: '89.41.181.197'
+  port: 443
+  password: 'b384d216-9efa-4fd0-a5ef-bd3c37475e4d'
+  skip-cert-verify: true
+  udp: true
+  sni: 'nl.anonch.net'
+- name: '🇫🇷 FR 17'
+  type: 'hysteria2'
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.microsoft.com'
+- name: '🇸🇪 SE 18'
+  type: 'hysteria2'
+  server: '50.7.38.243'
+  port: 443
+  password: 'd4ca9415f0eac7897472e1e5b86d2e96'
+  skip-cert-verify: true
+  udp: true
+  sni: 'promo.betust.net'
+- name: '🇮🇳 IN 19'
+  type: 'hysteria2'
+  server: '203.14.32.181'
+  port: 443
+  password: 'b384d216-9efa-4fd0-a5ef-bd3c37475e4d'
+  skip-cert-verify: true
+  udp: true
+  sni: 'de.anonch.net'
+- name: '🇺🇳 UN 20'
+  type: 'hysteria2'
+  server: '103.115.109.49'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: 'https:'
+- name: '🇺🇸 US 21'
+  type: 'hysteria2'
+  server: '9.247.54.188'
+  port: 443
+  password: '146d567c-6335-4e63-a8aa-7ec068642440'
+  skip-cert-verify: true
+  udp: true
+  sni: 'nl1.obxodvpn.us'
+- name: '🇺🇳 UN 22'
+  type: 'hysteria2'
+  server: '160.187.100.109'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: 'off'
+- name: '🇰🇷 KR 23'
+  type: 'hysteria2'
+  server: '152.70.237.123'
+  port: 2053
+  password: 'maintell'
+  skip-cert-verify: true
+  udp: true
+  sni: '152.70.237.123'
+- name: '🇧🇷 BR 24'
+  type: 'hysteria2'
+  server: '177.202.66.212'
+  port: 443
+  password: '146d567c-6335-4e63-a8aa-7ec068642440'
+  skip-cert-verify: true
+  udp: true
+  sni: 'de1.obxodvpn.us'
+- name: '🇨🇭 CH 25'
   type: 'hysteria2'
   server: '152.67.75.161'
   port: 443
@@ -127,15 +205,7 @@ proxies:
   sni: 'www.bing.com'
   obfs: 'salamander'
   obfs-password: 'c13f29db6a638ad2b211b9ce2669ef27'
-- name: '🇧🇷 BR 16'
-  type: 'hysteria2'
-  server: '177.202.66.212'
-  port: 443
-  password: '146d567c-6335-4e63-a8aa-7ec068642440'
-  skip-cert-verify: true
-  udp: true
-  sni: 'de1.obxodvpn.us'
-- name: '🇧🇷 BR 17'
+- name: '🇧🇷 BR 26'
   type: 'hysteria2'
   server: '179.254.191.251'
   port: 4444
@@ -143,17 +213,7 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'bl1.nexfile.net'
-- name: '🇩🇪 DE 18'
-  obfs: 'salamander'
-  obfs-password: 'Telegram@vpnjey'
-  password: 'VPNJEy'
-  port: 36264
-  server: '179.61.138.145'
-  skip-cert-verify: true
-  sni: 'de2.jey.cc.cd'
-  tls: false
-  type: 'hysteria2'
-- name: '🇨🇭 CH 19'
+- name: '🇨🇭 CH 27'
   type: 'hysteria2'
   server: '140.238.213.114'
   port: 50160
@@ -161,173 +221,15 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'www.bing.com'
-- name: '🇧🇪 BE 20'
-  type: 'hysteria2'
-  server: '150.251.142.34'
-  port: 8443
-  password: 'eac84acd-2fd2-4c61-8ed7-05c008f00d25'
-  skip-cert-verify: true
-  udp: true
-  sni: 'speedtestmark.com'
-- name: '🇩🇪 DE 21'
-  type: 'hysteria2'
-  server: '195.63.138.212'
-  port: 16443
-  password: 'fa937345-6d3e-4ff4-8127-1a836987a0db'
-  skip-cert-verify: true
-  udp: true
-  sni: 'cloudehouse24.ru'
-- name: '🇩🇪 DE 22'
-  type: 'hysteria2'
-  server: '18.194.242.173'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: '18.194.242.173'
-- name: '🇩🇪 DE 23'
-  type: 'hysteria2'
-  server: '3.69.232.199'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: '3.69.232.199'
-- name: '🇧🇷 BR 24'
-  type: 'hysteria2'
-  server: 'fi1.obxodvpn.us'
-  port: 443
-  password: '146d567c-6335-4e63-a8aa-7ec068642440'
-  skip-cert-verify: true
-  udp: true
-  sni: 'fi1.obxodvpn.us'
-- name: '🇩🇪 DE 25'
-  type: 'hysteria2'
-  server: '195.63.128.21'
-  port: 10444
-  password: 'fa937345-6d3e-4ff4-8127-1a836987a0db'
-  skip-cert-verify: true
-  udp: true
-  sni: 'germany.cloudhouse1.ru'
-- name: '🇺🇸 US 26'
-  type: 'hysteria2'
-  server: 'vpn-de-002.fastervpn.world'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: '127.0.0.1'
-- name: '🇩🇪 DE 27'
-  type: 'hysteria2'
-  server: '3.76.203.180'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: 'vpn-de-002.fastervpn.world'
 - name: '🇩🇪 DE 28'
   type: 'hysteria2'
-  server: '18.153.65.67'
+  server: '18.193.79.104'
   port: 443
   password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
   skip-cert-verify: true
   udp: true
   sni: 'vpn-de-002.fastervpn.world'
-- name: '🇺🇸 US 29'
-  type: 'hysteria2'
-  server: '66.94.121.46'
-  port: 443
-  password: 'gf1:gfhysteria2024'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.broadcom.com'
-- name: '🇺🇸 US 30'
-  type: 'hysteria2'
-  server: 'hy2-new.aspidnet.xyz'
-  port: 443
-  password: 'QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s'
-  skip-cert-verify: true
-  udp: true
-  sni: 'hy2-new.aspidnet.xyz'
-  obfs: 'salamander'
-  obfs-password: 'c1b4086fea89914496c7e10967a419216566'
-- name: '🇮🇱 IL 31'
-  type: 'hysteria2'
-  server: '129.159.156.109'
-  port: 50160
-  password: 'f25f19f29ce3fb53a35bf1b35b452a43'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.bing.com'
-- name: '🇩🇪 DE 32'
-  type: 'hysteria2'
-  server: '3.76.221.4'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: '3.76.221.4'
-- name: '🇯🇵 JP 33'
-  type: 'hysteria2'
-  server: '8.211.175.236'
-  port: 8443
-  password: 'u63SxILNwtrQZ7Y1ZrFaZfsA'
-  skip-cert-verify: true
-  udp: true
-  sni: 'bing.com'
-- name: '🇺🇸 US 34'
-  type: 'hysteria2'
-  server: '153.56.210.134'
-  port: 38045
-  password: 'a81a7b45-dd70-42ef-822f-ef467f944382'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.bing.com'
-  obfs: 'salamander'
-  obfs-password: '642516f2-f9bd-41ce-9904-dee699c39cf9'
-- name: '🇩🇪 DE 35'
-  type: 'hysteria2'
-  server: '77.90.15.183'
-  port: 8964
-  password: 'HATATEAYA'
-  skip-cert-verify: true
-  udp: true
-  sni: 'ganlanc.at'
-  obfs: 'salamander'
-  obfs-password: 'HATATEAYA'
-- name: '🇺🇳 UN 36'
-  type: 'hysteria2'
-  server: '103.115.109.49'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: 'https:'
-- name: '🇺🇳 UN 37'
-  type: 'hysteria2'
-  server: '160.187.100.109'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  skip-cert-verify: true
-  udp: true
-  sni: '127.0.0.1'
-- name: '🇺🇸 US 38'
-  type: 'hysteria2'
-  server: '45.86.74.193'
-  port: 443
-  password: '3a17ce52-4547-45aa-9820-a7d03ad5faca'
-  skip-cert-verify: true
-  udp: true
-  sni: 'media.embrofree.org'
-- name: '🇰🇷 KR 39'
-  type: 'hysteria2'
-  server: '152.70.237.123'
-  port: 2053
-  password: 'maintell'
-  skip-cert-verify: true
-  udp: true
-  sni: '152.70.237.123'
-- name: '🇰🇷 KR 40'
+- name: '🇰🇷 KR 29'
   type: 'hysteria2'
   server: '132.226.226.189'
   port: 50160
@@ -335,7 +237,22 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'off'
-- name: '🇭🇰 HK 41'
+- name: '🇰🇷 KR 30'
+  type: 'hysteria2'
+  server: '152.69.231.175'
+  port: 50160
+  password: '1beb216e3f60aea9555dae60d219a5ca'
+  skip-cert-verify: true
+  udp: true
+- name: '🇩🇪 DE 31'
+  type: 'hysteria2'
+  server: '3.69.232.199'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: '3.69.232.199'
+- name: '🇭🇰 HK 32'
   type: 'hysteria2'
   server: '202.146.222.174'
   port: 443
@@ -343,14 +260,56 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: '202.146.222.174'
-- name: '🇭🇰 HK 42'
+- name: '🇭🇰 HK 33'
+  type: 'hysteria2'
+  server: '202.146.222.29'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: 'https://t.me/wangcai2'
+- name: '🇩🇪 DE 34'
+  type: 'hysteria2'
+  server: '179.61.138.145'
+  port: 36264
+  password: 'VPNJEy'
+  skip-cert-verify: true
+  udp: true
+  sni: 'de2.jey.cc.cd'
+  obfs: 'salamander'
+  obfs-password: 'Telegram@vpnjey'
+- name: '🇭🇰 HK 35'
   type: 'hysteria2'
   server: '202.146.222.89'
   port: 443
   password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
   skip-cert-verify: true
   udp: true
-- name: '🇰🇷 KR 43'
+- name: '🇰🇷 KR 36'
+  type: 'hysteria2'
+  server: '152.67.200.82'
+  port: 50160
+  password: '3d7634af8cb2c6cb4bac1c0efad8b43d'
+  skip-cert-verify: true
+  udp: true
+  sni: 'whatsapp.com'
+- name: '🇩🇪 DE 37'
+  type: 'hysteria2'
+  server: '18.153.65.67'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: 'vpn-de-002.fastervpn.world'
+- name: '🇩🇪 DE 38'
+  type: 'hysteria2'
+  server: '195.63.138.212'
+  port: 8443
+  password: 'fa937345-6d3e-4ff4-8127-1a836987a0db'
+  skip-cert-verify: true
+  udp: true
+  sni: 'cloudehouse24.ru'
+- name: '🇰🇷 KR 39'
   type: 'hysteria2'
   server: '150.230.252.217'
   port: 50160
@@ -358,15 +317,17 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: '150-230-252-217.liao.kdns.fr'
-- name: '🇸🇬 SG 44'
+- name: '🇧🇷 BR 40'
   type: 'hysteria2'
-  server: '54.179.113.70'
-  port: 443
-  password: 'qQe1z5kU8kN6SlKnDt9Ru3Qp'
+  server: '150.230.229.100'
+  port: 20000
+  password: 'CyG0RFxMjzs41uQD4OLuHQ=='
   skip-cert-verify: true
   udp: true
-  sni: 'vpn-sg-001.fastervpn.world'
-- name: '🇦🇺 AU 45'
+  sni: 'hy2-br2.whuiy.xyz'
+  obfs: 'salamander'
+  obfs-password: 'CyG0RFxMjzs41uQD4OLuHQ=='
+- name: '🇦🇺 AU 41'
   type: 'hysteria2'
   server: '152.67.115.203'
   port: 443
@@ -376,28 +337,22 @@ proxies:
   sni: 'www.bing.com'
   obfs: 'salamander'
   obfs-password: '850a3fb1cd33a28f12d837578ae1a2e7'
-- name: '🇰🇷 KR 46'
-  type: 'hysteria2'
-  server: '152.67.200.82'
-  port: 50160
-  password: '3d7634af8cb2c6cb4bac1c0efad8b43d'
-  skip-cert-verify: true
-  udp: true
-- name: '🇸🇬 SG 47'
+- name: '🇸🇬 SG 42'
   type: 'hysteria2'
   server: '47.129.241.99'
   port: 443
   password: 'qQe1z5kU8kN6SlKnDt9Ru3Qp'
   skip-cert-verify: true
   udp: true
-- name: '🇰🇷 KR 48'
+- name: '🇸🇬 SG 43'
   type: 'hysteria2'
-  server: '152.69.231.175'
-  port: 50160
-  password: '1beb216e3f60aea9555dae60d219a5ca'
+  server: '54.179.113.70'
+  port: 443
+  password: 'qQe1z5kU8kN6SlKnDt9Ru3Qp'
   skip-cert-verify: true
   udp: true
-- name: '🇸🇬 SG 49'
+  sni: 'vpn-sg-001.fastervpn.world'
+- name: '🇸🇬 SG 44'
   type: 'hysteria2'
   server: '13.212.78.215'
   port: 443
@@ -405,49 +360,20 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: 'vpn-sg-001.fastervpn.world'
-- name: '🇭🇰 HK 50'
-  type: 'hysteria2'
-  server: 'vpn-hk-004.fastervpn.world'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+- down: ''
+  fingerprint: ''
+  name: '🇦🇺 AU 45'
+  obfs: ''
+  obfs-password: ''
+  password: 'linlin-2026'
+  port: 36712
+  server: '13.55.52.44'
   skip-cert-verify: true
-  udp: true
-  sni: 'vpn-hk-004.fastervpn.world'
-- name: '🇭🇰 HK 51'
-  password: '92bd8c68-6434-11ee-b644-f23c91cfbbc9'
-  port: 443
-  server: '88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com'
-  skip-cert-verify: true
-  sni: '88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com'
-  tls: false
+  sni: '13.55.52.44'
   type: 'hysteria2'
-- name: '🇯🇵 JP 52'
-  type: 'hysteria2'
-  server: '138.3.208.26'
-  port: 50160
-  password: '184cdec28da5a09450803c8debcd2cc9'
-  skip-cert-verify: true
-  udp: true
-  sni: '1'
-- name: '🇸🇬 SG 53'
-  type: 'hysteria2'
-  server: '138.2.89.249'
-  port: 443
-  password: 'd042d150716709bb778cc73889cddb02'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.bing.com'
-  obfs: 'salamander'
-  obfs-password: '309502c4a8df10b46fb976d4a8c43f42'
-- name: '🇸🇬 SG 54'
-  type: 'hysteria2'
-  server: '138.2.73.238'
-  port: 50160
-  password: 'f87376e17da040ed04c9665ce8972930'
-  skip-cert-verify: true
-  udp: true
-  sni: 'www.bing.com'
-- name: '🇦🇺 AU 55'
+  up: ''
+  region: '澳大利亚'
+- name: '🇦🇺 AU 46'
   type: 'hysteria2'
   server: '159.13.55.48'
   port: 20000
@@ -457,53 +383,110 @@ proxies:
   sni: 'hy2-au2.whuiy.xyz'
   obfs: 'salamander'
   obfs-password: 'b42d90fa667942aebc734d60'
-- name: '🇭🇰 HK 56'
+- name: '🇸🇬 SG 47'
   type: 'hysteria2'
-  server: '152.32.254.68'
-  port: 5010
-  password: 'eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ'
+  server: '138.2.73.238'
+  port: 50160
+  password: 'f87376e17da040ed04c9665ce8972930'
   skip-cert-verify: true
   udp: true
-  obfs: 'salamander'
-  obfs-password: '7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9'
-- name: '🇩🇪 DE 57'
+  sni: 'www.bing.com'
+- name: '🇺🇸 US 48'
   type: 'hysteria2'
-  server: '18.193.79.104'
+  server: 'vpn-us-004.fastervpn.world'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: 'vpn-us-004.fastervpn.world'
+- name: '🇩🇪 DE 49'
+  type: 'hysteria2'
+  server: '195.63.128.21'
+  port: 10444
+  password: 'fa937345-6d3e-4ff4-8127-1a836987a0db'
+  skip-cert-verify: true
+  udp: true
+  sni: 'germany.cloudhouse1.ru'
+- name: '🇩🇪 DE 50'
+  type: 'hysteria2'
+  server: '18.194.242.173'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: '18.194.242.173'
+- name: '🇸🇬 SG 51'
+  type: 'hysteria2'
+  server: '138.2.89.249'
+  port: 443
+  password: 'd042d150716709bb778cc73889cddb02'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.bing.com'
+  obfs: 'salamander'
+  obfs-password: '309502c4a8df10b46fb976d4a8c43f42'
+- name: '🇺🇸 US 52'
+  type: 'hysteria2'
+  server: '153.56.210.134'
+  port: 57251
+  password: 'ff0343ad-1c9f-4986-8c62-c01935b508ca'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.bing.com'
+  obfs: 'salamander'
+  obfs-password: '0ee2089e-70df-4c30-bfea-1fb9be61d93e'
+- name: '🇮🇱 IL 53'
+  type: 'hysteria2'
+  server: '129.159.156.109'
+  port: 50160
+  password: 'f25f19f29ce3fb53a35bf1b35b452a43'
+  skip-cert-verify: true
+  udp: true
+  sni: 'www.bing.com'
+- name: '🇩🇪 DE 54'
+  type: 'hysteria2'
+  server: '3.76.203.180'
   port: 443
   password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
   skip-cert-verify: true
   udp: true
   sni: 'vpn-de-002.fastervpn.world'
-- name: '🇳🇱 NL 58'
+- name: '🇺🇸 US 55'
   type: 'hysteria2'
-  server: 'hysteria.udpgw.com'
-  port: 8443
-  password: 'HowdyHysteria2023w0W'
-  skip-cert-verify: true
-  udp: true
-  sni: 'sni-here.com'
-  obfs: 'salamander'
-  obfs-password: 'HysteriaHowdy'
-- name: '🇯🇵 JP 59'
-  type: 'hysteria2'
-  server: '8.209.247.109'
+  server: '103.246.248.147'
   port: 443
-  password: 'usqmqUKJFIlCmvkCNSY64L3k'
+  password: 'b384d216-9efa-4fd0-a5ef-bd3c37475e4d'
   skip-cert-verify: true
   udp: true
-- type: 'hysteria'
-  name: '🇺🇸 US 60'
-  server: '137.175.82.44'
-  port: 20022
-  password: 'dongtaiwang.com'
-  tls: true
+  sni: 'pl.anonch.org'
+- name: '🇮🇳 IN 56'
+  password: '41edb44c8e'
+  port: 11592
+  server: '103.88.243.142'
   skip-cert-verify: true
-  alpn:
-  - 'h3'
-  up: '11'
-  down: '55'
-  auth-str: 'dongtaiwang.com'
-- name: '🇷🇺 RU 61'
+  sni: 'srv-17e124.21freedom.net'
+  tls: false
+  type: 'hysteria2'
+- name: '🇺🇸 US 57'
+  obfs: 'salamander'
+  obfs-password: 'mn1g0eianbese7bl'
+  password: 'u9axzkplfc3463am'
+  port: 16146
+  server: 'sub.macdonalder.cyou'
+  skip-cert-verify: false
+  sni: 'sub.macdonalder.cyou'
+  tls: false
+  type: 'hysteria2'
+  region: '印度'
+- name: '🇩🇪 DE 58'
+  type: 'hysteria2'
+  server: '3.76.221.4'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  skip-cert-verify: true
+  udp: true
+  sni: '3.76.221.4'
+- name: '🇷🇺 RU 59'
   type: 'vless'
   server: '45.138.100.248'
   port: 10443
@@ -513,319 +496,41 @@ proxies:
   network: 'tcp'
   skip-cert-verify: true
   servername: '45.138.100.248'
-- name: '🇺🇸 US 62'
+- name: '🇺🇸 US 60'
   type: 'vless'
-  server: '172.64.145.94'
-  port: 443
-  uuid: '5dc15e15-f285-4a9d-959b-0e4fbdd77b63'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'powered-by-surena.configfarsi695fd01a94fe7.workers.dev'
-- name: '🇸🇨 SC 63'
-  type: 'vless'
-  server: '154.197.64.252'
-  port: 443
-  uuid: '08038e90-7fe9-49c9-bbdc-b7044d6bd348'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'worker3.notoj58234.workers.dev'
-- name: '🇺🇳 UN 64'
-  type: 'vless'
-  server: '104.17.147.208'
-  port: 443
-  uuid: '258ca28a-d982-4a40-b620-7c1c81108060'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'b.rack.sxsc.dpdns.org'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'b.rack.sxsc.dpdns.org'
-- name: '🇺🇳 UN 65'
-  type: 'vless'
-  server: '104.17.148.111'
-  port: 443
-  uuid: '2b181a3a-c001-4145-845a-5d43a43837d5'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'vpn-1fj.pages.dev'
-- name: '🇺🇳 UN 66'
-  type: 'vless'
-  server: '162.159.152.58'
-  port: 2087
-  uuid: '51a0af77-a60c-4d9b-81a4-f50e1b38d90b'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'ns4t32a2zc38o0on-ghqgwsswrh4mqda.pages.dev'
-- name: '🇺🇳 UN 67'
-  type: 'vless'
-  server: '162.159.130.234'
-  port: 443
-  uuid: '5d7b401c-78fa-4254-872e-6d42bf7e75ec'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'vp19.1145678.xyz'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'vp19.1145678.xyz'
-- name: '🇺🇳 UN 68'
-  type: 'vless'
-  server: '104.18.12.229'
-  port: 8443
-  uuid: '1753c03f-39c4-4bf2-ae83-38e90c847e8e'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'ydyg0908.mynameiszt.eu.org'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'ydyg0908.mynameiszt.eu.org'
-- name: '🇺🇦 UA 69'
-  type: 'vless'
-  server: '45.135.235.255'
-  port: 443
-  uuid: '0b7337bf-dcff-432b-9ec6-b4fb6d22fc92'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'worker3.fivon81984.workers.dev'
-- name: '🇪🇸 ES 70'
-  type: 'vless'
-  server: '185.18.250.2'
-  port: 443
-  uuid: '5c9e3f77-5bde-4732-af3c-6a5d3ecee37a'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'worker3.wewotes286.workers.dev'
-- name: '🇺🇸 US 71'
-  type: 'vless'
-  server: '8.6.112.0'
-  port: 443
-  uuid: 'e324f793-580c-43b7-9d23-58119efbcc9d'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'worker3.cexop17836.workers.dev'
-- name: '🇺🇳 UN 72'
-  type: 'vless'
-  server: '104.16.80.1'
-  port: 443
-  uuid: '462f23ba-3286-4601-813d-878bf26b4fcb'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'nmdx.ccwu.cc'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'nmdx.ccwu.cc'
-- name: '🇺🇳 UN 73'
-  type: 'vless'
-  server: 'www.vmware.com'
-  port: 2087
-  uuid: 'bf14dc50-e9f2-49fd-8642-620446edeafb'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'v7-e4v.pages.dev'
-- name: '🇺🇳 UN 74'
-  type: 'vless'
-  server: 'saas.sin.fan'
-  port: 8443
-  uuid: '5d7b401c-78fa-4254-872e-6d42bf7e75ec'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'vp17.1145678.xyz'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'vp17.1145678.xyz'
-- name: '🇺🇸 US 75'
-  type: 'vless'
-  server: '172.66.0.118'
-  port: 2087
-  uuid: '51a0af77-a60c-4d9b-81a4-f50e1b38d90b'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'ns4t32a2zc38o0on-ghqgwsswrh4mqda.pages.dev'
-- name: '🇺🇳 UN 76'
-  type: 'vless'
-  server: 'www.visa.com.sg'
-  port: 8443
-  uuid: '1753c03f-39c4-4bf2-ae83-38e90c847e8e'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'ydyg0908.mynameiszt.eu.org'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'ydyg0908.mynameiszt.eu.org'
-- name: '🇺🇸 US 77'
-  type: 'vless'
-  server: 'edge-relay-c9db.edge-edge-relay-be8e.workers.dev'
-  port: 443
-  uuid: '8a540f3b-04c7-4e22-924a-51a0b6fad164'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'edge-relay-c9db.edge-edge-relay-be8e.workers.dev'
-- name: '🇺🇳 UN 78'
-  type: 'vless'
-  server: '104.18.45.236'
-  port: 2096
-  uuid: '51a0af77-a60c-4d9b-81a4-f50e1b38d90b'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'mohammadhoseini4532.pages.dev'
-- name: '🇲🇾 MY 79'
-  type: 'vless'
-  server: '8.35.211.188'
-  port: 8443
-  uuid: '2b181a3a-c001-4145-845a-5d43a43837d5'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'vpn-1fj.pages.dev'
-- name: '🇺🇳 UN 80'
-  type: 'vless'
-  server: 'www.speedtest.net'
-  port: 443
-  uuid: 'ec23f217-23a1-4f62-b98d-ba56070de89c'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'wallweb4.pages.dev'
-- name: '🇺🇳 UN 81'
-  type: 'vless'
-  server: 'radar.cloudflare.com'
-  port: 8080
-  uuid: 'cfa71937-73d5-4eb8-9b25-eadecd944803'
-  udp: true
-  tls: false
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'sh-harand.shcharand00.workers.dev'
-- name: '🇿🇦 ZA 82'
-  type: 'vless'
-  server: '160.123.255.172'
-  port: 443
-  uuid: '003ec416-45f0-462a-8030-016fe0a71703'
-  udp: true
-  tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: 'mama147.baklajann.ru'
-  xhttp-opts:
-    path: '/'
-    mode: 'auto'
-    host: 'mama147.baklajann.ru'
-- name: '🇩🇰 DK 83'
-  type: 'vless'
-  server: '159.195.207.238'
-  port: 49313
-  uuid: '855c7aaa-e7d6-463e-971e-d36032744428'
+  server: '168.110.21.56'
+  port: 18453
+  uuid: '1751bebc-1bf1-420c-8b9d-97157aad179b'
   udp: true
   tls: false
   network: 'tcp'
   skip-cert-verify: true
-- name: '🇺🇸 US 84'
+- client-fingerprint: 'chrome'
+  name: '🇺🇸 US 61'
+  network: 'ws'
+  port: 2053
+  server: '172.67.199.126'
+  servername: 'fast.145779.xyz'
+  tls: true
   type: 'vless'
-  server: '141.11.203.165'
-  port: 443
-  uuid: '003ec416-45f0-462a-8030-016fe0a71703'
+  uuid: 'c83f15bf-1817-4ec8-a19f-6393d226434c'
+  ws-opts:
+    headers:
+      Host: 'fast.145779.xyz'
+    path: '/ws-tesla'
+  x-toolall-mihomo: true
+- name: '🇯🇵 JP 62'
+  type: 'vless'
+  server: '155.248.175.201'
+  port: 23169
+  uuid: 'f67b1159-a61f-4ae4-9844-0701b716a290'
   udp: true
   tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: '186.baklajann.ru'
-  xhttp-opts:
-    path: '/'
-    mode: 'auto'
-    host: '186.baklajann.ru'
-- name: '🇺🇸 US 85'
-  type: 'vless'
-  server: '45.86.60.174'
-  port: 16443
-  uuid: '13e541f3-d09d-4633-89df-8513db0ced20'
-  udp: true
-  tls: false
   network: 'tcp'
   skip-cert-verify: true
-- name: '🇧🇷 BR 86'
+  servername: 'djj.zjlo.top'
+  flow: 'xtls-rprx-vision'
+- name: '🇧🇷 BR 63'
   type: 'vless'
   server: '177.177.215.45'
   port: 444
@@ -836,28 +541,7 @@ proxies:
   skip-cert-verify: true
   servername: 'ams2.shtil.io'
   flow: 'xtls-rprx-vision'
-- name: '🇳🇱 NL 87'
-  type: 'vless'
-  server: '130.78.30.147'
-  port: 443
-  uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: '105ky37.virtual-network.lol'
-  flow: 'xtls-rprx-vision'
-- name: '🇺🇸 US 88'
-  type: 'vless'
-  server: '146.19.254.171'
-  port: 8443
-  uuid: '24fb9b5b-43b7-4058-a7e5-a0499ada1fda'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  flow: 'xtls-rprx-vision'
-- name: '🇩🇰 DK 89'
+- name: '🇩🇰 DK 64'
   type: 'vless'
   server: '87.58.201.5'
   port: 443
@@ -868,43 +552,17 @@ proxies:
   skip-cert-verify: true
   servername: 'nl.point.cookie-line.cc'
   flow: 'xtls-rprx-vision'
-- name: '🇩🇪 DE 90'
+- name: '🇺🇦 UA 65'
   type: 'vless'
-  server: '50.7.87.123'
-  port: 8443
-  uuid: 'f18c5f6d-2bac-4a99-8c92-a6e6e7aea9b4'
+  server: '178.94.25.73'
+  port: 10443
+  uuid: '2dacc738-5720-4824-b8bc-e3db57596ba7'
   udp: true
-  tls: true
+  tls: false
   network: 'tcp'
   skip-cert-verify: true
-  servername: 'api-v2.atlanta-games.com'
-  flow: 'xtls-rprx-vision'
-- name: '🇧🇷 BR 91'
-  type: 'vless'
-  server: '187.7.206.176'
-  port: 443
-  uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: '1fw71dc.virtual-network.lol'
-  flow: 'xtls-rprx-vision'
-- client-fingerprint: 'firefox'
-  flow: 'xtls-rprx-vision'
-  name: '🇺🇸 US 92'
-  network: 'tcp'
-  port: 443
-  reality-opts:
-    public-key: 'SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc'
-    short-id: ''
-  server: '163.245.42.87'
-  servername: 'mother-earth.fyi'
-  tls: true
-  type: 'vless'
-  uuid: 'b9bfa54d-bc44-4592-a6d6-89a9665d286f'
-  x-toolall-mihomo: true
-- name: '🇧🇷 BR 93'
+  servername: '178.94.25.73'
+- name: '🇧🇷 BR 66'
   type: 'vless'
   server: '187.7.206.179'
   port: 443
@@ -915,97 +573,40 @@ proxies:
   skip-cert-verify: true
   servername: '1fw71df.virtual-network.lol'
   flow: 'xtls-rprx-vision'
-- name: '🇳🇱 NL 94'
+- name: '🇳🇱 NL 67'
   type: 'vless'
-  server: 'app.streamru13.net'
-  port: 443
-  uuid: 'fd90e601-a56c-42b8-aab7-aa02d26fcb04'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'app.streamru13.net'
-  flow: 'xtls-rprx-vision'
-- name: '🇪🇪 EE 95'
-  type: 'vless'
-  server: '194.156.26.125'
-  port: 443
-  uuid: '003ec416-45f0-462a-8030-016fe0a71703'
-  udp: true
-  tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: 'mama120.baklajann.ru'
-  xhttp-opts:
-    path: '/'
-    mode: 'auto'
-    host: 'mama120.baklajann.ru'
-- name: '🇺🇸 US 96'
-  type: 'vless'
-  server: '132.243.212.204'
+  server: '130.78.30.147'
   port: 443
   uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
   udp: true
   tls: true
   network: 'tcp'
   skip-cert-verify: true
-  servername: '10w0wjw.virtual-network.lol'
+  servername: '105ky37.virtual-network.lol'
   flow: 'xtls-rprx-vision'
-- name: '🇮🇷 IR 97'
+- name: '🇧🇷 BR 68'
   type: 'vless'
-  server: '91.107.177.172'
+  server: '187.7.206.176'
   port: 443
-  uuid: '08fc6597-23e9-4f29-bce2-b3bbc04e8c91'
+  uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
   udp: true
   tls: true
   network: 'tcp'
   skip-cert-verify: true
-  servername: 'mergo.vpn.iiproxy.com'
-- name: '🇺🇦 UA 98'
+  servername: '1fw71dc.virtual-network.lol'
+  flow: 'xtls-rprx-vision'
+- name: '🇺🇸 US 69'
   type: 'vless'
-  server: '45.135.235.90'
-  port: 443
-  uuid: '003ec416-45f0-462a-8030-016fe0a71703'
+  server: '146.19.254.171'
+  port: 8443
+  uuid: '24fb9b5b-43b7-4058-a7e5-a0499ada1fda'
   udp: true
   tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: '51.baklajann.ru'
-  xhttp-opts:
-    path: '/'
-    mode: 'auto'
-    host: '51.baklajann.ru'
-- name: '🇺🇦 UA 99'
-  type: 'vless'
   network: 'tcp'
-  server: '85.90.217.42'
-  port: 443
-  uuid: '03fcc618-b93d-6796-6aed-8a38c975d581'
-  servername: '85.90.217.42'
   skip-cert-verify: true
-  tls: true
-  udp: true
-- name: '🇺🇸 US 100'
-  type: 'vless'
-  server: '185.133.35.86'
-  port: 443
-  uuid: '003ec416-45f0-462a-8030-016fe0a71703'
-  udp: true
-  tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: 'mama511.baklajann.ru'
-  xhttp-opts:
-    path: '/'
-    mode: 'auto'
-    host: 'mama511.baklajann.ru'
-- name: '🇧🇾 BY 101'
-  port: 10443
-  server: '178.172.227.124'
-  tls: false
-  type: 'vless'
-  uuid: '1af36694-b548-4b18-89a0-bc076eab4ed7'
-- name: '🇱🇹 LT 102'
+  servername: '146.19.254.171'
+  flow: 'xtls-rprx-vision'
+- name: '🇱🇹 LT 70'
   type: 'vless'
   server: 'app.streamru14.net'
   port: 443
@@ -1016,280 +617,46 @@ proxies:
   skip-cert-verify: true
   servername: 'app.streamru14.net'
   flow: 'xtls-rprx-vision'
-- name: '🇨🇭 CH 103'
+- name: '🇺🇸 US 71'
   type: 'vless'
-  server: '138.124.86.230'
-  port: 48115
-  uuid: 'b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b'
-  udp: true
-  tls: true
-  network: 'grpc'
-  skip-cert-verify: true
-  servername: '138-124-86-230.sslip.io'
-  grpc-opts:
-    grpc-service-name: '138-124-86-230-sslip-io'
-- name: '🇮🇷 IR 104'
-  type: 'vless'
-  server: 'app.streamru1.com'
+  server: '132.243.212.204'
   port: 443
-  uuid: 'fd90e601-a56c-42b8-aab7-aa02d26fcb04'
+  uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
   udp: true
   tls: true
   network: 'tcp'
   skip-cert-verify: true
-  servername: 'app.streamru1.com'
+  servername: '10w0wjw.virtual-network.lol'
   flow: 'xtls-rprx-vision'
-- name: '🇳🇱 NL 105'
-  server: '130.78.31.25'
+- name: '🇺🇸 US 72'
+  type: 'vless'
+  server: '45.194.66.177'
+  port: 443
+  uuid: '352a250d-080b-47b5-b7db-f9f8fa31c551'
+  udp: true
+  tls: true
+  network: 'tcp'
+  skip-cert-verify: true
+  servername: '31tawwo0.virtual-network.lol'
+  flow: 'xtls-rprx-vision'
+- name: '🇺🇸 US 73'
+  server: 'edge.bookmai.com'
   port: 443
   type: 'vless'
-  uuid: '146d567c-6335-4e63-a8aa-7ec068642440'
+  uuid: 'b9bfa54d-bc44-4592-a6d6-89a9665d286f'
   tls: true
+  tfo: false
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: true
   reality-opts:
-    public-key: 'fDrDDz_GCqhDgG8kMxWXk2vRuyfBHTTNwVa7k7nJHgw'
-    short-id: '5c42ed8c'
-  servername: 'pl2.obxodvpn.us'
-  client-fingerprint: 'firefox'
-  network: 'xhttp'
-  xhttp-opts:
-    path: '/xhttp'
-    host: 'pl2.obxodvpn.us'
-    mode: 'packet-up'
-  udp: true
-- name: '🇱🇹 LT 106'
-  type: 'vless'
-  server: 'app.streamru10.net'
-  port: 443
-  uuid: 'fd90e601-a56c-42b8-aab7-aa02d26fcb04'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'app.streamru10.net'
-  flow: 'xtls-rprx-vision'
-- name: '🇺🇸 US 107'
-  type: 'vless'
-  server: '48.102.209.126'
-  port: 443
-  uuid: 'dfe50e18-28ce-459e-a6b9-0f2585bcc3b6'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'ee.point.cookie-line.cc'
-  flow: 'xtls-rprx-vision'
-- name: '🇦🇺 AU 108'
-  server: 'platform102.golnamakcert.top'
-  port: 80
-  type: 'vless'
-  uuid: 'e13cf851-b4fd-413b-8d49-146e6eb8e5d4'
-  tls: false
-  network: 'ws'
-  ws-opts:
-    path: '/platform102'
-    headers:
-      Host: 'platform102.halalkhor.info'
-  udp: true
-- name: '🇧🇷 BR 109'
-  type: 'vless'
-  server: 'app.streamru17.net'
-  port: 443
-  uuid: 'fd90e601-a56c-42b8-aab7-aa02d26fcb04'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'app.streamru17.net'
-  flow: 'xtls-rprx-vision'
-- name: '🇺🇸 US 110'
-  type: 'vless'
-  server: '213.176.73.245'
-  port: 2096
-  uuid: '14b49dbd-e6a8-442c-9d64-a28682b87c53'
-  udp: true
-  tls: true
-  network: 'grpc'
-  skip-cert-verify: true
-  servername: 'edge8.volkswagenman.ru'
-  grpc-opts:
-    grpc-service-name: 'edge8'
-- name: '🇨🇭 CH 111'
-  type: 'vless'
-  server: 'suh.cryptofront.uk'
-  port: 80
-  uuid: 'c762af05-2e92-4133-bc30-8cf45dd40a28'
-  udp: true
-  tls: false
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'suh.cryptofront.uk'
-- name: '🇺🇳 UN 112'
-  type: 'vless'
-  server: 'chess.com'
-  port: 443
-  uuid: '0280c276-641b-49af-b699-4931c30ac137'
-  udp: true
-  tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: 'norway.xn--nlqaa425dbaab446bbabd698meae.online.'
-  xhttp-opts:
-    path: '/api'
-    mode: 'auto'
-    host: 'norway.xn--nlqaa425dbaab446bbabd698meae.online'
-- alpn:
-  - 'h2'
+    public-key: 'SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc'
+    short-id: ''
+  servername: 'mother-earth.fyi'
   client-fingerprint: 'chrome'
-  grpc-opts:
-    grpc-service-name: 'vlgrpc'
-  name: '🇧🇷 BR 113'
-  network: 'grpc'
-  port: 443
-  server: '201.24.121.243'
-  servername: 'kk-ru24a1.testkknegr.online'
-  tls: true
-  type: 'vless'
-  uuid: '32b5ca9b-3f81-4031-965d-e8b074216e8d'
-- name: '🇭🇺 HU 114'
-  type: 'vless'
-  server: '93.88.206.70'
-  port: 443
-  uuid: '44ddb84a-f152-47ef-a970-fd63f2df9b30'
-  udp: true
-  tls: true
-  network: 'xhttp'
-  skip-cert-verify: true
-  servername: 'edge.sevka.xyz'
-  xhttp-opts:
-    path: '/350a12c4b006'
-    mode: 'auto'
-    host: 'edge.sevka.xyz'
-- name: '🇧🇷 BR 115'
-  type: 'vless'
-  server: 'vps3.nemnogogo.com'
-  port: 443
-  uuid: '38308ff1-5aa9-494f-a25a-0f2870d56b3e'
-  udp: true
-  tls: true
-  network: 'grpc'
-  skip-cert-verify: true
-  servername: 'vps3.nemnogogo.com'
-  grpc-opts:
-    grpc-service-name: 'mobile.api.Event'
-- name: '🇯🇵 JP 116'
-  type: 'vless'
-  server: '155.248.175.201'
-  port: 23169
-  uuid: '9da605d3-f5f7-4135-f806-450f036f9351'
-  udp: true
-  tls: true
   network: 'tcp'
-  skip-cert-verify: true
-  servername: 'djj.zjlo.top'
-  flow: 'xtls-rprx-vision'
-- name: '🇪🇸 ES 117'
-  server: '193.160.208.240'
-  port: 443
-  type: 'vless'
-  uuid: '4777d90d-265b-4927-a0d1-63f36ed1421c'
-  tls: true
-  servername: '193.160.208.240'
-  client-fingerprint: 'firefox'
-  network: 'xhttp'
-  xhttp-opts:
-    path: '/assets/twru01/'
-    mode: 'auto'
   udp: true
-- name: '🇺🇦 UA 118'
-  type: 'vless'
-  server: '178.94.25.73'
-  port: 10443
-  uuid: '2dacc738-5720-4824-b8bc-e3db57596ba7'
-  udp: true
-  tls: false
-  network: 'tcp'
-  skip-cert-verify: true
-- client-fingerprint: 'chrome'
-  name: '🇧🇷 BR 119'
-  network: 'xhttp'
-  port: 443
-  server: '201.34.142.108'
-  tls: true
-  type: 'vless'
-  udp: true
-  uuid: '4777d90d-265b-4927-a0d1-63f36ed1421c'
-  xhttp-opts:
-    mode: 'auto'
-    path: '/assets/nlrelay01/'
-- name: '🇺🇳 UN 120'
-  type: 'vless'
-  server: '104.18.151.231'
-  port: 443
-  uuid: 'eaf76557-2219-4799-8171-d7020adfefd0'
-  udp: true
-  tls: true
-  network: 'ws'
-  skip-cert-verify: true
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'muddy-star-d195.aboumansour10313.workers.dev'
-- name: '🇺🇸 US 121'
-  type: 'vless'
-  server: 'linen.gerqix.online'
-  port: 443
-  uuid: '80a06811-f74b-4b82-ac99-7e66c2a98e1c'
-  udp: true
-  tls: true
-  network: 'grpc'
-  skip-cert-verify: true
-  servername: 'fernglade.gerqix.online'
-  grpc-opts:
-    grpc-service-name: 'glush.de1.v1'
-- name: '🇺🇸 US 122'
-  type: 'vless'
-  server: 'support.zoom.us'
-  port: 80
-  uuid: 'f028d829-249a-4692-b45f-1b4cde8ef0c7'
-  udp: true
-  tls: false
-  network: 'ws'
-  skip-cert-verify: true
-  servername: 'free.sahanwickramasinghe.com'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'free.sahanwickramasinghe.com'
-- client-fingerprint: 'firefox'
-  flow: 'xtls-rprx-vision'
-  name: '🇦🇺 AU 123'
-  network: 'tcp'
-  packet-encoding: 'xudp'
-  port: 443
-  reality-opts:
-    public-key: 'gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk'
-    short-id: '0ad08b47f498efd2'
-  server: '51.161.204.244'
-  servername: 'www.cloudflare.com'
-  tls: true
-  type: 'vless'
-  uuid: '36e89875-9c53-482b-bc41-d3890e9da176'
-  x-toolall-mihomo: true
-- name: '🇺🇸 US 124'
-  type: 'vless'
-  server: '140.245.62.225'
-  port: 36442
-  uuid: '5269e0b4-0dff-4f97-e0c7-83130bacb009'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'xjpp.zjlo.top'
-  flow: 'xtls-rprx-vision'
-- name: '🇰🇷 KR 125'
+  region: '法国'
+- name: '🇰🇷 KR 74'
   type: 'vless'
   server: '152.69.226.63'
   port: 25555
@@ -1303,7 +670,83 @@ proxies:
     path: '/'
     headers:
       Host: '152.69.226.63'
-- name: '🇮🇷 IR 126'
+- name: '🇨🇭 CH 75'
+  type: 'vless'
+  server: '138.124.86.230'
+  port: 48115
+  uuid: 'b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b'
+  udp: true
+  tls: true
+  network: 'grpc'
+  skip-cert-verify: true
+  servername: '138-124-86-230.sslip.io'
+  grpc-opts:
+    grpc-service-name: '138-124-86-230-sslip-io'
+- name: '🇨🇭 CH 76'
+  type: 'vless'
+  network: 'tcp'
+  server: '179.43.187.67'
+  port: 443
+  uuid: '9dd38d60-e683-47c6-bd53-d71bdfee78f3'
+  servername: 'portal.mavexa.ir'
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: 'chrome'
+- name: '🇺🇸 US 77'
+  type: 'vless'
+  server: '209.206.51.236'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇯🇵 JP 78'
+  type: 'vless'
+  server: '207.65.189.9'
+  port: 443
+  uuid: '57715fc4-f787-4e90-9eb2-53fa515fbf37'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'spsudu.pages.dev'
+- name: '🇺🇸 US 79'
+  type: 'vless'
+  server: '140.245.62.225'
+  port: 36442
+  uuid: '2633cbab-e901-4f5a-9a0f-18ff319d0d70'
+  udp: true
+  tls: true
+  network: 'tcp'
+  skip-cert-verify: true
+  servername: 'xjpp.zjlo.top'
+  flow: 'xtls-rprx-vision'
+- name: '🇨🇭 CH 80'
+  type: 'vless'
+  server: 'suh.cryptofront.uk'
+  port: 80
+  uuid: 'c762af05-2e92-4133-bc30-8cf45dd40a28'
+  udp: true
+  tls: false
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'suh.cryptofront.uk'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'suh.cryptofront.uk'
+- name: '🇮🇷 IR 81'
   type: 'vless'
   server: '91.107.188.129'
   port: 2083
@@ -1317,70 +760,230 @@ proxies:
     path: '/'
     headers:
       Host: 'site.check-looks.space'
-- name: '🇯🇵 JP 127'
-  type: 'vless'
-  server: '207.65.189.9'
+- client-fingerprint: 'firefox'
+  grpc-opts:
+    grpc-service-name: 'mobile.api.Event'
+  name: '🇧🇷 BR 82'
+  network: 'grpc'
   port: 443
-  uuid: '57715fc4-f787-4e90-9eb2-53fa515fbf37'
-  udp: true
+  server: '201.24.116.192'
+  servername: 'vps3.nemnogogo.com'
   tls: true
+  type: 'vless'
+  uuid: '38308ff1-5aa9-494f-a25a-0f2870d56b3e'
+  x-toolall-mihomo: true
+- alpn:
+  - 'h2'
+  client-fingerprint: 'firefox'
+  grpc-opts:
+    grpc-mode: 'gun'
+    grpc-service-name: 'mobile.api.Event'
+  name: '🇧🇷 BR 83'
+  network: 'grpc'
+  port: 443
+  server: '201.51.12.98'
+  servername: 'vps3.nemnogogo.com'
+  tls: true
+  type: 'vless'
+  udp: true
+  uuid: '38308ff1-5aa9-494f-a25a-0f2870d56b3e'
+  x-toolall-mihomo: true
+- alpn:
+  - 'h2'
+  client-fingerprint: 'chrome'
+  grpc-opts:
+    grpc-service-name: 'vlgrpc'
+  name: '🇧🇷 BR 84'
+  network: 'grpc'
+  port: 443
+  server: '201.24.121.243'
+  servername: 'kk-ru24a1.testkknegr.online'
+  tls: true
+  type: 'vless'
+  uuid: '32b5ca9b-3f81-4031-965d-e8b074216e8d'
+- client-fingerprint: 'chrome'
+  name: '🇧🇷 BR 85'
+  network: 'xhttp'
+  port: 443
+  server: '201.34.142.108'
+  tls: true
+  type: 'vless'
+  udp: true
+  uuid: '4777d90d-265b-4927-a0d1-63f36ed1421c'
+  xhttp-opts:
+    mode: 'auto'
+    path: '/assets/nlrelay01/'
+- name: '🇻🇳 VN 86'
+  port: 2086
+  server: '150.95.109.109'
+  tls: false
+  type: 'vless'
+  uuid: 'b83faafc-cbb7-4655-99d4-2c4c39a49d1b'
+- name: '🇷🇺 RU 87'
+  server: '5.129.202.80'
+  port: 443
+  type: 'vless'
+  uuid: '7ad63b26-bf70-4872-8fab-ebaf73a1e19d'
+  tls: true
+  flow: 'xtls-rprx-vision'
+  reality-opts:
+    public-key: 'NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8'
+    short-id: '2ef2b10d5143d798'
+  servername: 'mirror-50.topp-con.xyz'
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  udp: true
+- name: '🇩🇪 DE 88'
+  type: 'vless'
+  server: '84.235.244.108'
+  port: 22573
+  uuid: '39947382-3212-41c9-bc3a-589574ac8b23'
+  udp: true
+  tls: false
   network: 'ws'
   skip-cert-verify: true
   ws-opts:
     path: '/'
     headers:
-      Host: 'spsudu.pages.dev'
-- name: '🇺🇳 UN 128'
+      Host: 'uae.unixzone.us'
+- name: '🇳🇱 NL 89'
   type: 'vless'
-  server: '104.17.70.206'
-  port: 8443
-  uuid: '3692de53-42e6-4aed-a522-40ec355dcd2f'
+  server: '176.124.200.148'
+  port: 443
+  uuid: '5ef70d03-e0fc-462c-9a04-1441f604fbfb'
+  udp: true
+  tls: true
+  network: 'xhttp'
+  skip-cert-verify: true
+  servername: 'driftwood.elvano.website'
+  xhttp-opts:
+    path: '/api/de2/sync'
+    mode: 'auto'
+    host: 'driftwood.elvano.website'
+- name: '🇺🇸 US 90'
+  type: 'vless'
+  server: '209.94.90.201'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
   udp: true
   tls: true
   network: 'ws'
   skip-cert-verify: true
-  servername: 'free.sahanwickramasinghe.com'
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇺🇸 US 91'
+  type: 'vless'
+  server: '198.202.24.214'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇿🇦 ZA 92'
+  type: 'vless'
+  server: '206.238.239.245'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇺🇸 US 93'
+  type: 'vless'
+  server: '209.94.90.47'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇺🇸 US 94'
+  type: 'vless'
+  server: '170.114.45.6'
+  port: 80
+  uuid: 'f028d829-249a-4692-b45f-1b4cde8ef0c7'
+  udp: true
+  tls: false
+  network: 'ws'
+  skip-cert-verify: true
   ws-opts:
     path: '/'
     headers:
       Host: 'free.sahanwickramasinghe.com'
-- name: '🇻🇳 VN 129'
+- name: '🇺🇸 US 95'
   type: 'vless'
-  server: '150.95.109.109'
-  port: 2086
-  uuid: 'b83faafc-cbb7-4655-99d4-2c4c39a49d1b'
+  server: '198.202.24.142'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
   udp: true
-  tls: false
-  network: 'tcp'
-  skip-cert-verify: true
-- name: '🇧🇾 BY 130'
-  network: 'ws'
-  port: 14430
-  server: '178.172.227.228'
-  tls: false
-  type: 'vless'
-  uuid: 'b6e5dc56-836f-48c1-9163-b0b0b43b647d'
-  ws-opts:
-    headers:
-      Host: '178.172.227.228'
-    path: '/vless'
-- name: '🇧🇷 BR 131'
-  server: '201.24.55.217'
-  port: 443
-  type: 'vless'
-  uuid: '80a06811-f74b-4b82-ac99-7e66c2a98e1c'
   tls: true
-  alpn:
-  - 'http/1.1'
-  servername: 'reedbed.filnex.baby'
-  client-fingerprint: 'firefox'
   network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
   ws-opts:
-    path: '/api/de6/stream'
+    path: '/'
     headers:
-      Host: 'reedbed.filnex.baby'
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇿🇦 ZA 96'
+  type: 'vless'
+  server: '206.238.237.25'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
   udp: true
-- name: '🇩🇪 DE 132'
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇧🇷 BR 97'
+  type: 'vless'
+  server: 'almanac.filnex.baby'
+  port: 443
+  uuid: '5ef70d03-e0fc-462c-9a04-1441f604fbfb'
+  udp: true
+  tls: true
+  network: 'grpc'
+  skip-cert-verify: true
+  servername: 'morningfen.merlano.monster'
+  grpc-opts:
+    grpc-service-name: 'glush.de1.v1'
+- name: '🇿🇦 ZA 98'
+  type: 'vless'
+  server: '206.238.239.20'
+  port: 2083
+  uuid: 'a6ad7987-f17e-41fa-a752-72db9a725eb2'
+  udp: true
+  tls: true
+  network: 'ws'
+  skip-cert-verify: true
+  servername: 'vipfree.dr-ping.ir'
+  ws-opts:
+    path: '/'
+    headers:
+      Host: 'vipfree.dr-ping.ir'
+- name: '🇩🇪 DE 99'
   type: 'vless'
   server: '167.233.129.126'
   port: 2474
@@ -1389,263 +992,23 @@ proxies:
   tls: false
   network: 'tcp'
   skip-cert-verify: true
-- name: '🇮🇷 IR 133'
+- name: '🇩🇪 DE 100'
   type: 'vless'
-  server: '194.60.228.97'
-  port: 443
-  uuid: '667016ca-f02e-4b5f-bfc3-3d8ed81e9bec'
-  udp: true
-  tls: true
-  network: 'tcp'
-  skip-cert-verify: true
-  servername: 'base.hosamobenl.co.uk'
-- name: '🇺🇳 UN 134'
-  type: 'vless'
-  server: '104.17.3.81'
-  port: 80
-  uuid: 'fdd8f4d0-4500-11ef-8227-1577c1651679'
-  udp: true
-  tls: false
   network: 'ws'
-  skip-cert-verify: true
-  servername: 'sg-vless-ws.bypass.id'
+  server: '45.153.245.181'
+  port: 443
+  uuid: '4e4f1f70-5e56-4a76-bb9d-db087f4690c4'
+  servername: 'jp3.yohototo.top'
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: 'unsafe'
   ws-opts:
-    path: '/'
     headers:
-      Host: 'sg-vless-ws.bypass.id'
-- name: '🇺🇸 US 135'
-  type: 'trojan'
-  server: '66.163.122.30'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 136'
-  type: 'trojan'
-  server: '66.163.122.81'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 137'
-  type: 'trojan'
-  server: '66.163.122.7'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 138'
-  type: 'trojan'
-  server: '66.163.122.113'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 139'
-  type: 'trojan'
-  server: '66.163.122.26'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 140'
-  type: 'trojan'
-  server: '66.163.122.46'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇺🇸 US 141'
-  type: 'trojan'
-  server: '170.101.101.53'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 142'
-  type: 'trojan'
-  server: '170.101.101.211'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 143'
-  type: 'trojan'
-  server: '170.101.101.112'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 144'
-  type: 'trojan'
-  server: '216.152.155.23'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.nextjobopportunityandclaimyouridealrole.com'
-- name: '🇺🇸 US 145'
-  type: 'trojan'
-  server: '170.101.101.131'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 146'
-  type: 'trojan'
-  server: '170.101.101.67'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 147'
-  type: 'trojan'
-  server: '170.101.101.19'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'learn.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 148'
-  type: 'trojan'
-  server: '170.101.101.237'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'cdn.explorecreativejobsandenhanceyourcareerportfolio.com'
-- name: '🇺🇸 US 149'
-  type: 'trojan'
-  server: '216.152.156.212'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
-- name: '🇺🇸 US 150'
-  type: 'trojan'
-  server: '216.152.156.42'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
-- name: '🇺🇸 US 151'
-  type: 'trojan'
-  server: '216.152.156.81'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
-- name: '🇺🇸 US 152'
-  type: 'trojan'
-  server: '216.152.156.65'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
-- name: '🇺🇸 US 153'
-  type: 'trojan'
-  server: '66.163.114.114'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'learn.findconnectwithemployersandbuildprofessionalnetwork.com'
-- name: '🇺🇸 US 154'
-  type: 'trojan'
-  server: '66.163.114.126'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.findconnectwithemployersandbuildprofessionalnetwork.com'
-- name: '🇺🇸 US 155'
-  type: 'trojan'
-  server: '66.163.112.76'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 156'
-  type: 'trojan'
-  server: '66.163.112.171'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'learn.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 157'
-  type: 'trojan'
-  server: '66.163.112.242'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 158'
-  type: 'trojan'
-  server: '66.163.112.13'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 159'
-  type: 'trojan'
-  server: '216.106.186.82'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 160'
-  type: 'trojan'
-  server: '216.106.186.66'
-  port: 443
-  password: '242a3d8eee5e4ed1a6bfa4141d549a25'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 161'
-  type: 'trojan'
-  server: '216.106.186.32'
-  port: 443
-  password: 'dba20dcb635e430fa4d3bfc303a149d2'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 162'
-  type: 'trojan'
-  server: '216.106.186.155'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 163'
-  type: 'trojan'
-  server: '66.163.112.147'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 164'
+      Host: 'jp3.yohototo.top'
+    path: '/tyxyws'
+- name: '🇺🇸 US 101'
   type: 'trojan'
   server: '66.163.112.142'
   port: 443
@@ -1653,15 +1016,23 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'cdn.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 165'
+- name: '🇺🇸 US 102'
   type: 'trojan'
-  server: '66.163.112.121'
+  server: '66.163.112.76'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'www.unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 166'
+  sni: 'api.unlockyourfuturefindyourperfectcareer.com'
+- name: '🇺🇸 US 103'
+  type: 'trojan'
+  server: '66.163.112.171'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'learn.unlockyourfuturefindyourperfectcareer.com'
+- name: '🇺🇸 US 104'
   type: 'trojan'
   server: '66.163.112.31'
   port: 443
@@ -1669,23 +1040,23 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'unlockyourfuturefindyourperfectcareer.com'
-- name: '🇺🇸 US 167'
+- name: '🇺🇸 US 105'
   type: 'trojan'
-  server: '216.106.186.33'
-  port: 443
-  password: 'f0eb8c92ce8946aaba856569cff1a16b'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 168'
-  type: 'trojan'
-  server: '167.88.61.52'
+  server: '66.163.112.147'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'courses.browseseniorrolesandenhanceyourcareertoday.com'
-- name: '🇺🇸 US 169'
+  sni: 'courses.unlockyourfuturefindyourperfectcareer.com'
+- name: '🇺🇸 US 106'
+  type: 'trojan'
+  server: '66.163.112.242'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'resources.unlockyourfuturefindyourperfectcareer.com'
+- name: '🇺🇸 US 107'
   type: 'trojan'
   server: '167.88.61.198'
   port: 443
@@ -1693,15 +1064,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'cdn.browseseniorrolesandenhanceyourcareertoday.com'
-- name: '🇺🇸 US 170'
-  type: 'trojan'
-  server: '167.88.61.85'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.browseseniorrolesandenhanceyourcareertoday.com'
-- name: '🇺🇸 US 171'
+- name: '🇺🇸 US 108'
   type: 'trojan'
   server: '167.88.61.193'
   port: 443
@@ -1709,7 +1072,55 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'browseseniorrolesandenhanceyourcareertoday.com'
-- name: '🇺🇸 US 172'
+- name: '🇺🇸 US 109'
+  type: 'trojan'
+  server: '167.88.61.52'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'courses.browseseniorrolesandenhanceyourcareertoday.com'
+- name: '🇺🇸 US 110'
+  type: 'trojan'
+  server: '167.88.61.20'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'api.browseseniorrolesandenhanceyourcareertoday.com'
+- name: '🇺🇸 US 111'
+  type: 'trojan'
+  server: '216.106.186.32'
+  port: 443
+  password: 'dba20dcb635e430fa4d3bfc303a149d2'
+  udp: true
+  skip-cert-verify: true
+  sni: 'blog.findlocaljobnetworkandbuildcommunityconnections.com'
+- name: '🇺🇸 US 112'
+  type: 'trojan'
+  server: '216.106.186.66'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'www.findlocaljobnetworkandbuildcommunityconnections.com'
+- name: '🇺🇸 US 113'
+  type: 'trojan'
+  server: '216.106.186.33'
+  port: 443
+  password: 'f0eb8c92ce8946aaba856569cff1a16b'
+  udp: true
+  skip-cert-verify: true
+  sni: 'resources.findlocaljobnetworkandbuildcommunityconnections.com'
+- name: '🇺🇸 US 114'
+  type: 'trojan'
+  server: '216.106.186.82'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'courses.findlocaljobnetworkandbuildcommunityconnections.com'
+- name: '🇺🇸 US 115'
   type: 'trojan'
   server: '167.88.61.175'
   port: 443
@@ -1717,222 +1128,23 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'blog.browseseniorrolesandenhanceyourcareertoday.com'
-- name: '🇺🇸 US 173'
+- name: '🇺🇸 US 116'
   type: 'trojan'
-  server: '216.152.155.50'
+  server: '66.163.114.166'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'cdn.nextjobopportunityandclaimyouridealrole.com'
-- name: '🇺🇸 US 174'
+  sni: 'blog.findconnectwithemployersandbuildprofessionalnetwork.com'
+- name: '🇺🇸 US 117'
   type: 'trojan'
-  server: '66.163.122.25'
+  server: '216.106.186.155'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'cdn.searchnationwidecareerchangehelperandguidancetoday.com'
-- name: '🇩🇪 DE 175'
-  type: 'trojan'
-  server: '193.108.119.29'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.iloverussia2026.com'
-- name: '🇺🇸 US 176'
-  type: 'trojan'
-  server: '216.152.155.176'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.nextjobopportunityandclaimyouridealrole.com'
-- name: '🇩🇪 DE 177'
-  type: 'trojan'
-  server: '193.108.119.78'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.iloverussia2026.com'
-- name: '🇩🇪 DE 178'
-  type: 'trojan'
-  server: '193.108.119.34'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'cdn.iloverussia2026.com'
-- name: '🇺🇸 US 179'
-  type: 'trojan'
-  server: '34.94.152.229'
-  port: 443
-  password: '123456'
-  udp: true
-  skip-cert-verify: true
-  sni: 'us.ctt25.uk'
-- name: '🇺🇳 UN 180'
-  type: 'trojan'
-  server: '208.69.78.158'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.yourultimateprofessionalcareerhub.com'
-- name: '🇺🇳 UN 181'
-  type: 'trojan'
-  server: '208.69.78.19'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'www.yourultimateprofessionalcareerhub.com'
-- name: '🇺🇳 UN 182'
-  type: 'trojan'
-  server: '208.69.78.208'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.yourultimateprofessionalcareerhub.com'
-- name: '🇺🇳 UN 183'
-  type: 'trojan'
-  server: '208.69.78.33'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'courses.yourultimateprofessionalcareerhub.com'
-- name: '🇺🇳 UN 184'
-  type: 'trojan'
-  server: '208.69.78.222'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'yourultimateprofessionalcareerhub.com'
-- name: '🇺🇸 US 185'
-  type: 'trojan'
-  server: '64.176.7.205'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'advanceyouremploymentskillsandcareerdevelopmenthub.com'
-- name: '🇺🇸 US 186'
-  type: 'trojan'
-  server: '216.152.156.159'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'resources.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
-- name: '🇺🇳 UN 187'
-  type: 'trojan'
-  server: '208.69.78.60'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'cdn.yourultimateprofessionalcareerhub.com'
-- name: '🇧🇷 BR 188'
-  type: 'trojan'
-  server: '216.238.104.154'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'findtemporaryworkandfreelancerprojectsonlineplatform.com'
-- name: '🇺🇸 US 189'
-  type: 'trojan'
-  server: '169.197.140.171'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
-- name: '🇺🇸 US 190'
-  type: 'trojan'
-  server: '216.106.186.46'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'cdn.findlocaljobnetworkandbuildcommunityconnections.com'
-- name: '🇺🇸 US 191'
-  type: 'trojan'
-  server: '169.197.140.169'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
-- name: '🇺🇸 US 192'
-  type: 'trojan'
-  server: '66.163.118.166'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'learn.discovergreatjobsandadvanceyourcareer.com'
-- name: '🇰🇷 KR 193'
-  type: 'trojan'
-  server: '158.247.253.243'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'connectgraduateswithjobopeningsandgrowprofessionally.com'
-- name: '🇭🇰 HK 194'
-  password: '12012'
-  port: 12012
-  server: '47.242.93.89'
-  skip-cert-verify: true
-  sni: 'ali-hk.b-gfw.cfd'
-  type: 'trojan'
-- name: '🇱🇹 LT 195'
-  type: 'trojan'
-  server: '86.38.247.109'
-  port: 2087
-  password: 'sshs8_6481354771'
-  udp: true
-  skip-cert-verify: true
-  sni: 'ul-singapore1.09vpn.com'
-- name: '🇦🇺 AU 196'
-  type: 'trojan'
-  server: '45.63.30.142'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'connectwithemployerstohireyouridealteam.com'
-- name: '🇹🇼 TW 197'
-  type: 'trojan'
-  server: '34.80.15.95'
-  port: 443
-  password: '123456'
-  udp: true
-  skip-cert-verify: true
-  sni: 'tw.ctt25.uk'
-- name: '🇺🇸 US 198'
-  type: 'trojan'
-  server: '66.163.118.244'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'api.discovergreatjobsandadvanceyourcareer.com'
-- name: '🇺🇸 US 199'
-  type: 'trojan'
-  server: '139.84.231.142'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'explorecareerpathsandunlockprofessionalsuccesstoday.com'
-- name: '🇺🇸 US 200'
+  sni: 'api.findlocaljobnetworkandbuildcommunityconnections.com'
+- name: '🇺🇸 US 118'
   type: 'trojan'
   server: '66.163.114.45'
   port: 443
@@ -1940,31 +1152,195 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'cdn.findconnectwithemployersandbuildprofessionalnetwork.com'
-- name: '🇸🇪 SE 201'
+- name: '🇺🇸 US 119'
   type: 'trojan'
-  server: '95.143.196.97'
+  server: '34.94.152.229'
   port: 443
-  password: 'FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF'
+  password: '123456'
   udp: true
   skip-cert-verify: true
-  sni: 'connect-se.mimowhat.online'
-- name: '🇺🇸 US 202'
+  sni: 'us.ctt25.uk'
+- name: '🇺🇸 US 120'
   type: 'trojan'
-  server: '169.197.140.208'
-  port: 443
-  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
-  udp: true
-  skip-cert-verify: true
-  sni: 'blog.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
-- name: '🇺🇸 US 203'
-  type: 'trojan'
-  server: '66.163.118.131'
+  server: '66.163.114.114'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'www.discovergreatjobsandadvanceyourcareer.com'
-- name: '🇺🇸 US 204'
+  sni: 'learn.findconnectwithemployersandbuildprofessionalnetwork.com'
+- name: '🇺🇸 US 121'
+  type: 'trojan'
+  server: '66.163.114.245'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'findconnectwithemployersandbuildprofessionalnetwork.com'
+- name: '🇺🇸 US 122'
+  type: 'trojan'
+  server: '66.163.114.126'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'resources.findconnectwithemployersandbuildprofessionalnetwork.com'
+- name: '🇺🇸 US 123'
+  type: 'trojan'
+  server: '66.163.122.113'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'api.searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 124'
+  type: 'trojan'
+  server: '66.163.122.7'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'www.searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 125'
+  type: 'trojan'
+  server: '66.163.122.30'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'resources.searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 126'
+  type: 'trojan'
+  server: '66.163.122.46'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 127'
+  type: 'trojan'
+  server: '170.101.101.237'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'cdn.explorecreativejobsandenhanceyourcareerportfolio.com'
+- name: '🇺🇸 US 128'
+  type: 'trojan'
+  server: '66.163.112.121'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'www.unlockyourfuturefindyourperfectcareer.com'
+- name: '🇺🇸 US 129'
+  type: 'trojan'
+  server: '66.163.122.25'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'cdn.searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 130'
+  type: 'trojan'
+  server: '170.101.101.19'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'learn.explorecreativejobsandenhanceyourcareerportfolio.com'
+- name: '🇺🇸 US 131'
+  type: 'trojan'
+  server: '216.152.156.42'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
+- name: '🇺🇸 US 132'
+  type: 'trojan'
+  server: '216.152.156.212'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
+- name: '🇺🇸 US 133'
+  type: 'trojan'
+  server: '216.152.156.65'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com'
+- name: '🇺🇸 US 134'
+  type: 'trojan'
+  server: '66.163.122.26'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'blog.searchnationwidecareerchangehelperandguidancetoday.com'
+- name: '🇺🇸 US 135'
+  type: 'trojan'
+  server: '216.152.155.176'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'blog.nextjobopportunityandclaimyouridealrole.com'
+- name: '🇺🇸 US 136'
+  type: 'trojan'
+  server: '169.197.140.214'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
+- name: '🇩🇪 DE 137'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  port: 443
+  server: '193.108.119.15'
+  sni: 'courses.iloverussia2026.com'
+  type: 'trojan'
+- name: '🇩🇪 DE 138'
+  type: 'trojan'
+  server: '193.108.119.134'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'api.iloverussia2026.com'
+- name: '🇩🇪 DE 139'
+  type: 'trojan'
+  server: '193.108.119.193'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'resources.iloverussia2026.com'
+- name: '🇩🇪 DE 140'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  port: 443
+  server: '193.108.119.96'
+  sni: 'learn.iloverussia2026.com'
+  type: 'trojan'
+- name: '🇩🇪 DE 141'
+  type: 'trojan'
+  server: '193.108.119.29'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'blog.iloverussia2026.com'
+- name: '🇩🇪 DE 142'
+  type: 'trojan'
+  server: '193.108.119.34'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  udp: true
+  skip-cert-verify: true
+  sni: 'cdn.iloverussia2026.com'
+- name: '🇺🇸 US 143'
   type: 'trojan'
   server: '169.197.140.224'
   port: 443
@@ -1972,478 +1348,533 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 'resources.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
-- name: '🇺🇸 US 205'
+- name: '🇰🇷 KR 144'
   type: 'trojan'
-  server: '216.152.147.201'
+  server: '158.247.253.243'
   port: 443
   password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
   skip-cert-verify: true
-  sni: 'resources.connectingpeoplewithgreatjobs.com'
-- name: '🇺🇸 US 206'
-  type: 'ss'
-  server: '135.148.42.13'
-  port: 8388
-  cipher: 'aes-256-gcm'
-  password: 'itzvpn@321'
-  udp: true
-- name: '🇺🇸 US 207'
-  type: 'ss'
-  server: '15.204.247.244'
-  port: 4444
-  cipher: 'aes-256-gcm'
-  password: 'pKEW8JPByTVTLtM'
-  udp: true
-- name: '🇺🇸 US 208'
-  type: 'ss'
-  server: '15.204.246.108'
-  port: 8881
-  cipher: 'aes-256-gcm'
-  password: 'kDWvXYZoTBcGkC4'
-  udp: true
-- name: '🇨🇿 CZ 209'
-  type: 'ss'
-  server: '193.151.163.18'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 210'
-  type: 'ss'
-  server: '138.197.89.234'
-  port: 28960
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'DZRy4Q3QH0jUGfKFl2jDCZ'
-  udp: true
-- name: '🇺🇸 US 211'
-  type: 'ss'
-  server: '98.98.79.198'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇬🇧 GB 212'
-  type: 'ss'
-  server: '185.230.230.18'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 213'
-  type: 'ss'
-  server: '149.40.57.133'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 214'
-  type: 'ss'
-  server: '149.40.57.134'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇨🇦 CA 215'
-  type: 'ss'
-  server: '198.100.154.175'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: '3h3hb2gptqz6suyt'
-  udp: true
-- name: '🇨🇦 CA 216'
-  type: 'ss'
-  server: '15.235.57.6'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'kxhnt5jtykd328cg'
-  udp: true
-- name: '🇨🇦 CA 217'
-  type: 'ss'
-  server: '51.222.12.127'
-  port: 445
-  cipher: 'aes-256-gcm'
-  password: 'zDNVedRFPQexG9v'
-  udp: true
-- name: '🇺🇸 US 218'
-  type: 'ss'
-  server: '3.144.14.254'
+  sni: 'connectgraduateswithjobopeningsandgrowprofessionally.com'
+- name: '🇺🇸 US 145'
+  type: 'trojan'
+  server: '64.176.7.205'
   port: 443
-  cipher: 'aes-256-cfb'
-  password: 'amazonskr05'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇸 US 219'
-  type: 'ss'
-  server: '67.220.73.178'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 220'
-  type: 'ss'
-  server: '138.199.42.68'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 221'
-  type: 'ss'
-  server: '15.204.247.206'
-  port: 4444
-  cipher: 'aes-256-gcm'
-  password: 'pKEW8JPByTVTLtM'
-  udp: true
-- name: '🇺🇸 US 222'
-  type: 'ss'
-  server: '162.251.62.31'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 223'
-  type: 'ss'
-  server: '15.204.247.124'
-  port: 2375
-  cipher: 'aes-256-gcm'
-  password: 'faBAoD54k87UJG7'
-  udp: true
-- name: '🇺🇸 US 224'
-  type: 'ss'
-  server: '169.197.140.247'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 225'
-  type: 'ss'
-  server: '15.204.233.41'
-  port: 8882
-  cipher: 'aes-256-gcm'
-  password: 'kDWvXYZoTBcGkC4'
-  udp: true
-- name: '🇺🇸 US 226'
-  type: 'ss'
-  server: '38.91.107.57'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 227'
-  type: 'ss'
-  server: '38.91.107.19'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 228'
-  type: 'ss'
-  server: '193.151.160.9'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇨🇦 CA 229'
-  type: 'ss'
-  server: '51.222.141.125'
-  port: 445
-  cipher: 'aes-256-gcm'
-  password: 'zDNVedRFPQexG9v'
-  udp: true
-- name: '🇺🇸 US 230'
-  type: 'ss'
-  server: '15.204.246.111'
-  port: 5498
-  cipher: 'aes-256-gcm'
-  password: 'lGqs95QkFHo2NV'
-  udp: true
-- name: '🇪🇸 ES 231'
-  type: 'ss'
-  server: '185.215.132.18'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 232'
-  type: 'ss'
-  server: '167.88.62.203'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 233'
-  type: 'ss'
-  server: '38.22.17.139'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 234'
-  type: 'ss'
-  server: '38.121.43.225'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 235'
-  type: 'ss'
-  server: '38.22.17.219'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 236'
-  type: 'ss'
-  server: '38.121.43.231'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇪🇸 ES 237'
-  type: 'ss'
-  server: '185.215.132.9'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 238'
-  type: 'ss'
-  server: '156.146.38.168'
+  skip-cert-verify: true
+  sni: 'advanceyouremploymentskillsandcareerdevelopmenthub.com'
+- name: '🇺🇸 US 146'
+  type: 'trojan'
+  server: '169.197.140.169'
   port: 443
-  cipher: 'aes-128-gcm'
-  password: 'shadowsocks'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇨🇦 CA 239'
-  type: 'ss'
-  server: '138.197.141.58'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇨🇦 CA 240'
-  type: 'ss'
-  server: '158.51.121.221'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 241'
-  type: 'ss'
-  server: '156.146.38.167'
+  skip-cert-verify: true
+  sni: 'api.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
+- name: '🇺🇸 US 147'
+  type: 'trojan'
+  server: '169.197.140.245'
   port: 443
-  cipher: 'aes-128-gcm'
-  password: 'shadowsocks'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇸 US 242'
-  type: 'ss'
-  server: '156.146.38.170'
+  skip-cert-verify: true
+  sni: 'www.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
+- name: '🇦🇺 AU 148'
+  type: 'trojan'
+  server: '45.63.30.142'
   port: 443
-  cipher: 'aes-128-gcm'
-  password: 'shadowsocks'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇸 US 243'
-  type: 'ss'
-  server: '156.146.38.169'
+  skip-cert-verify: true
+  sni: 'connectwithemployerstohireyouridealteam.com'
+- name: '🇧🇷 BR 149'
+  type: 'trojan'
+  server: '216.238.104.154'
   port: 443
-  cipher: 'aes-128-gcm'
-  password: 'shadowsocks'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇸 US 244'
-  type: 'ss'
-  server: '15.204.246.132'
-  port: 7307
-  cipher: 'aes-256-gcm'
-  password: 'FoOiGlkAA9yPEGP'
-  udp: true
-- name: '🇨🇦 CA 245'
-  type: 'ss'
-  server: '137.184.174.93'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 246'
-  type: 'ss'
-  server: '104.238.140.45'
-  port: 11051
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'JUXsy78dSs6ROkasikmoaL'
-  udp: true
-- name: '🇺🇸 US 247'
-  type: 'ss'
-  server: '38.143.66.146'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇨🇦 CA 248'
-  type: 'ss'
-  server: '51.222.136.236'
-  port: 8882
-  cipher: 'aes-256-gcm'
-  password: 'kDWvXYZoTBcGkC4'
-  udp: true
-- name: '🇺🇸 US 249'
-  type: 'ss'
-  server: '198.98.53.130'
+  skip-cert-verify: true
+  sni: 'findtemporaryworkandfreelancerprojectsonlineplatform.com'
+- name: '🇺🇸 US 150'
+  type: 'trojan'
+  server: '169.197.140.208'
   port: 443
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'eDfN7SODQceIOmIAbtJJtK'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇸 US 250'
-  type: 'ss'
-  server: '137.184.89.151'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  skip-cert-verify: true
+  sni: 'blog.discoverfreshgraduatejobsstartyourprofessionaljourney.com'
+- name: '🇺🇸 US 151'
+  type: 'trojan'
+  server: '66.163.118.62'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇺🇳 UN 251'
-  type: 'ss'
-  server: '23.150.152.38'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  skip-cert-verify: true
+  sni: 'courses.discovergreatjobsandadvanceyourcareer.com'
+- name: '🇺🇸 US 152'
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
+  port: 443
+  server: '216.152.147.79'
+  skip-cert-verify: false
+  sni: 'blog.connectingpeoplewithgreatjobs.com'
+  type: 'trojan'
+- name: '🇺🇸 US 153'
+  type: 'trojan'
+  server: '139.84.231.142'
+  port: 443
+  password: '0ab6c98dae3b48e8b9c4a776b6c9c19a'
   udp: true
-- name: '🇬🇧 GB 252'
-  type: 'ss'
-  server: '198.244.201.129'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  skip-cert-verify: true
+  sni: 'explorecareerpathsandunlockprofessionalsuccesstoday.com'
+- ip: '172.16.0.2/32'
+  ipv6: '2606:4700:110:8af2:447b:a9b9:b420:ebff/128'
+  mtu: 1420
+  name: '🇺🇸 US 154'
+  port: 1014
+  private-key: 'eGpcqvonUvA7/m1lcaERbf2opGESbp375ieSliLc3WU='
+  public-key: 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+  server: '8.6.112.30'
+  type: 'wireguard'
   udp: true
-- name: '🇬🇧 GB 253'
-  type: 'ss'
-  server: '198.244.202.215'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  region: '泰国'
+- ip: '172.16.0.2/32'
+  ipv6: '2606:4700:110:8e4e:939b:b987:39aa:c46c/128'
+  mtu: 1280
+  name: '🇺🇸 US 155'
+  port: 955
+  private-key: 'OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo='
+  public-key: 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+  reserved:
+  - 0
+  - 0
+  - 0
+  server: '8.6.112.100'
+  type: 'wireguard'
   udp: true
-- name: '🇺🇸 US 254'
+  region: '🇨🇳CN'
+- ip: '172.16.0.2/32'
+  ipv6: '2606:4700:110:8e4e:939b:b987:39aa:c46c/128'
+  mtu: 1280
+  name: '🇺🇸 US 156'
+  port: 1180
+  private-key: 'OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo='
+  public-key: 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+  reserved:
+  - 0
+  - 0
+  - 0
+  server: '8.6.112.246'
+  type: 'wireguard'
+  udp: true
+- ip: '172.16.0.2/32'
+  mtu: 1380
+  name: '🇺🇳 UN 157'
+  port: 3581
+  presharedkey: ''
+  private-key: '2FaqTm+aXdVK00dvbeuMW/t741BWYu9lNOOVtMI4R3Y='
+  public-key: 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+  reserved:
+  - 80
+  - 103
+  - 64
+  server: '162.159.192.11'
+  type: 'wireguard'
+  udp: true
+  region: '美国'
+- ip: '172.16.0.2/32'
+  keepalive: '5'
+  mtu: 1280
+  name: '🇳🇱 NL 158'
+  persistent-keepalive: '5'
+  port: 987
+  presharedkey: ''
+  private-key: 'GJTd46xB/fjfi6vyJmpxUiNrNdjZTW0Qhi7b0PkER1Y='
+  public-key: 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+  reserved:
+  - 175
+  - 93
+  - 41
+  server: '188.114.97.6'
+  type: 'wireguard'
+  udp: true
+  wnoise: 'quic'
+  wnoisecount: '15'
+  wnoisedelay: '1-2'
+  wpayloadsize: '5-10'
+  region: '🇨🇳CN'
+- name: '🇺🇸 US 159'
   type: 'ss'
   server: '79.110.54.250'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇺🇸 US 255'
-  type: 'ss'
-  server: '107.151.182.197'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 256'
+- name: '🇺🇸 US 160'
   type: 'ss'
   server: '107.151.182.253'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇬🇧 GB 257'
+- name: '🇺🇸 US 161'
   type: 'ss'
-  server: '18.132.198.49'
-  port: 443
-  cipher: 'aes-256-cfb'
-  password: 'amazonskr05'
+  server: '107.151.182.197'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇬🇧 GB 258'
+- name: '🇺🇸 US 162'
   type: 'ss'
-  server: '185.176.206.9'
+  server: '104.238.140.45'
+  port: 11051
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'JUXsy78dSs6ROkasikmoaL'
+  udp: true
+- name: '🇺🇸 US 163'
+  type: 'ss'
+  server: '156.146.38.169'
+  port: 443
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
+  udp: true
+- name: '🇺🇸 US 164'
+  type: 'ss'
+  server: '156.146.38.170'
+  port: 443
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
+  udp: true
+- name: '🇺🇸 US 165'
+  type: 'ss'
+  server: '156.146.38.168'
+  port: 443
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
+  udp: true
+- name: '🇺🇸 US 166'
+  type: 'ss'
+  server: '107.155.57.11'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 167'
+  type: 'ss'
+  server: '23.251.121.242'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 168'
+  type: 'ss'
+  server: '107.155.57.51'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 169'
+  type: 'ss'
+  server: '38.143.66.146'
   port: 19999
   cipher: 'aes-256-gcm'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
-- name: '🇳🇱 NL 259'
+- name: '🇺🇸 US 170'
   type: 'ss'
-  server: '109.201.152.181'
+  server: '167.88.62.56'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇺🇸 US 171'
+  type: 'ss'
+  server: '149.40.57.135'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇺🇸 US 172'
+  type: 'ss'
+  server: '79.110.53.169'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 173'
+  type: 'ss'
+  server: '149.40.57.134'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇬🇧 GB 174'
+  type: 'ss'
+  server: '149.22.95.183'
   port: 443
-  cipher: 'aes-128-cfb'
+  cipher: 'aes-128-gcm'
   password: 'shadowsocks'
   udp: true
-- name: '🇪🇸 ES 260'
-  type: 'ss'
-  server: '5.188.181.201'
-  port: 9005
-  cipher: 'aes-256-cfb'
-  password: 'ZET59LF6DvCC8KVt'
-  udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇮🇷 IR 261'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '151.241.19.29'
+  name: '🇺🇸 US 175'
+  password: 'BWyPPTusFKhGgzKh'
+  port: 8388
+  server: '64.177.90.30'
   type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇮🇷 IR 262'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '151.241.19.36'
+- name: '🇺🇸 US 176'
   type: 'ss'
-- name: '🇫🇷 FR 263'
-  type: 'ss'
-  server: '35.181.166.131'
+  server: '37.19.198.244'
   port: 443
-  cipher: 'aes-256-cfb'
-  password: 'amazonskr05'
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
   udp: true
-- name: '🇨🇦 CA 264'
+- name: '🇺🇸 US 177'
   type: 'ss'
-  server: '23.230.52.119'
-  port: 42878
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu'
-  udp: true
-- name: '🇫🇷 FR 265'
-  type: 'ss'
-  server: '13.38.60.238'
-  port: 443
-  cipher: 'aes-256-cfb'
-  password: 'amazonskr05'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇬🇧 GB 266'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  server: '38.91.100.39'
   port: 19999
-  server: '142.202.51.22'
-  type: 'ss'
-- name: '🇺🇸 US 267'
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇺🇸 US 178'
   type: 'ss'
   server: '138.199.43.159'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
+- name: '🇺🇸 US 179'
+  type: 'ss'
+  server: '15.204.247.206'
+  port: 4444
+  cipher: 'aes-256-gcm'
+  password: 'pKEW8JPByTVTLtM'
+  udp: true
+- name: '🇺🇸 US 180'
+  type: 'ss'
+  server: '198.98.53.130'
+  port: 443
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'eDfN7SODQceIOmIAbtJJtK'
+  udp: true
+- name: '🇺🇸 US 181'
+  type: 'ss'
+  server: '138.199.42.68'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇨🇦 CA 182'
+  type: 'ss'
+  server: '137.184.174.93'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇨🇦 CA 183'
+  type: 'ss'
+  server: '51.222.136.236'
+  port: 8882
+  cipher: 'aes-256-gcm'
+  password: 'kDWvXYZoTBcGkC4'
+  udp: true
+- name: '🇨🇦 CA 184'
+  type: 'ss'
+  server: '138.197.141.58'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇨🇦 CA 185'
+  type: 'ss'
+  server: '51.222.141.125'
+  port: 445
+  cipher: 'aes-256-gcm'
+  password: 'zDNVedRFPQexG9v'
+  udp: true
+- name: '🇺🇸 US 186'
+  type: 'ss'
+  server: '98.98.79.198'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 187'
+  type: 'ss'
+  server: '135.148.42.13'
+  port: 8388
+  cipher: 'aes-256-gcm'
+  password: 'itzvpn@321'
+  udp: true
+- name: '🇺🇸 US 188'
+  type: 'ss'
+  server: '15.204.246.111'
+  port: 5498
+  cipher: 'aes-256-gcm'
+  password: 'lGqs95QkFHo2NV'
+  udp: true
+- name: '🇺🇸 US 189'
+  type: 'ss'
+  server: '15.204.247.244'
+  port: 4444
+  cipher: 'aes-256-gcm'
+  password: 'pKEW8JPByTVTLtM'
+  udp: true
+- name: '🇺🇸 US 190'
+  type: 'ss'
+  server: '193.151.160.18'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇺🇸 US 191'
+  type: 'ss'
+  server: '15.204.233.41'
+  port: 8882
+  cipher: 'aes-256-gcm'
+  password: 'kDWvXYZoTBcGkC4'
+  udp: true
+- name: '🇺🇸 US 192'
+  type: 'ss'
+  server: '193.151.160.9'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- cipher: 'aes-128-gcm'
+  name: '🇬🇧 GB 193'
+  password: 'shadowsocks'
+  port: 443
+  server: '149.22.87.204'
+  type: 'ss'
+- cipher: 'aes-128-gcm'
+  name: '🇬🇧 GB 194'
+  password: 'shadowsocks'
+  port: 443
+  server: '149.22.87.240'
+  type: 'ss'
+- cipher: 'aes-128-gcm'
+  name: '🇬🇧 GB 195'
+  password: 'shadowsocks'
+  port: 443
+  server: '149.22.87.241'
+  type: 'ss'
+- name: '🇺🇸 US 196'
+  type: 'ss'
+  server: '15.204.246.108'
+  port: 8881
+  cipher: 'aes-256-gcm'
+  password: 'kDWvXYZoTBcGkC4'
+  udp: true
+- name: '🇨🇦 CA 197'
+  type: 'ss'
+  server: '51.222.12.127'
+  port: 445
+  cipher: 'aes-256-gcm'
+  password: 'zDNVedRFPQexG9v'
+  udp: true
+- name: '🇺🇸 US 198'
+  type: 'ss'
+  server: '15.204.246.132'
+  port: 7307
+  cipher: 'aes-256-gcm'
+  password: 'FoOiGlkAA9yPEGP'
+  udp: true
+- name: '🇪🇸 ES 199'
+  type: 'ss'
+  server: '5.188.181.201'
+  port: 9031
+  cipher: 'aes-256-cfb'
+  password: 'BwcAUZk8hUFAkDGN'
+  udp: true
+- name: '🇯🇵 JP 200'
+  type: 'ss'
+  server: 'jpa.123069.xyz'
+  port: 53758
+  cipher: 'aes-128-gcm'
+  password: 'Bwlqh7GcFB'
+  udp: true
+- name: '🇺🇸 US 201'
+  type: 'ss'
+  server: '38.121.43.225'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇩🇪 DE 268'
+  name: '🇮🇷 IR 202'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '193.108.119.3'
+  server: '151.241.19.29'
   type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 269'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+- name: '🇺🇸 US 203'
+  type: 'ss'
+  server: '38.121.43.231'
   port: 19999
-  server: '23.157.88.43'
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇺🇸 US 204'
   type: 'ss'
-- name: '🇬🇧 GB 270'
+  server: '167.88.63.99'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- cipher: 'aes-128-gcm'
+  name: '🇩🇰 DK 205'
+  password: 'shadowsocks'
+  port: 443
+  server: '158.173.24.73'
+  type: 'ss'
+- name: '🇳🇱 NL 206'
+  type: 'ss'
+  server: '109.201.152.181'
+  port: 443
+  cipher: 'aes-128-cfb'
+  password: 'shadowsocks'
+  udp: true
+- name: '🇬🇧 GB 207'
   type: 'ss'
   server: '185.176.204.18'
   port: 19999
   cipher: 'aes-256-gcm'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
+- name: '🇬🇧 GB 208'
+  type: 'ss'
+  server: '141.98.101.181'
+  port: 443
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
+  udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇩🇪 DE 271'
+  name: '🇩🇪 DE 209'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
   server: '193.108.119.2'
   type: 'ss'
-- name: '🇬🇧 GB 272'
+- name: '🇧🇬 BG 210'
   type: 'ss'
-  server: '146.70.46.199'
+  server: '185.226.172.8'
+  port: 8008
+  cipher: 'aes-256-gcm'
+  password: 'XKFKl2rULjIp74'
+  udp: true
+- name: '🇺🇸 US 211'
+  type: 'ss'
+  server: '38.22.17.139'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇩🇪 DE 212'
+  type: 'ss'
+  server: '146.70.20.147'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇺🇸 US 273'
+- name: '🇺🇸 US 213'
   type: 'ss'
   server: '216.172.144.199'
   port: 40643
@@ -2451,139 +1882,130 @@ proxies:
   password: 'Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇫🇷 FR 274'
+  name: '🇬🇧 GB 214'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '57.129.83.85'
+  server: '198.244.201.129'
   type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇨🇦 CA 275'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+- name: '🇬🇧 GB 215'
+  type: 'ss'
+  server: '198.244.202.215'
   port: 19999
-  server: '167.17.64.22'
-  type: 'ss'
-- name: '🇧🇬 BG 276'
-  type: 'ss'
-  server: '185.226.172.8'
-  port: 8008
   cipher: 'aes-256-gcm'
-  password: 'XKFKl2rULjIp74'
-  udp: true
-- name: '🇬🇧 GB 277'
-  type: 'ss'
-  server: '82.38.31.48'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇩🇪 DE 278'
-  type: 'ss'
-  server: '178.162.254.38'
-  port: 8388
-  cipher: 'aes-256-gcm'
-  password: 'itzvpn@321'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇫🇷 FR 279'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '172.99.189.142'
+  udp: true
+- name: '🇳🇴 NO 216'
   type: 'ss'
-- name: '🇬🇧 GB 280'
+  server: '84.247.155.196'
+  port: 80
+  cipher: 'aes-256-gcm'
+  password: '3eOFeNssde7PYYMv'
+  udp: true
+- name: '🇬🇧 GB 217'
   type: 'ss'
   server: '82.38.31.162'
   port: 443
   cipher: 'chacha20-ietf-poly1305'
   password: 'oZIoA69Q8yhcQV8ka3Pa3A'
   udp: true
-- name: '🇳🇱 NL 281'
-  type: 'ss'
-  server: '193.29.139.212'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'QCXDxuDlTTMD7jtgHUjIoj'
-  udp: true
-- name: '🇬🇧 GB 282'
-  type: 'ss'
-  server: '82.38.31.35'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇨🇦 CA 283'
+  name: '🇩🇪 DE 218'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '167.17.64.27'
+  server: '193.108.119.3'
   type: 'ss'
-- name: '🇬🇧 GB 284'
+- name: '🇬🇧 GB 219'
   type: 'ss'
-  server: '82.38.31.203'
+  server: '82.38.31.182'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 285'
+- name: '🇬🇧 GB 220'
+  type: 'ss'
+  server: '82.38.31.49'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 221'
+  type: 'ss'
+  server: '141.98.101.178'
+  port: 443
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
+  udp: true
+- name: '🇬🇧 GB 222'
+  type: 'ss'
+  server: '82.38.31.193'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 223'
+  type: 'ss'
+  server: '82.38.31.214'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 224'
+  type: 'ss'
+  server: '82.38.31.61'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 225'
   type: 'ss'
   server: '82.38.31.181'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇳🇱 NL 286'
+- name: '🇬🇧 GB 226'
+  type: 'ss'
+  server: '82.38.31.204'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 227'
+  type: 'ss'
+  server: '82.38.31.195'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇨🇭 CH 228'
+  type: 'ss'
+  server: '178.83.185.156'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇳🇱 NL 229'
   type: 'ss'
   server: '193.29.139.198'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇺🇳 UN 287'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '23.162.152.22'
+- name: '🇬🇧 GB 230'
   type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 288'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '38.114.120.221'
-  type: 'ss'
-- name: '🇬🇧 GB 289'
-  type: 'ss'
-  server: '82.38.31.205'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 290'
-  type: 'ss'
-  server: '82.38.31.220'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 291'
-  type: 'ss'
-  server: '82.38.31.176'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 292'
-  type: 'ss'
-  server: '82.38.31.165'
+  server: '141.98.101.179'
   port: 443
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  cipher: 'aes-128-gcm'
+  password: 'shadowsocks'
   udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇨🇦 CA 293'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '167.17.64.175'
+- name: '🇬🇧 GB 231'
   type: 'ss'
-- name: '🇳🇱 NL 294'
+  server: '82.38.31.203'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇳🇱 NL 232'
   type: 'ss'
   server: '193.29.139.132'
   port: 8080
@@ -2591,468 +2013,390 @@ proxies:
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇨🇦 CA 295'
-  password: 'Y6R9pAtvxxzmGC'
-  port: 5601
-  server: '51.222.155.113'
-  type: 'ss'
-- name: '🇬🇧 GB 296'
-  type: 'ss'
-  server: '82.38.31.201'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 297'
+  name: '🇺🇸 US 233'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '38.109.228.110'
+  server: '23.157.88.43'
   type: 'ss'
-- name: '🇳🇱 NL 298'
+- cipher: 'aes-256-gcm'
+  name: '🇬🇧 GB 234'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '142.202.51.22'
   type: 'ss'
-  server: '193.29.139.147'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇳🇱 NL 299'
-  type: 'ss'
-  server: '193.29.139.168'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'QCXDxuDlTTMD7jtgHUjIoj'
-  udp: true
-- name: '🇬🇧 GB 300'
-  type: 'ss'
-  server: '82.38.31.39'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 301'
-  type: 'ss'
-  server: '82.38.31.202'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 302'
-  type: 'ss'
-  server: '82.38.31.217'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇫🇷 FR 303'
-  type: 'ss'
-  server: '51.77.144.182'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'x19py0a8ipglqkbe'
-  udp: true
-- name: '🇬🇧 GB 304'
-  type: 'ss'
-  server: '82.38.31.47'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 305'
-  type: 'ss'
-  server: '82.38.31.191'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 306'
-  type: 'ss'
-  server: '82.38.31.61'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 307'
-  type: 'ss'
-  server: '82.38.31.66'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 308'
-  type: 'ss'
-  server: '82.38.31.180'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 309'
-  type: 'ss'
-  server: '82.38.31.49'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 310'
+- name: '🇬🇧 GB 235'
   type: 'ss'
   server: '82.38.31.157'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'oZIoA69Q8yhcQV8ka3Pa3A'
   udp: true
-- name: '🇬🇧 GB 311'
-  type: 'ss'
-  network: 'tcp'
-  server: '82.38.31.212'
-  port: 8080
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  skip-cert-verify: false
-  udp: false
-  cipher: 'chacha20-ietf-poly1305'
-- name: '🇬🇧 GB 312'
-  type: 'ss'
-  server: '82.38.31.194'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 313'
-  type: 'ss'
-  server: '82.38.31.200'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 314'
-  type: 'ss'
-  server: '82.38.31.46'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 315'
-  type: 'ss'
-  server: '82.38.31.204'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 316'
-  type: 'ss'
-  server: '82.38.31.156'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 317'
-  type: 'ss'
-  server: '82.38.31.189'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 318'
-  type: 'ss'
-  server: '82.38.31.207'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇳🇱 NL 319'
-  type: 'ss'
-  server: '193.29.139.235'
-  port: 443
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
-  udp: true
-- name: '🇬🇧 GB 320'
-  type: 'ss'
-  server: '82.38.31.192'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- cipher: 'chacha20-ietf-poly1305'
-  name: '🇫🇷 FR 321'
-  password: '29irqk0paakcx19v'
-  port: 8080
-  server: '51.83.61.102'
-  type: 'ss'
-- name: '🇳🇱 NL 322'
-  type: 'ss'
-  server: '193.29.139.223'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇩🇪 DE 323'
-  type: 'ss'
-  server: '213.202.208.199'
-  port: 5000
-  cipher: 'aes-256-gcm'
-  password: 'Y6R9pAtvxxzmGC'
-  udp: true
-- name: '🇬🇧 GB 324'
-  type: 'ss'
-  server: '82.38.31.213'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 325'
-  type: 'ss'
-  server: '82.38.31.179'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 326'
-  type: 'ss'
-  server: '82.38.31.195'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 327'
-  type: 'ss'
-  server: '82.38.31.186'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 328'
-  type: 'ss'
-  server: '82.38.31.216'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 329'
+- name: '🇬🇧 GB 236'
   type: 'ss'
   server: '82.38.31.62'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'oZIoA69Q8yhcQV8ka3Pa3A'
   udp: true
-- name: '🇬🇧 GB 330'
-  type: 'ss'
-  server: '82.38.31.183'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 331'
-  type: 'ss'
-  server: '82.38.31.218'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 332'
-  type: 'ss'
-  server: '82.38.31.187'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇬🇧 GB 333'
+- name: '🇬🇧 GB 237'
   type: 'ss'
   server: '82.38.31.185'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇨🇭 CH 334'
+- name: '🇬🇧 GB 238'
   type: 'ss'
-  server: '178.83.185.156'
+  server: '82.38.31.35'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'oZIoA69Q8yhcQV8ka3Pa3A'
   udp: true
-- name: '🇬🇧 GB 335'
+- name: '🇬🇧 GB 239'
   type: 'ss'
-  server: '82.38.31.219'
+  server: '82.38.31.207'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 336'
+- cipher: 'aes-256-gcm'
+  name: '🇮🇷 IR 240'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '151.241.19.36'
   type: 'ss'
-  server: '82.38.31.184'
+- name: '🇬🇧 GB 241'
+  type: 'ss'
+  server: '82.38.31.180'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 337'
+- name: '🇬🇧 GB 242'
   type: 'ss'
-  server: '82.38.31.198'
+  server: '82.38.31.48'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇳🇱 NL 243'
+  type: 'ss'
+  server: '193.29.139.235'
+  port: 443
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇳🇱 NL 244'
+  type: 'ss'
+  server: '193.29.139.147'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 338'
+- name: '🇬🇧 GB 245'
   type: 'ss'
-  server: '82.38.31.208'
+  server: '82.38.31.46'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 246'
+  type: 'ss'
+  server: '82.38.31.156'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇳🇱 NL 247'
+  type: 'ss'
+  server: '193.29.139.168'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'QCXDxuDlTTMD7jtgHUjIoj'
+  udp: true
+- name: '🇬🇧 GB 248'
+  type: 'ss'
+  server: '82.38.31.186'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 339'
+- name: '🇬🇧 GB 249'
+  type: 'ss'
+  server: '82.38.31.217'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 250'
+  type: 'ss'
+  server: '82.38.31.47'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 251'
+  type: 'ss'
+  server: '136.148.77.250'
+  port: 8388
+  cipher: 'aes-256-gcm'
+  password: 'itzvpn@321'
+  udp: true
+- name: '🇬🇧 GB 252'
   type: 'ss'
   server: '82.38.31.215'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 340'
+- name: '🇬🇧 GB 253'
   type: 'ss'
-  server: '82.38.31.214'
+  server: '82.38.31.165'
+  port: 443
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 254'
+  type: 'ss'
+  server: '82.38.31.179'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇬🇧 GB 341'
+- name: '🇬🇧 GB 255'
   type: 'ss'
-  server: '82.38.31.210'
+  server: '82.38.31.66'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 256'
+  type: 'ss'
+  server: '82.38.31.187'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇵🇦 PA 342'
+  name: '🇬🇧 GB 257'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '186.190.215.251'
+  server: '185.176.206.9'
   type: 'ss'
-- name: '🇬🇧 GB 343'
+- name: '🇬🇧 GB 258'
   type: 'ss'
-  server: '82.38.31.199'
+  server: '82.38.31.220'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇺🇳 UN 344'
+- name: '🇬🇧 GB 259'
+  type: 'ss'
+  server: '82.38.31.184'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 260'
+  type: 'ss'
+  server: '82.38.31.183'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇺🇸 US 261'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '38.114.120.221'
+  type: 'ss'
+- name: '🇨🇦 CA 262'
+  type: 'ss'
+  server: '23.230.52.119'
+  port: 42878
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu'
+  udp: true
+- name: '🇫🇷 FR 263'
+  type: 'ss'
+  server: '57.129.76.233'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇬🇧 GB 264'
+  type: 'ss'
+  server: '82.38.31.39'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'oZIoA69Q8yhcQV8ka3Pa3A'
+  udp: true
+- name: '🇬🇧 GB 265'
+  type: 'ss'
+  server: '82.38.31.218'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇳🇱 NL 266'
+  type: 'ss'
+  server: '193.29.139.223'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇨🇦 CA 267'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '167.17.64.22'
+  type: 'ss'
+- name: '🇬🇧 GB 268'
+  type: 'ss'
+  server: '82.38.31.216'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇫🇷 FR 269'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '57.129.83.85'
+  type: 'ss'
+- name: '🇬🇧 GB 270'
+  type: 'ss'
+  server: '82.38.31.213'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 271'
+  type: 'ss'
+  server: '82.38.31.192'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 272'
+  type: 'ss'
+  server: '82.38.31.194'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇺🇸 US 273'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '185.164.175.81'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇸🇪 SE 274'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '138.199.55.243'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇨🇦 CA 275'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '167.17.64.175'
+  type: 'ss'
+- name: '🇺🇸 US 276'
+  type: 'ss'
+  server: '152.53.1.57'
+  port: 8388
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'AdawffFMHymlasRb0VOP3HFf7sTG5sJx'
+  udp: true
+- name: '🇬🇧 GB 277'
+  type: 'ss'
+  server: '82.38.31.191'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 278'
+  type: 'ss'
+  server: '146.70.61.37'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇵🇱 PL 279'
+  type: 'ss'
+  server: '217.30.10.44'
+  port: 9052
+  cipher: 'aes-256-cfb'
+  password: 'jt2ekBNc9HuVtm2a'
+  udp: true
+- name: '🇵🇱 PL 280'
+  type: 'ss'
+  server: '217.30.10.70'
+  port: 9037
+  cipher: 'aes-256-cfb'
+  password: 'TN2YqghxeFDKZfLU'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇨🇿 CZ 281'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '79.127.139.242'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇨🇦 CA 282'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '167.17.64.27'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇵🇦 PA 283'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '186.190.215.251'
+  type: 'ss'
+- name: '🇺🇳 UN 284'
   type: 'ss'
   server: '23.166.88.127'
   port: 19999
   cipher: 'aes-256-gcm'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
-- name: '🇬🇧 GB 345'
-  type: 'ss'
-  server: '146.70.61.18'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 346'
-  type: 'ss'
-  server: '79.110.53.169'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇵🇱 PL 347'
-  type: 'ss'
-  server: '217.30.10.70'
-  port: 9010
-  cipher: 'aes-256-cfb'
-  password: 'f63gg8EruDnUrmz4'
-  udp: true
-- name: '🇵🇱 PL 348'
-  type: 'ss'
-  server: '217.30.10.44'
-  port: 9062
-  cipher: 'aes-256-cfb'
-  password: 'tkhHVxxfM2QErBWe'
-  udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 349'
+  name: '🇫🇷 FR 285'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '202.50.253.63'
-  skip-cert-verify: false
-  tls: false
+  server: '172.99.189.142'
   type: 'ss'
+- name: '🇧🇬 BG 286'
+  type: 'ss'
+  server: '213.183.63.60'
+  port: 9029
+  cipher: 'aes-256-cfb'
+  password: 'dU3DSNS8wYPXzEKw'
   udp: true
-  x-toolall-mihomo: true
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 350'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.90'
-  skip-cert-verify: false
-  tls: false
+- name: '🇬🇧 GB 287'
   type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- name: '🇬🇧 GB 351'
-  type: 'ss'
-  server: '82.38.31.211'
+  server: '82.38.31.212'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 352'
+  name: '🇳🇿 NZ 288'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '202.50.253.45'
+  server: '202.50.253.18'
   type: 'ss'
-- name: '🇺🇸 US 353'
+- name: '🇬🇧 GB 289'
   type: 'ss'
-  server: '107.155.57.11'
+  server: '82.38.31.206'
   port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇳🇿 NZ 354'
-  type: 'ss'
-  server: '202.50.253.72'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 355'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.27'
-  skip-cert-verify: false
-  tls: false
-  type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 356'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.81'
-  type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 357'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.36'
-  type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 358'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.99'
-  type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- name: '🇺🇸 US 359'
-  type: 'ss'
-  server: '23.251.121.242'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 360'
+- name: '🇺🇸 US 290'
   type: 'ss'
   server: '107.161.160.28'
   port: 8388
@@ -3060,420 +2404,508 @@ proxies:
   password: 'itzvpn@321'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇨🇿 CZ 361'
+  name: '🇬🇧 GB 291'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   port: 19999
-  server: '79.127.139.242'
-  type: 'ss'
-- cipher: 'chacha20-ietf-poly1305'
-  name: '🇫🇷 FR 362'
-  password: 'mx81glqbtlwuhcjo'
-  port: 8080
-  server: '57.131.4.13'
-  type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 363'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.18'
-  type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- cipher: 'chacha20-ietf-poly1305'
-  name: '🇳🇴 NO 364'
-  password: 'ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44='
-  port: 990
-  server: '185.213.23.63'
-  type: 'ss'
-- name: '🇬🇧 GB 365'
-  type: 'ss'
-  server: '146.70.46.214'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇸🇪 SE 366'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '138.199.55.243'
-  type: 'ss'
-- name: '🇺🇸 US 367'
-  type: 'ss'
-  server: '152.53.1.57'
-  port: 8388
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'AdawffFMHymlasRb0VOP3HFf7sTG5sJx'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇸🇪 SE 368'
-  password: 'AxIYWtskJWIIaefW'
-  port: 8388
-  server: '70.34.212.124'
-  type: 'ss'
-- name: '🇬🇧 GB 369'
-  type: 'ss'
   server: '82.110.60.9'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 292'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.99'
+  type: 'ss'
+- name: '🇺🇳 UN 293'
+  type: 'ss'
+  server: '23.166.88.189'
   port: 19999
   cipher: 'aes-256-gcm'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇳🇿 NZ 370'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '202.50.253.54'
+- name: '🇬🇧 GB 294'
   type: 'ss'
-  udp: true
-  x-toolall-mihomo: true
-- name: '🇸🇦 SA 371'
-  type: 'ss'
-  server: '169.150.210.233'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 372'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '66.163.118.103'
-  type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇨🇦 CA 373'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '167.17.71.167'
-  type: 'ss'
-- name: '🇩🇪 DE 374'
-  type: 'ss'
-  server: '146.70.20.147'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 375'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '185.164.175.81'
-  type: 'ss'
-- name: '🇧🇬 BG 376'
-  type: 'ss'
-  server: '213.183.63.60'
-  port: 9029
-  cipher: 'aes-256-cfb'
-  password: 'dU3DSNS8wYPXzEKw'
-  udp: true
-- name: '🇱🇹 LT 377'
-  type: 'ss'
-  server: '195.238.126.20'
-  port: 9068
-  cipher: 'aes-256-cfb'
-  password: 'mwgRg9hRq3b4Qnwb'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇨🇿 CZ 378'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '79.127.184.104'
-  type: 'ss'
-- name: '🇬🇧 GB 379'
-  type: 'ss'
-  server: '82.38.31.193'
+  server: '82.38.31.202'
   port: 8080
   cipher: 'chacha20-ietf-poly1305'
   password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇳🇱 NL 380'
-  password: 'itzvpn@321'
-  port: 8388
-  server: '145.79.177.201'
-  type: 'ss'
-- name: '🇬🇧 GB 381'
-  type: 'ss'
-  server: '82.38.31.182'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇮🇹 IT 382'
-  type: 'ss'
-  server: '91.201.65.122'
-  port: 9097
-  cipher: 'aes-256-cfb'
-  password: 'Sn5B7jTqr76aCJT8'
-  udp: true
-- name: '🇱🇻 LV 383'
-  type: 'ss'
-  server: '185.135.86.175'
-  port: 9068
-  cipher: 'aes-256-cfb'
-  password: 'mwgRg9hRq3b4Qnwb'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 384'
-  password: 'Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE'
-  port: 18443
-  server: '48.103.218.241'
-  type: 'ss'
-- name: '🇳🇱 NL 385'
-  type: 'ss'
-  server: '193.29.139.234'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: '4a2rfixophdjffa8KVA4Aa'
-  udp: true
-- name: '🇺🇸 US 386'
-  type: 'ss'
-  server: '98.98.207.163'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇯🇵 JP 387'
-  type: 'ss'
-  server: '168.138.205.100'
-  port: 53758
-  cipher: 'aes-128-gcm'
-  password: 'Bwlqh7GcFB'
-  udp: true
-- name: '🇬🇧 GB 388'
-  type: 'ss'
-  server: '82.38.31.206'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
-  udp: true
-- name: '🇺🇸 US 389'
-  type: 'ss'
-  server: '98.98.142.161'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇬🇧 GB 390'
-  type: 'ss'
-  server: '146.70.61.37'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇸🇬 SG 391'
-  type: 'ss'
-  server: '15.235.182.183'
-  port: 19999
-  cipher: 'aes-256-gcm'
+  name: '🇸🇬 SG 295'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇸🇬 SG 392'
+  port: 19999
+  server: '51.79.228.131'
+  type: 'ss'
+- name: '🇸🇬 SG 296'
   type: 'ss'
   server: '68.183.227.45'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇺🇸 US 393'
-  type: 'ss'
-  server: '149.88.106.73'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇸🇬 SG 394'
-  type: 'ss'
-  server: '128.199.172.224'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- cipher: 'aes-256-gcm'
-  name: '🇸🇬 SG 395'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '51.79.228.131'
-  type: 'ss'
-- cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 396'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  port: 19999
-  server: '149.88.106.74'
-  type: 'ss'
-- name: '🇸🇬 SG 397'
-  type: 'ss'
-  server: '68.183.227.4'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇺🇸 US 398'
-  type: 'ss'
-  server: '149.88.107.74'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇺🇸 US 399'
-  type: 'ss'
-  server: '149.88.107.47'
-  port: 19999
-  cipher: 'aes-256-gcm'
-  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
-  udp: true
-- name: '🇸🇬 SG 400'
+- name: '🇸🇬 SG 297'
   type: 'ss'
   server: '15.235.164.133'
   port: 19999
   cipher: 'aes-256-gcm'
   password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
-- name: '🇺🇸 US 401'
+- cipher: 'aes-256-gcm'
+  name: '🇺🇳 UN 298'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '23.162.152.22'
   type: 'ss'
-  server: '128.1.186.132'
-  port: 8080
-  cipher: 'rc4-md5'
-  password: '14fFPrbezE3HDZzsMOr6'
-  udp: true
-- name: '🇷🇺 RU 402'
+- cipher: 'aes-256-gcm'
+  name: '🇫🇷 FR 299'
+  password: 'itzvpn@321'
+  port: 8388
+  server: '57.131.27.21'
   type: 'ss'
-  server: '77.221.132.206'
-  port: 24759
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'hCgbUnMaoAfSgvE8IKdnGu'
   udp: true
-- name: '🇬🇧 GB 403'
-  type: 'ss'
-  server: '54.37.240.40'
-  port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: '8nrpt2il04ptci2j'
-  udp: true
-- name: '🇰🇷 KR 404'
-  type: 'ss'
-  server: '49.254.204.134'
-  port: 1774
-  cipher: 'aes-256-cfb'
-  password: '1234!@#$'
-  udp: true
-- name: '🇺🇸 US 405'
-  type: 'ss'
-  server: '15.204.246.107'
-  port: 8888
-  cipher: 'aes-256-gcm'
-  password: 'Y6R9pAtvxxzmGC'
-  udp: true
-- name: '🇰🇷 KR 406'
+- name: '🇰🇷 KR 300'
   type: 'ss'
   server: '218.237.185.234'
   port: 4652
   cipher: 'aes-256-cfb'
   password: 'qwerREWQ@@'
   udp: true
-- cipher: 'chacha20-ietf-poly1305'
-  name: '🇿🇦 ZA 407'
-  password: 'aduB9HGxQHjA2SBMRjkHX6'
-  port: 443
-  server: '102.37.156.224'
+- cipher: 'aes-256-gcm'
+  name: '🇺🇸 US 301'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '149.88.107.47'
   type: 'ss'
-- name: '🇺🇸 US 408'
+- name: '🇺🇸 US 302'
   type: 'ss'
-  server: '213.176.92.148'
-  port: 40647
+  server: '149.88.107.74'
+  port: 19999
   cipher: 'aes-256-gcm'
-  password: 'DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY='
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
   udp: true
-- cipher: 'chacha20-ietf-poly1305'
-  name: '🇿🇦 ZA 409'
-  password: 'Xsy8Ox4yOV3xLlpxtjzs3X'
-  port: 16233
-  server: '102.133.165.160'
+- name: '🇬🇧 GB 303'
   type: 'ss'
-- name: '🇬🇧 GB 410'
-  type: 'ss'
-  server: '82.38.31.190'
+  server: '146.70.46.214'
   port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇬🇧 GB 411'
+- name: '🇬🇧 GB 304'
   type: 'ss'
-  server: '82.38.31.178'
+  server: '146.70.46.199'
   port: 8080
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇸🇬 SG 412'
+- name: '🇸🇬 SG 305'
   type: 'ss'
   server: '68.183.235.240'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-- name: '🇺🇸 US 413'
+- name: '🇺🇸 US 306'
   type: 'ss'
-  server: '128.1.186.73'
+  server: '149.88.106.74'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇬🇧 GB 307'
+  type: 'ss'
+  server: '146.70.61.18'
   port: 8080
   cipher: 'rc4-md5'
   password: '14fFPrbezE3HDZzsMOr6'
   udp: true
 - cipher: 'aes-256-gcm'
-  name: '🇺🇸 US 414'
-  password: 'AMok40FfaM+Ikwre16psBpVk6JHxsQZw'
-  port: 8388
-  server: '209.248.57.105'
+  name: '🇸🇬 SG 308'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '15.235.182.183'
   type: 'ss'
-- name: '🇺🇸 US 415'
+- name: '🇬🇧 GB 309'
   type: 'ss'
-  server: 'mm.good2026.com'
-  port: 12961
-  cipher: 'aes-128-gcm'
-  password: '2f0c7e37-2534-48dc-9615-d85ae800c41f'
+  server: '82.38.31.176'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
   udp: true
-- name: '🇰🇷 KR 416'
+- name: '🇰🇷 KR 310'
+  type: 'ss'
+  server: '49.254.204.133'
+  port: 1774
+  cipher: 'aes-256-cfb'
+  password: '1234!@#$'
+  udp: true
+- name: '🇸🇦 SA 311'
+  type: 'ss'
+  server: '169.150.210.233'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇰🇷 KR 312'
+  type: 'ss'
+  server: '49.254.204.134'
+  port: 1774
+  cipher: 'aes-256-cfb'
+  password: '1234!@#$'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 313'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.81'
+  skip-cert-verify: false
+  tls: false
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- cipher: 'aes-256-gcm'
+  name: '🇺🇸 US 314'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '66.163.118.103'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 315'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.90'
+  type: 'ss'
+- name: '🇬🇧 GB 316'
+  type: 'ss'
+  server: '82.38.31.190'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇺🇳 UN 317'
+  server: '103.36.91.32'
+  port: 8388
+  type: 'ss'
+  cipher: 'chacha20-ietf'
+  password: 'asd123456'
+  region: '其他地区'
+- cipher: 'aes-256-gcm'
+  name: '🇨🇦 CA 318'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '167.17.71.167'
+  type: 'ss'
+- name: '🇬🇧 GB 319'
+  type: 'ss'
+  server: '82.38.31.219'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 320'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.45'
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- name: '🇱🇹 LT 321'
+  type: 'ss'
+  server: '195.238.126.84'
+  port: 9039
+  cipher: 'aes-256-cfb'
+  password: 'qYEN5HX4JKeVCdEC'
+  udp: true
+- name: '🇱🇹 LT 322'
+  type: 'ss'
+  server: '195.238.126.20'
+  port: 9002
+  cipher: 'aes-256-cfb'
+  password: 'b8KkNDjEd5QqFyRm'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 323'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.36'
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- name: '🇩🇪 DE 324'
+  type: 'ss'
+  server: '213.202.208.199'
+  port: 5000
+  cipher: 'aes-256-gcm'
+  password: 'Y6R9pAtvxxzmGC'
+  udp: true
+- name: '🇳🇱 NL 325'
+  type: 'ss'
+  server: '193.29.139.212'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'QCXDxuDlTTMD7jtgHUjIoj'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇨🇿 CZ 326'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '79.127.184.104'
+  type: 'ss'
+- name: '🇩🇪 DE 327'
+  type: 'ss'
+  server: '178.162.254.38'
+  port: 8388
+  cipher: 'aes-256-gcm'
+  password: 'itzvpn@321'
+  udp: true
+- name: '🇱🇻 LV 328'
+  type: 'ss'
+  server: '185.135.86.175'
+  port: 9068
+  cipher: 'aes-256-cfb'
+  password: 'mwgRg9hRq3b4Qnwb'
+  udp: true
+- name: '🇳🇿 NZ 329'
+  type: 'ss'
+  server: '202.50.253.63'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 330'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.27'
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- name: '🇮🇹 IT 331'
+  type: 'ss'
+  server: '91.201.65.122'
+  port: 9039
+  cipher: 'aes-256-cfb'
+  password: 'qYEN5HX4JKeVCdEC'
+  udp: true
+- name: '🇰🇷 KR 332'
   type: 'ss'
   server: '211.178.105.134'
   port: 6123
   cipher: 'aes-256-cfb'
   password: 'qwerREWQ@@'
   udp: true
-- name: '🇺🇳 UN 417'
-  type: 'vmess'
-  network: 'tcp'
-  server: '23.162.200.198'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
-  tls: false
-  alterId: 0
-  cipher: 'auto'
-- name: '🇺🇸 US 418'
-  type: 'vmess'
-  network: 'tcp'
-  server: '38.91.107.49'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
-  tls: false
-  alterId: 0
-  cipher: 'auto'
-- name: '🇺🇸 US 419'
-  type: 'vmess'
-  network: 'tcp'
-  server: '38.110.1.246'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+- name: '🇺🇸 US 333'
+  type: 'ss'
+  server: '98.98.207.163'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
   udp: true
-  alterId: 0
-  cipher: 'auto'
-- name: '🇺🇸 US 420'
-  type: 'vmess'
-  network: 'tcp'
-  server: '129.146.143.80'
-  port: 48111
-  uuid: 'd4603cc2-e0ee-4651-83f5-1db5b7168177'
+- name: '🇸🇬 SG 334'
+  type: 'ss'
+  server: '128.199.172.224'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 335'
+  type: 'ss'
+  server: '128.1.186.132'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇸🇬 SG 336'
+  type: 'ss'
+  server: '68.183.227.236'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 337'
+  type: 'ss'
+  server: '128.1.186.73'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇺🇸 US 338'
+  type: 'ss'
+  server: '38.109.228.110'
+  port: 19999
+  cipher: 'aes-256-gcm'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  udp: true
+- name: '🇷🇺 RU 339'
+  type: 'ss'
+  server: '45.147.200.232'
+  port: 18443
+  cipher: 'aes-256-gcm'
+  password: 'NTiHBg64fsY8u8DbGrtypD9gPGSL386p'
+  udp: true
+- name: '🇸🇬 SG 340'
+  type: 'ss'
+  server: '68.183.227.4'
+  port: 8080
+  cipher: 'rc4-md5'
+  password: '14fFPrbezE3HDZzsMOr6'
+  udp: true
+- name: '🇬🇧 GB 341'
+  type: 'ss'
+  server: '82.38.31.178'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇬🇧 GB 342'
+  type: 'ss'
+  server: '82.38.31.201'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- name: '🇺🇸 US 343'
+  type: 'ss'
+  server: '15.204.247.124'
+  port: 2375
+  cipher: 'aes-256-gcm'
+  password: 'faBAoD54k87UJG7'
+  udp: true
+- name: '🇫🇷 FR 344'
+  type: 'ss'
+  server: '57.129.113.16'
+  port: 8388
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'NcAXc0UZI6yQJE1p8QmOv8'
+  udp: true
+- name: '🇨🇦 CA 345'
+  type: 'ss'
+  server: '51.79.49.116'
+  port: 8882
+  cipher: 'aes-256-gcm'
+  password: 'kDWvXYZoTBcGkC4'
+  udp: true
+- name: '🇿🇦 ZA 346'
+  type: 'ss'
+  server: '102.37.156.224'
+  port: 443
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'aduB9HGxQHjA2SBMRjkHX6'
+  udp: true
+- name: '🇿🇦 ZA 347'
+  type: 'ss'
+  server: '102.133.165.160'
+  port: 16233
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'Xsy8Ox4yOV3xLlpxtjzs3X'
+  udp: true
+- name: '🇷🇺 RU 348'
+  type: 'ss'
+  server: '46.17.47.194'
+  port: 18443
+  cipher: 'aes-256-gcm'
+  password: 'cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa'
+  udp: true
+- name: '🇬🇧 GB 349'
+  type: 'ss'
+  server: '82.38.31.205'
+  port: 8080
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'k1dBOmOB4oqi7Ump37a1bQ'
+  udp: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 350'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.54'
+  skip-cert-verify: false
   tls: false
-  alterId: 0
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- cipher: 'aes-256-gcm'
+  name: '🇳🇿 NZ 351'
+  password: 'ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4='
+  port: 19999
+  server: '202.50.253.72'
+  type: 'ss'
+  udp: true
+  x-toolall-mihomo: true
+- cipher: 'aes-256-gcm'
+  name: '🇨🇦 CA 352'
+  password: 'Y6R9pAtvxxzmGC'
+  port: 5000
+  server: '51.222.200.165'
+  type: 'ss'
+- cipher: 'aes-256-gcm'
+  name: '🇺🇸 US 353'
+  password: 'DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY='
+  port: 40647
+  server: '213.176.92.148'
+  type: 'ss'
+- type: 'vmess'
+  name: '🇺🇸 US 354'
+  server: '172.67.190.164'
+  port: 443
+  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
   cipher: 'auto'
-- name: '🇺🇸 US 421'
+  alterId: 0
+  tls: true
+  servername: 'guanwang.awsno.com'
+  sni: 'guanwang.awsno.com'
+  client-fingerprint: 'chrome'
+  network: 'ws'
+  ws-opts:
+    path: '/hls/cctv5phd.m3u8'
+    headers:
+      Host: 'guanwang.awsno.com'
+- type: 'vmess'
+  name: '🇺🇸 US 355'
+  server: '172.64.145.93'
+  port: 443
+  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
+  cipher: 'auto'
+  alterId: 0
+  tls: true
+  servername: 'guanwang.awsno.com'
+  sni: 'guanwang.awsno.com'
+  network: 'ws'
+  ws-opts:
+    path: '/hls/cctv5phd.m3u8'
+    headers:
+      Host: 'guanwang.awsno.com'
+- type: 'vmess'
+  name: '🇳🇱 NL 356'
+  server: '188.114.99.137'
+  port: 443
+  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
+  cipher: 'auto'
+  alterId: 0
+  tls: true
+  servername: 'guanwang.awsno.com'
+  sni: 'guanwang.awsno.com'
+  client-fingerprint: 'chrome'
+  network: 'ws'
+  ws-opts:
+    path: '/hls/cctv5phd.m3u8'
+    headers:
+      Host: 'guanwang.awsno.com'
+- alterId: 0
+  cipher: 'auto'
+  client-fingerprint: 'chrome'
+  name: '🇺🇸 US 357'
+  network: 'ws'
+  port: 443
+  server: 'www.shopify.com'
+  servername: 'guanwang.awsno.com'
+  tls: true
+  type: 'vmess'
+  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
+  ws-opts:
+    headers:
+      Host: 'guanwang.awsno.com'
+    path: '/hls/cctv5phd.m3u8'
+  x-toolall-mihomo: true
+- name: '🇺🇸 US 358'
   type: 'vmess'
   network: 'tcp'
   server: '84.17.41.2'
@@ -3482,7 +2914,153 @@ proxies:
   udp: true
   alterId: 0
   cipher: 'auto'
-- name: '🇫🇷 FR 422'
+- alterId: 64
+  cipher: 'auto'
+  country: '🇺🇸US'
+  h2-opts: {}
+  http-opts: {}
+  name: '🇺🇸 US 359'
+  network: 'ws'
+  port: 30004
+  server: '192.74.236.148'
+  servername: 'www.91334565.xyz'
+  skip-cert-verify: true
+  tls: true
+  type: 'vmess'
+  uuid: '418048af-a293-4b99-9b0c-98ca3580dd24'
+  ws-opts:
+    headers:
+      HOST: 'www.91334565.xyz'
+    path: '/path/1733477783705'
+  x-toolall-mihomo: true
+- name: '🇺🇳 UN 360'
+  type: 'vmess'
+  network: 'tcp'
+  server: '23.162.200.198'
+  port: 18000
+  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+  tls: false
+  alterId: 0
+  cipher: 'auto'
+- name: '🇨🇦 CA 361'
+  type: 'vmess'
+  network: 'tcp'
+  server: '134.195.196.211'
+  port: 18000
+  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+  udp: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 362'
+  type: 'vmess'
+  network: 'tcp'
+  server: '141.11.139.102'
+  port: 32515
+  uuid: '081dbf5a-d8b6-40c8-96f8-3c4ca9f50442'
+  skip-cert-verify: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 363'
+  type: 'vmess'
+  network: 'tcp'
+  server: '38.91.107.57'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 364'
+  type: 'vmess'
+  network: 'tcp'
+  server: '162.251.62.35'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 365'
+  type: 'vmess'
+  network: 'tcp'
+  server: '172.111.36.253'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇰🇷 KR 366'
+  type: 'vmess'
+  network: 'tcp'
+  server: '146.56.112.110'
+  port: 8888
+  uuid: 'e7c302f3-90d6-42dd-9d7d-94a3683a3707'
+  udp: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 367'
+  type: 'vmess'
+  network: 'tcp'
+  server: '209.38.42.238'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 368'
+  type: 'vmess'
+  network: 'tcp'
+  server: '149.88.23.202'
+  port: 18000
+  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+  udp: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 369'
+  type: 'vmess'
+  network: 'tcp'
+  server: '149.88.23.207'
+  port: 18000
+  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+  udp: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇫🇷 FR 370'
+  type: 'vmess'
+  network: 'ws'
+  server: '57.129.132.223'
+  port: 80
+  uuid: 'a25cbf11-2908-4a1b-a3a8-9a571777dca3'
+  skip-cert-verify: true
+  alterId: 0
+  cipher: 'auto'
+  ws-opts:
+    headers:
+      Host: '57.129.132.223'
+    path: '/vmess/'
+- name: '🇫🇷 FR 371'
+  type: 'vmess'
+  network: 'tcp'
+  server: '46.105.222.157'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇸🇪 SE 372'
+  type: 'vmess'
+  network: 'tcp'
+  server: '138.199.55.230'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇫🇷 FR 373'
   type: 'vmess'
   network: 'tcp'
   server: '162.19.204.71'
@@ -3495,7 +3073,36 @@ proxies:
   alterId: 0
   cipher: 'auto'
   client-fingerprint: 'chrome'
-- name: '🇫🇷 FR 423'
+- name: '🇺🇸 US 374'
+  type: 'vmess'
+  network: 'tcp'
+  server: '62.93.166.184'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇦🇹 AT 375'
+  type: 'vmess'
+  network: 'tcp'
+  server: '154.47.19.225'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: 'auto'
+- name: '🇺🇸 US 376'
+  type: 'vmess'
+  network: 'tcp'
+  server: '67.220.95.3'
+  port: 18000
+  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
+  tls: false
+  alterId: 0
+  cipher: 'aes-128-gcm'
+- name: '🇫🇷 FR 377'
   type: 'vmess'
   network: 'tcp'
   server: '141.95.65.9'
@@ -3508,153 +3115,28 @@ proxies:
   alterId: 0
   cipher: 'aes-128-gcm'
   client-fingerprint: 'chrome'
-- alterId: 64
-  cipher: 'auto'
-  name: '🇺🇸 US 424'
-  network: 'ws'
-  port: 30004
-  server: '192.74.236.148'
-  skip-cert-verify: true
-  tls: true
-  type: 'vmess'
-  udp: true
-  uuid: '418048af-a293-4b99-9b0c-98ca3580dd24'
-  ws-opts:
-    headers:
-      Host: 'www.91334565.xyz'
-    path: '/path/1733477783705'
-  x-toolall-mihomo: true
-- alterId: 0
-  cipher: 'auto'
-  name: '🇺🇸 US 425'
-  network: 'ws'
-  port: 443
-  server: '172.64.145.93'
-  servername: 'guanwang.awsno.com'
-  skip-cert-verify: true
-  tls: true
-  type: 'vmess'
-  udp: true
-  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
-  ws-opts:
-    headers:
-      Host: 'guanwang.awsno.com'
-    path: '/hls/cctv5phd.m3u8'
-  x-toolall-mihomo: true
-- alterId: 0
-  cipher: 'auto'
-  client-fingerprint: 'chrome'
-  name: '🇳🇱 NL 426'
-  network: 'ws'
-  port: 443
-  server: '188.114.99.137'
-  servername: 'guanwang.awsno.com'
-  tls: true
-  type: 'vmess'
-  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
-  ws-opts:
-    headers:
-      Host: 'guanwang.awsno.com'
-    path: '/hls/cctv5phd.m3u8'
-  x-toolall-mihomo: true
-- name: '🇺🇸 US 427'
-  server: 'US122207.ssgreen.org'
-  port: 443
-  type: 'vmess'
-  uuid: '74d216a3-fdb8-4774-a9c3-35f9e5a46819'
-  alterId: 0
-  cipher: 'auto'
-  tls: true
-  skip-cert-verify: true
-  network: 'ws'
-  ws-opts:
-    path: '/wes'
-    headers:
-      Host: 'US122207.ssgreen.org'
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: 'auto'
-  http-opts:
-    headers:
-      Host:
-      - 'openai.com'
-    method: 'GET'
-    path:
-    - '/QQqun-737805443'
-  name: '🇭🇰 HK 428'
-  network: 'http'
-  port: 52080
-  server: '47.242.81.94'
-  skip-cert-verify: true
-  tls: false
-  type: 'vmess'
-  udp: true
-  uuid: 'e47b9f77-60e4-4738-8d53-772b6002e146'
-- name: '🇺🇸 US 429'
+- name: '🇧🇷 BR 378'
   type: 'vmess'
   network: 'tcp'
-  server: '149.88.23.202'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
-  udp: true
-  alterId: 0
-  cipher: 'auto'
-- name: '🇺🇸 US 430'
-  type: 'vmess'
-  network: 'tcp'
-  server: '149.88.23.207'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
-  udp: true
-  alterId: 0
-  cipher: 'auto'
-- alterId: 0
-  cipher: 'auto'
-  country: '🇺🇸US'
-  h2-opts: {}
-  http-opts: {}
-  name: '🇺🇸 US 431'
-  network: 'ws'
-  port: 443
-  server: '172.67.190.164'
-  servername: 'guanwang.awsno.com'
+  server: '103.88.232.55'
+  port: 1270
+  uuid: '5c040f1d-45db-43bd-8d46-e4950e433735'
   skip-cert-verify: true
   tls: true
-  type: 'vmess'
-  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
-  ws-opts:
-    headers:
-      HOST: 'guanwang.awsno.com'
-    path: '/hls/cctv5phd.m3u8'
-  x-toolall-mihomo: true
-- alterId: 0
-  cipher: 'auto'
-  client-fingerprint: 'chrome'
-  name: '🇺🇳 UN 432'
-  network: 'ws'
-  port: 443
-  server: '104.18.42.163'
-  servername: 'guanwang.awsno.com'
-  tls: true
-  type: 'vmess'
-  uuid: '6a89a215-22bf-4bd7-9642-b95b2e09583a'
-  ws-opts:
-    headers:
-      Host: 'guanwang.awsno.com'
-    path: '/hls/cctv5phd.m3u8'
-  x-toolall-mihomo: true
-- name: '🇨🇦 CA 433'
-  type: 'vmess'
-  network: 'tcp'
-  server: '134.195.196.211'
-  port: 18000
-  uuid: 'f8c8dc3d-0d37-46b0-8b34-a7232882fcfe'
-  udp: true
   alterId: 0
   cipher: 'auto'
-- name: '🇦🇱 AL 434'
+- name: '🇺🇸 US 379'
+  type: 'ssr'
+  server: 'ssr2.762988.xyz'
+  port: 33336
+  protocol: 'auth_chain_a'
+  cipher: 'chacha20-ietf'
+  obfs: 'tls1.2_ticket_auth'
+  password: 'dongtaiwang.com'
+  protocol-param: ''
+  obfs-param: ''
+  udp: true
+- name: '🇦🇱 AL 380'
   type: 'ssr'
   server: '109.104.153.43'
   port: 33336
@@ -3675,149 +3157,149 @@ proxy-groups:
   - '🇺🇸 US 4'
   - '🇺🇸 US 5'
   - '🇺🇸 US 6'
-  - '🇸🇪 SE 7'
-  - '🇪🇸 ES 8'
-  - '🇷🇺 RU 9'
-  - '🇫🇷 FR 10'
+  - '🇺🇸 US 7'
+  - '🇯🇵 JP 8'
+  - '🇯🇵 JP 9'
+  - '🇯🇵 JP 10'
   - '🇺🇸 US 11'
-  - '🇫🇷 FR 12'
-  - '🇺🇸 US 13'
-  - '🇮🇷 IR 14'
-  - '🇨🇭 CH 15'
-  - '🇧🇷 BR 16'
-  - '🇧🇷 BR 17'
-  - '🇩🇪 DE 18'
-  - '🇨🇭 CH 19'
-  - '🇧🇪 BE 20'
-  - '🇩🇪 DE 21'
-  - '🇩🇪 DE 22'
-  - '🇩🇪 DE 23'
+  - '🇷🇺 RU 12'
+  - '🇪🇸 ES 13'
+  - '🇫🇷 FR 14'
+  - '🇮🇷 IR 15'
+  - '🇷🇴 RO 16'
+  - '🇫🇷 FR 17'
+  - '🇸🇪 SE 18'
+  - '🇮🇳 IN 19'
+  - '🇺🇳 UN 20'
+  - '🇺🇸 US 21'
+  - '🇺🇳 UN 22'
+  - '🇰🇷 KR 23'
   - '🇧🇷 BR 24'
-  - '🇩🇪 DE 25'
-  - '🇺🇸 US 26'
-  - '🇩🇪 DE 27'
+  - '🇨🇭 CH 25'
+  - '🇧🇷 BR 26'
+  - '🇨🇭 CH 27'
   - '🇩🇪 DE 28'
-  - '🇺🇸 US 29'
-  - '🇺🇸 US 30'
-  - '🇮🇱 IL 31'
-  - '🇩🇪 DE 32'
-  - '🇯🇵 JP 33'
-  - '🇺🇸 US 34'
-  - '🇩🇪 DE 35'
-  - '🇺🇳 UN 36'
-  - '🇺🇳 UN 37'
-  - '🇺🇸 US 38'
+  - '🇰🇷 KR 29'
+  - '🇰🇷 KR 30'
+  - '🇩🇪 DE 31'
+  - '🇭🇰 HK 32'
+  - '🇭🇰 HK 33'
+  - '🇩🇪 DE 34'
+  - '🇭🇰 HK 35'
+  - '🇰🇷 KR 36'
+  - '🇩🇪 DE 37'
+  - '🇩🇪 DE 38'
   - '🇰🇷 KR 39'
-  - '🇰🇷 KR 40'
-  - '🇭🇰 HK 41'
-  - '🇭🇰 HK 42'
-  - '🇰🇷 KR 43'
+  - '🇧🇷 BR 40'
+  - '🇦🇺 AU 41'
+  - '🇸🇬 SG 42'
+  - '🇸🇬 SG 43'
   - '🇸🇬 SG 44'
   - '🇦🇺 AU 45'
-  - '🇰🇷 KR 46'
+  - '🇦🇺 AU 46'
   - '🇸🇬 SG 47'
-  - '🇰🇷 KR 48'
-  - '🇸🇬 SG 49'
-  - '🇭🇰 HK 50'
-  - '🇭🇰 HK 51'
-  - '🇯🇵 JP 52'
-  - '🇸🇬 SG 53'
-  - '🇸🇬 SG 54'
-  - '🇦🇺 AU 55'
-  - '🇭🇰 HK 56'
-  - '🇩🇪 DE 57'
-  - '🇳🇱 NL 58'
-  - '🇯🇵 JP 59'
+  - '🇺🇸 US 48'
+  - '🇩🇪 DE 49'
+  - '🇩🇪 DE 50'
+  - '🇸🇬 SG 51'
+  - '🇺🇸 US 52'
+  - '🇮🇱 IL 53'
+  - '🇩🇪 DE 54'
+  - '🇺🇸 US 55'
+  - '🇮🇳 IN 56'
+  - '🇺🇸 US 57'
+  - '🇩🇪 DE 58'
+  - '🇷🇺 RU 59'
   - '🇺🇸 US 60'
-  - '🇷🇺 RU 61'
-  - '🇺🇸 US 62'
-  - '🇸🇨 SC 63'
-  - '🇺🇳 UN 64'
-  - '🇺🇳 UN 65'
-  - '🇺🇳 UN 66'
-  - '🇺🇳 UN 67'
-  - '🇺🇳 UN 68'
-  - '🇺🇦 UA 69'
-  - '🇪🇸 ES 70'
+  - '🇺🇸 US 61'
+  - '🇯🇵 JP 62'
+  - '🇧🇷 BR 63'
+  - '🇩🇰 DK 64'
+  - '🇺🇦 UA 65'
+  - '🇧🇷 BR 66'
+  - '🇳🇱 NL 67'
+  - '🇧🇷 BR 68'
+  - '🇺🇸 US 69'
+  - '🇱🇹 LT 70'
   - '🇺🇸 US 71'
-  - '🇺🇳 UN 72'
-  - '🇺🇳 UN 73'
-  - '🇺🇳 UN 74'
-  - '🇺🇸 US 75'
-  - '🇺🇳 UN 76'
+  - '🇺🇸 US 72'
+  - '🇺🇸 US 73'
+  - '🇰🇷 KR 74'
+  - '🇨🇭 CH 75'
+  - '🇨🇭 CH 76'
   - '🇺🇸 US 77'
-  - '🇺🇳 UN 78'
-  - '🇲🇾 MY 79'
-  - '🇺🇳 UN 80'
-  - '🇺🇳 UN 81'
-  - '🇿🇦 ZA 82'
-  - '🇩🇰 DK 83'
-  - '🇺🇸 US 84'
-  - '🇺🇸 US 85'
-  - '🇧🇷 BR 86'
-  - '🇳🇱 NL 87'
-  - '🇺🇸 US 88'
-  - '🇩🇰 DK 89'
-  - '🇩🇪 DE 90'
-  - '🇧🇷 BR 91'
-  - '🇺🇸 US 92'
-  - '🇧🇷 BR 93'
-  - '🇳🇱 NL 94'
-  - '🇪🇪 EE 95'
-  - '🇺🇸 US 96'
-  - '🇮🇷 IR 97'
-  - '🇺🇦 UA 98'
-  - '🇺🇦 UA 99'
-  - '🇺🇸 US 100'
-  - '🇧🇾 BY 101'
-  - '🇱🇹 LT 102'
-  - '🇨🇭 CH 103'
-  - '🇮🇷 IR 104'
-  - '🇳🇱 NL 105'
-  - '🇱🇹 LT 106'
+  - '🇯🇵 JP 78'
+  - '🇺🇸 US 79'
+  - '🇨🇭 CH 80'
+  - '🇮🇷 IR 81'
+  - '🇧🇷 BR 82'
+  - '🇧🇷 BR 83'
+  - '🇧🇷 BR 84'
+  - '🇧🇷 BR 85'
+  - '🇻🇳 VN 86'
+  - '🇷🇺 RU 87'
+  - '🇩🇪 DE 88'
+  - '🇳🇱 NL 89'
+  - '🇺🇸 US 90'
+  - '🇺🇸 US 91'
+  - '🇿🇦 ZA 92'
+  - '🇺🇸 US 93'
+  - '🇺🇸 US 94'
+  - '🇺🇸 US 95'
+  - '🇿🇦 ZA 96'
+  - '🇧🇷 BR 97'
+  - '🇿🇦 ZA 98'
+  - '🇩🇪 DE 99'
+  - '🇩🇪 DE 100'
+  - '🇺🇸 US 101'
+  - '🇺🇸 US 102'
+  - '🇺🇸 US 103'
+  - '🇺🇸 US 104'
+  - '🇺🇸 US 105'
+  - '🇺🇸 US 106'
   - '🇺🇸 US 107'
-  - '🇦🇺 AU 108'
-  - '🇧🇷 BR 109'
+  - '🇺🇸 US 108'
+  - '🇺🇸 US 109'
   - '🇺🇸 US 110'
-  - '🇨🇭 CH 111'
-  - '🇺🇳 UN 112'
-  - '🇧🇷 BR 113'
-  - '🇭🇺 HU 114'
-  - '🇧🇷 BR 115'
-  - '🇯🇵 JP 116'
-  - '🇪🇸 ES 117'
-  - '🇺🇦 UA 118'
-  - '🇧🇷 BR 119'
-  - '🇺🇳 UN 120'
+  - '🇺🇸 US 111'
+  - '🇺🇸 US 112'
+  - '🇺🇸 US 113'
+  - '🇺🇸 US 114'
+  - '🇺🇸 US 115'
+  - '🇺🇸 US 116'
+  - '🇺🇸 US 117'
+  - '🇺🇸 US 118'
+  - '🇺🇸 US 119'
+  - '🇺🇸 US 120'
   - '🇺🇸 US 121'
   - '🇺🇸 US 122'
-  - '🇦🇺 AU 123'
+  - '🇺🇸 US 123'
   - '🇺🇸 US 124'
-  - '🇰🇷 KR 125'
-  - '🇮🇷 IR 126'
-  - '🇯🇵 JP 127'
-  - '🇺🇳 UN 128'
-  - '🇻🇳 VN 129'
-  - '🇧🇾 BY 130'
-  - '🇧🇷 BR 131'
-  - '🇩🇪 DE 132'
-  - '🇮🇷 IR 133'
-  - '🇺🇳 UN 134'
+  - '🇺🇸 US 125'
+  - '🇺🇸 US 126'
+  - '🇺🇸 US 127'
+  - '🇺🇸 US 128'
+  - '🇺🇸 US 129'
+  - '🇺🇸 US 130'
+  - '🇺🇸 US 131'
+  - '🇺🇸 US 132'
+  - '🇺🇸 US 133'
+  - '🇺🇸 US 134'
   - '🇺🇸 US 135'
   - '🇺🇸 US 136'
-  - '🇺🇸 US 137'
-  - '🇺🇸 US 138'
-  - '🇺🇸 US 139'
-  - '🇺🇸 US 140'
-  - '🇺🇸 US 141'
-  - '🇺🇸 US 142'
+  - '🇩🇪 DE 137'
+  - '🇩🇪 DE 138'
+  - '🇩🇪 DE 139'
+  - '🇩🇪 DE 140'
+  - '🇩🇪 DE 141'
+  - '🇩🇪 DE 142'
   - '🇺🇸 US 143'
-  - '🇺🇸 US 144'
+  - '🇰🇷 KR 144'
   - '🇺🇸 US 145'
   - '🇺🇸 US 146'
   - '🇺🇸 US 147'
-  - '🇺🇸 US 148'
-  - '🇺🇸 US 149'
+  - '🇦🇺 AU 148'
+  - '🇧🇷 BR 149'
   - '🇺🇸 US 150'
   - '🇺🇸 US 151'
   - '🇺🇸 US 152'
@@ -3825,8 +3307,8 @@ proxy-groups:
   - '🇺🇸 US 154'
   - '🇺🇸 US 155'
   - '🇺🇸 US 156'
-  - '🇺🇸 US 157'
-  - '🇺🇸 US 158'
+  - '🇺🇳 UN 157'
+  - '🇳🇱 NL 158'
   - '🇺🇸 US 159'
   - '🇺🇸 US 160'
   - '🇺🇸 US 161'
@@ -3842,267 +3324,213 @@ proxy-groups:
   - '🇺🇸 US 171'
   - '🇺🇸 US 172'
   - '🇺🇸 US 173'
-  - '🇺🇸 US 174'
-  - '🇩🇪 DE 175'
+  - '🇬🇧 GB 174'
+  - '🇺🇸 US 175'
   - '🇺🇸 US 176'
-  - '🇩🇪 DE 177'
-  - '🇩🇪 DE 178'
+  - '🇺🇸 US 177'
+  - '🇺🇸 US 178'
   - '🇺🇸 US 179'
-  - '🇺🇳 UN 180'
-  - '🇺🇳 UN 181'
-  - '🇺🇳 UN 182'
-  - '🇺🇳 UN 183'
-  - '🇺🇳 UN 184'
-  - '🇺🇸 US 185'
+  - '🇺🇸 US 180'
+  - '🇺🇸 US 181'
+  - '🇨🇦 CA 182'
+  - '🇨🇦 CA 183'
+  - '🇨🇦 CA 184'
+  - '🇨🇦 CA 185'
   - '🇺🇸 US 186'
-  - '🇺🇳 UN 187'
-  - '🇧🇷 BR 188'
+  - '🇺🇸 US 187'
+  - '🇺🇸 US 188'
   - '🇺🇸 US 189'
   - '🇺🇸 US 190'
   - '🇺🇸 US 191'
   - '🇺🇸 US 192'
-  - '🇰🇷 KR 193'
-  - '🇭🇰 HK 194'
-  - '🇱🇹 LT 195'
-  - '🇦🇺 AU 196'
-  - '🇹🇼 TW 197'
+  - '🇬🇧 GB 193'
+  - '🇬🇧 GB 194'
+  - '🇬🇧 GB 195'
+  - '🇺🇸 US 196'
+  - '🇨🇦 CA 197'
   - '🇺🇸 US 198'
-  - '🇺🇸 US 199'
-  - '🇺🇸 US 200'
-  - '🇸🇪 SE 201'
-  - '🇺🇸 US 202'
+  - '🇪🇸 ES 199'
+  - '🇯🇵 JP 200'
+  - '🇺🇸 US 201'
+  - '🇮🇷 IR 202'
   - '🇺🇸 US 203'
   - '🇺🇸 US 204'
-  - '🇺🇸 US 205'
-  - '🇺🇸 US 206'
-  - '🇺🇸 US 207'
-  - '🇺🇸 US 208'
-  - '🇨🇿 CZ 209'
-  - '🇺🇸 US 210'
+  - '🇩🇰 DK 205'
+  - '🇳🇱 NL 206'
+  - '🇬🇧 GB 207'
+  - '🇬🇧 GB 208'
+  - '🇩🇪 DE 209'
+  - '🇧🇬 BG 210'
   - '🇺🇸 US 211'
-  - '🇬🇧 GB 212'
+  - '🇩🇪 DE 212'
   - '🇺🇸 US 213'
-  - '🇺🇸 US 214'
-  - '🇨🇦 CA 215'
-  - '🇨🇦 CA 216'
-  - '🇨🇦 CA 217'
-  - '🇺🇸 US 218'
-  - '🇺🇸 US 219'
-  - '🇺🇸 US 220'
-  - '🇺🇸 US 221'
-  - '🇺🇸 US 222'
-  - '🇺🇸 US 223'
-  - '🇺🇸 US 224'
-  - '🇺🇸 US 225'
-  - '🇺🇸 US 226'
-  - '🇺🇸 US 227'
-  - '🇺🇸 US 228'
-  - '🇨🇦 CA 229'
-  - '🇺🇸 US 230'
-  - '🇪🇸 ES 231'
-  - '🇺🇸 US 232'
+  - '🇬🇧 GB 214'
+  - '🇬🇧 GB 215'
+  - '🇳🇴 NO 216'
+  - '🇬🇧 GB 217'
+  - '🇩🇪 DE 218'
+  - '🇬🇧 GB 219'
+  - '🇬🇧 GB 220'
+  - '🇬🇧 GB 221'
+  - '🇬🇧 GB 222'
+  - '🇬🇧 GB 223'
+  - '🇬🇧 GB 224'
+  - '🇬🇧 GB 225'
+  - '🇬🇧 GB 226'
+  - '🇬🇧 GB 227'
+  - '🇨🇭 CH 228'
+  - '🇳🇱 NL 229'
+  - '🇬🇧 GB 230'
+  - '🇬🇧 GB 231'
+  - '🇳🇱 NL 232'
   - '🇺🇸 US 233'
-  - '🇺🇸 US 234'
-  - '🇺🇸 US 235'
-  - '🇺🇸 US 236'
-  - '🇪🇸 ES 237'
-  - '🇺🇸 US 238'
-  - '🇨🇦 CA 239'
-  - '🇨🇦 CA 240'
-  - '🇺🇸 US 241'
-  - '🇺🇸 US 242'
-  - '🇺🇸 US 243'
-  - '🇺🇸 US 244'
-  - '🇨🇦 CA 245'
-  - '🇺🇸 US 246'
-  - '🇺🇸 US 247'
-  - '🇨🇦 CA 248'
-  - '🇺🇸 US 249'
-  - '🇺🇸 US 250'
-  - '🇺🇳 UN 251'
+  - '🇬🇧 GB 234'
+  - '🇬🇧 GB 235'
+  - '🇬🇧 GB 236'
+  - '🇬🇧 GB 237'
+  - '🇬🇧 GB 238'
+  - '🇬🇧 GB 239'
+  - '🇮🇷 IR 240'
+  - '🇬🇧 GB 241'
+  - '🇬🇧 GB 242'
+  - '🇳🇱 NL 243'
+  - '🇳🇱 NL 244'
+  - '🇬🇧 GB 245'
+  - '🇬🇧 GB 246'
+  - '🇳🇱 NL 247'
+  - '🇬🇧 GB 248'
+  - '🇬🇧 GB 249'
+  - '🇬🇧 GB 250'
+  - '🇬🇧 GB 251'
   - '🇬🇧 GB 252'
   - '🇬🇧 GB 253'
-  - '🇺🇸 US 254'
-  - '🇺🇸 US 255'
-  - '🇺🇸 US 256'
+  - '🇬🇧 GB 254'
+  - '🇬🇧 GB 255'
+  - '🇬🇧 GB 256'
   - '🇬🇧 GB 257'
   - '🇬🇧 GB 258'
-  - '🇳🇱 NL 259'
-  - '🇪🇸 ES 260'
-  - '🇮🇷 IR 261'
-  - '🇮🇷 IR 262'
+  - '🇬🇧 GB 259'
+  - '🇬🇧 GB 260'
+  - '🇺🇸 US 261'
+  - '🇨🇦 CA 262'
   - '🇫🇷 FR 263'
-  - '🇨🇦 CA 264'
-  - '🇫🇷 FR 265'
-  - '🇬🇧 GB 266'
-  - '🇺🇸 US 267'
-  - '🇩🇪 DE 268'
-  - '🇺🇸 US 269'
+  - '🇬🇧 GB 264'
+  - '🇬🇧 GB 265'
+  - '🇳🇱 NL 266'
+  - '🇨🇦 CA 267'
+  - '🇬🇧 GB 268'
+  - '🇫🇷 FR 269'
   - '🇬🇧 GB 270'
-  - '🇩🇪 DE 271'
+  - '🇬🇧 GB 271'
   - '🇬🇧 GB 272'
   - '🇺🇸 US 273'
-  - '🇫🇷 FR 274'
+  - '🇸🇪 SE 274'
   - '🇨🇦 CA 275'
-  - '🇧🇬 BG 276'
+  - '🇺🇸 US 276'
   - '🇬🇧 GB 277'
-  - '🇩🇪 DE 278'
-  - '🇫🇷 FR 279'
-  - '🇬🇧 GB 280'
-  - '🇳🇱 NL 281'
-  - '🇬🇧 GB 282'
-  - '🇨🇦 CA 283'
-  - '🇬🇧 GB 284'
-  - '🇬🇧 GB 285'
-  - '🇳🇱 NL 286'
-  - '🇺🇳 UN 287'
-  - '🇺🇸 US 288'
+  - '🇬🇧 GB 278'
+  - '🇵🇱 PL 279'
+  - '🇵🇱 PL 280'
+  - '🇨🇿 CZ 281'
+  - '🇨🇦 CA 282'
+  - '🇵🇦 PA 283'
+  - '🇺🇳 UN 284'
+  - '🇫🇷 FR 285'
+  - '🇧🇬 BG 286'
+  - '🇬🇧 GB 287'
+  - '🇳🇿 NZ 288'
   - '🇬🇧 GB 289'
-  - '🇬🇧 GB 290'
+  - '🇺🇸 US 290'
   - '🇬🇧 GB 291'
-  - '🇬🇧 GB 292'
-  - '🇨🇦 CA 293'
-  - '🇳🇱 NL 294'
-  - '🇨🇦 CA 295'
-  - '🇬🇧 GB 296'
-  - '🇺🇸 US 297'
-  - '🇳🇱 NL 298'
-  - '🇳🇱 NL 299'
-  - '🇬🇧 GB 300'
-  - '🇬🇧 GB 301'
-  - '🇬🇧 GB 302'
-  - '🇫🇷 FR 303'
+  - '🇳🇿 NZ 292'
+  - '🇺🇳 UN 293'
+  - '🇬🇧 GB 294'
+  - '🇸🇬 SG 295'
+  - '🇸🇬 SG 296'
+  - '🇸🇬 SG 297'
+  - '🇺🇳 UN 298'
+  - '🇫🇷 FR 299'
+  - '🇰🇷 KR 300'
+  - '🇺🇸 US 301'
+  - '🇺🇸 US 302'
+  - '🇬🇧 GB 303'
   - '🇬🇧 GB 304'
-  - '🇬🇧 GB 305'
-  - '🇬🇧 GB 306'
+  - '🇸🇬 SG 305'
+  - '🇺🇸 US 306'
   - '🇬🇧 GB 307'
-  - '🇬🇧 GB 308'
+  - '🇸🇬 SG 308'
   - '🇬🇧 GB 309'
-  - '🇬🇧 GB 310'
-  - '🇬🇧 GB 311'
-  - '🇬🇧 GB 312'
-  - '🇬🇧 GB 313'
-  - '🇬🇧 GB 314'
-  - '🇬🇧 GB 315'
+  - '🇰🇷 KR 310'
+  - '🇸🇦 SA 311'
+  - '🇰🇷 KR 312'
+  - '🇳🇿 NZ 313'
+  - '🇺🇸 US 314'
+  - '🇳🇿 NZ 315'
   - '🇬🇧 GB 316'
-  - '🇬🇧 GB 317'
-  - '🇬🇧 GB 318'
-  - '🇳🇱 NL 319'
-  - '🇬🇧 GB 320'
-  - '🇫🇷 FR 321'
-  - '🇳🇱 NL 322'
-  - '🇩🇪 DE 323'
-  - '🇬🇧 GB 324'
-  - '🇬🇧 GB 325'
-  - '🇬🇧 GB 326'
-  - '🇬🇧 GB 327'
-  - '🇬🇧 GB 328'
-  - '🇬🇧 GB 329'
-  - '🇬🇧 GB 330'
-  - '🇬🇧 GB 331'
-  - '🇬🇧 GB 332'
-  - '🇬🇧 GB 333'
-  - '🇨🇭 CH 334'
-  - '🇬🇧 GB 335'
-  - '🇬🇧 GB 336'
-  - '🇬🇧 GB 337'
-  - '🇬🇧 GB 338'
-  - '🇬🇧 GB 339'
-  - '🇬🇧 GB 340'
+  - '🇺🇳 UN 317'
+  - '🇨🇦 CA 318'
+  - '🇬🇧 GB 319'
+  - '🇳🇿 NZ 320'
+  - '🇱🇹 LT 321'
+  - '🇱🇹 LT 322'
+  - '🇳🇿 NZ 323'
+  - '🇩🇪 DE 324'
+  - '🇳🇱 NL 325'
+  - '🇨🇿 CZ 326'
+  - '🇩🇪 DE 327'
+  - '🇱🇻 LV 328'
+  - '🇳🇿 NZ 329'
+  - '🇳🇿 NZ 330'
+  - '🇮🇹 IT 331'
+  - '🇰🇷 KR 332'
+  - '🇺🇸 US 333'
+  - '🇸🇬 SG 334'
+  - '🇺🇸 US 335'
+  - '🇸🇬 SG 336'
+  - '🇺🇸 US 337'
+  - '🇺🇸 US 338'
+  - '🇷🇺 RU 339'
+  - '🇸🇬 SG 340'
   - '🇬🇧 GB 341'
-  - '🇵🇦 PA 342'
-  - '🇬🇧 GB 343'
-  - '🇺🇳 UN 344'
-  - '🇬🇧 GB 345'
-  - '🇺🇸 US 346'
-  - '🇵🇱 PL 347'
-  - '🇵🇱 PL 348'
-  - '🇳🇿 NZ 349'
+  - '🇬🇧 GB 342'
+  - '🇺🇸 US 343'
+  - '🇫🇷 FR 344'
+  - '🇨🇦 CA 345'
+  - '🇿🇦 ZA 346'
+  - '🇿🇦 ZA 347'
+  - '🇷🇺 RU 348'
+  - '🇬🇧 GB 349'
   - '🇳🇿 NZ 350'
-  - '🇬🇧 GB 351'
-  - '🇳🇿 NZ 352'
+  - '🇳🇿 NZ 351'
+  - '🇨🇦 CA 352'
   - '🇺🇸 US 353'
-  - '🇳🇿 NZ 354'
-  - '🇳🇿 NZ 355'
-  - '🇳🇿 NZ 356'
-  - '🇳🇿 NZ 357'
-  - '🇳🇿 NZ 358'
+  - '🇺🇸 US 354'
+  - '🇺🇸 US 355'
+  - '🇳🇱 NL 356'
+  - '🇺🇸 US 357'
+  - '🇺🇸 US 358'
   - '🇺🇸 US 359'
-  - '🇺🇸 US 360'
-  - '🇨🇿 CZ 361'
-  - '🇫🇷 FR 362'
-  - '🇳🇿 NZ 363'
-  - '🇳🇴 NO 364'
-  - '🇬🇧 GB 365'
-  - '🇸🇪 SE 366'
+  - '🇺🇳 UN 360'
+  - '🇨🇦 CA 361'
+  - '🇺🇸 US 362'
+  - '🇺🇸 US 363'
+  - '🇺🇸 US 364'
+  - '🇺🇸 US 365'
+  - '🇰🇷 KR 366'
   - '🇺🇸 US 367'
-  - '🇸🇪 SE 368'
-  - '🇬🇧 GB 369'
-  - '🇳🇿 NZ 370'
-  - '🇸🇦 SA 371'
-  - '🇺🇸 US 372'
-  - '🇨🇦 CA 373'
-  - '🇩🇪 DE 374'
-  - '🇺🇸 US 375'
-  - '🇧🇬 BG 376'
-  - '🇱🇹 LT 377'
-  - '🇨🇿 CZ 378'
-  - '🇬🇧 GB 379'
-  - '🇳🇱 NL 380'
-  - '🇬🇧 GB 381'
-  - '🇮🇹 IT 382'
-  - '🇱🇻 LV 383'
-  - '🇺🇸 US 384'
-  - '🇳🇱 NL 385'
-  - '🇺🇸 US 386'
-  - '🇯🇵 JP 387'
-  - '🇬🇧 GB 388'
-  - '🇺🇸 US 389'
-  - '🇬🇧 GB 390'
-  - '🇸🇬 SG 391'
-  - '🇸🇬 SG 392'
-  - '🇺🇸 US 393'
-  - '🇸🇬 SG 394'
-  - '🇸🇬 SG 395'
-  - '🇺🇸 US 396'
-  - '🇸🇬 SG 397'
-  - '🇺🇸 US 398'
-  - '🇺🇸 US 399'
-  - '🇸🇬 SG 400'
-  - '🇺🇸 US 401'
-  - '🇷🇺 RU 402'
-  - '🇬🇧 GB 403'
-  - '🇰🇷 KR 404'
-  - '🇺🇸 US 405'
-  - '🇰🇷 KR 406'
-  - '🇿🇦 ZA 407'
-  - '🇺🇸 US 408'
-  - '🇿🇦 ZA 409'
-  - '🇬🇧 GB 410'
-  - '🇬🇧 GB 411'
-  - '🇸🇬 SG 412'
-  - '🇺🇸 US 413'
-  - '🇺🇸 US 414'
-  - '🇺🇸 US 415'
-  - '🇰🇷 KR 416'
-  - '🇺🇳 UN 417'
-  - '🇺🇸 US 418'
-  - '🇺🇸 US 419'
-  - '🇺🇸 US 420'
-  - '🇺🇸 US 421'
-  - '🇫🇷 FR 422'
-  - '🇫🇷 FR 423'
-  - '🇺🇸 US 424'
-  - '🇺🇸 US 425'
-  - '🇳🇱 NL 426'
-  - '🇺🇸 US 427'
-  - '🇭🇰 HK 428'
-  - '🇺🇸 US 429'
-  - '🇺🇸 US 430'
-  - '🇺🇸 US 431'
-  - '🇺🇳 UN 432'
-  - '🇨🇦 CA 433'
-  - '🇦🇱 AL 434'
+  - '🇺🇸 US 368'
+  - '🇺🇸 US 369'
+  - '🇫🇷 FR 370'
+  - '🇫🇷 FR 371'
+  - '🇸🇪 SE 372'
+  - '🇫🇷 FR 373'
+  - '🇺🇸 US 374'
+  - '🇦🇹 AT 375'
+  - '🇺🇸 US 376'
+  - '🇫🇷 FR 377'
+  - '🇧🇷 BR 378'
+  - '🇺🇸 US 379'
+  - '🇦🇱 AL 380'
   url: 'https://www.google.com/favicon.ico'
   interval: 300
 - name: '🌐 Proxy'
@@ -4115,149 +3543,149 @@ proxy-groups:
   - '🇺🇸 US 4'
   - '🇺🇸 US 5'
   - '🇺🇸 US 6'
-  - '🇸🇪 SE 7'
-  - '🇪🇸 ES 8'
-  - '🇷🇺 RU 9'
-  - '🇫🇷 FR 10'
+  - '🇺🇸 US 7'
+  - '🇯🇵 JP 8'
+  - '🇯🇵 JP 9'
+  - '🇯🇵 JP 10'
   - '🇺🇸 US 11'
-  - '🇫🇷 FR 12'
-  - '🇺🇸 US 13'
-  - '🇮🇷 IR 14'
-  - '🇨🇭 CH 15'
-  - '🇧🇷 BR 16'
-  - '🇧🇷 BR 17'
-  - '🇩🇪 DE 18'
-  - '🇨🇭 CH 19'
-  - '🇧🇪 BE 20'
-  - '🇩🇪 DE 21'
-  - '🇩🇪 DE 22'
-  - '🇩🇪 DE 23'
+  - '🇷🇺 RU 12'
+  - '🇪🇸 ES 13'
+  - '🇫🇷 FR 14'
+  - '🇮🇷 IR 15'
+  - '🇷🇴 RO 16'
+  - '🇫🇷 FR 17'
+  - '🇸🇪 SE 18'
+  - '🇮🇳 IN 19'
+  - '🇺🇳 UN 20'
+  - '🇺🇸 US 21'
+  - '🇺🇳 UN 22'
+  - '🇰🇷 KR 23'
   - '🇧🇷 BR 24'
-  - '🇩🇪 DE 25'
-  - '🇺🇸 US 26'
-  - '🇩🇪 DE 27'
+  - '🇨🇭 CH 25'
+  - '🇧🇷 BR 26'
+  - '🇨🇭 CH 27'
   - '🇩🇪 DE 28'
-  - '🇺🇸 US 29'
-  - '🇺🇸 US 30'
-  - '🇮🇱 IL 31'
-  - '🇩🇪 DE 32'
-  - '🇯🇵 JP 33'
-  - '🇺🇸 US 34'
-  - '🇩🇪 DE 35'
-  - '🇺🇳 UN 36'
-  - '🇺🇳 UN 37'
-  - '🇺🇸 US 38'
+  - '🇰🇷 KR 29'
+  - '🇰🇷 KR 30'
+  - '🇩🇪 DE 31'
+  - '🇭🇰 HK 32'
+  - '🇭🇰 HK 33'
+  - '🇩🇪 DE 34'
+  - '🇭🇰 HK 35'
+  - '🇰🇷 KR 36'
+  - '🇩🇪 DE 37'
+  - '🇩🇪 DE 38'
   - '🇰🇷 KR 39'
-  - '🇰🇷 KR 40'
-  - '🇭🇰 HK 41'
-  - '🇭🇰 HK 42'
-  - '🇰🇷 KR 43'
+  - '🇧🇷 BR 40'
+  - '🇦🇺 AU 41'
+  - '🇸🇬 SG 42'
+  - '🇸🇬 SG 43'
   - '🇸🇬 SG 44'
   - '🇦🇺 AU 45'
-  - '🇰🇷 KR 46'
+  - '🇦🇺 AU 46'
   - '🇸🇬 SG 47'
-  - '🇰🇷 KR 48'
-  - '🇸🇬 SG 49'
-  - '🇭🇰 HK 50'
-  - '🇭🇰 HK 51'
-  - '🇯🇵 JP 52'
-  - '🇸🇬 SG 53'
-  - '🇸🇬 SG 54'
-  - '🇦🇺 AU 55'
-  - '🇭🇰 HK 56'
-  - '🇩🇪 DE 57'
-  - '🇳🇱 NL 58'
-  - '🇯🇵 JP 59'
+  - '🇺🇸 US 48'
+  - '🇩🇪 DE 49'
+  - '🇩🇪 DE 50'
+  - '🇸🇬 SG 51'
+  - '🇺🇸 US 52'
+  - '🇮🇱 IL 53'
+  - '🇩🇪 DE 54'
+  - '🇺🇸 US 55'
+  - '🇮🇳 IN 56'
+  - '🇺🇸 US 57'
+  - '🇩🇪 DE 58'
+  - '🇷🇺 RU 59'
   - '🇺🇸 US 60'
-  - '🇷🇺 RU 61'
-  - '🇺🇸 US 62'
-  - '🇸🇨 SC 63'
-  - '🇺🇳 UN 64'
-  - '🇺🇳 UN 65'
-  - '🇺🇳 UN 66'
-  - '🇺🇳 UN 67'
-  - '🇺🇳 UN 68'
-  - '🇺🇦 UA 69'
-  - '🇪🇸 ES 70'
+  - '🇺🇸 US 61'
+  - '🇯🇵 JP 62'
+  - '🇧🇷 BR 63'
+  - '🇩🇰 DK 64'
+  - '🇺🇦 UA 65'
+  - '🇧🇷 BR 66'
+  - '🇳🇱 NL 67'
+  - '🇧🇷 BR 68'
+  - '🇺🇸 US 69'
+  - '🇱🇹 LT 70'
   - '🇺🇸 US 71'
-  - '🇺🇳 UN 72'
-  - '🇺🇳 UN 73'
-  - '🇺🇳 UN 74'
-  - '🇺🇸 US 75'
-  - '🇺🇳 UN 76'
+  - '🇺🇸 US 72'
+  - '🇺🇸 US 73'
+  - '🇰🇷 KR 74'
+  - '🇨🇭 CH 75'
+  - '🇨🇭 CH 76'
   - '🇺🇸 US 77'
-  - '🇺🇳 UN 78'
-  - '🇲🇾 MY 79'
-  - '🇺🇳 UN 80'
-  - '🇺🇳 UN 81'
-  - '🇿🇦 ZA 82'
-  - '🇩🇰 DK 83'
-  - '🇺🇸 US 84'
-  - '🇺🇸 US 85'
-  - '🇧🇷 BR 86'
-  - '🇳🇱 NL 87'
-  - '🇺🇸 US 88'
-  - '🇩🇰 DK 89'
-  - '🇩🇪 DE 90'
-  - '🇧🇷 BR 91'
-  - '🇺🇸 US 92'
-  - '🇧🇷 BR 93'
-  - '🇳🇱 NL 94'
-  - '🇪🇪 EE 95'
-  - '🇺🇸 US 96'
-  - '🇮🇷 IR 97'
-  - '🇺🇦 UA 98'
-  - '🇺🇦 UA 99'
-  - '🇺🇸 US 100'
-  - '🇧🇾 BY 101'
-  - '🇱🇹 LT 102'
-  - '🇨🇭 CH 103'
-  - '🇮🇷 IR 104'
-  - '🇳🇱 NL 105'
-  - '🇱🇹 LT 106'
+  - '🇯🇵 JP 78'
+  - '🇺🇸 US 79'
+  - '🇨🇭 CH 80'
+  - '🇮🇷 IR 81'
+  - '🇧🇷 BR 82'
+  - '🇧🇷 BR 83'
+  - '🇧🇷 BR 84'
+  - '🇧🇷 BR 85'
+  - '🇻🇳 VN 86'
+  - '🇷🇺 RU 87'
+  - '🇩🇪 DE 88'
+  - '🇳🇱 NL 89'
+  - '🇺🇸 US 90'
+  - '🇺🇸 US 91'
+  - '🇿🇦 ZA 92'
+  - '🇺🇸 US 93'
+  - '🇺🇸 US 94'
+  - '🇺🇸 US 95'
+  - '🇿🇦 ZA 96'
+  - '🇧🇷 BR 97'
+  - '🇿🇦 ZA 98'
+  - '🇩🇪 DE 99'
+  - '🇩🇪 DE 100'
+  - '🇺🇸 US 101'
+  - '🇺🇸 US 102'
+  - '🇺🇸 US 103'
+  - '🇺🇸 US 104'
+  - '🇺🇸 US 105'
+  - '🇺🇸 US 106'
   - '🇺🇸 US 107'
-  - '🇦🇺 AU 108'
-  - '🇧🇷 BR 109'
+  - '🇺🇸 US 108'
+  - '🇺🇸 US 109'
   - '🇺🇸 US 110'
-  - '🇨🇭 CH 111'
-  - '🇺🇳 UN 112'
-  - '🇧🇷 BR 113'
-  - '🇭🇺 HU 114'
-  - '🇧🇷 BR 115'
-  - '🇯🇵 JP 116'
-  - '🇪🇸 ES 117'
-  - '🇺🇦 UA 118'
-  - '🇧🇷 BR 119'
-  - '🇺🇳 UN 120'
+  - '🇺🇸 US 111'
+  - '🇺🇸 US 112'
+  - '🇺🇸 US 113'
+  - '🇺🇸 US 114'
+  - '🇺🇸 US 115'
+  - '🇺🇸 US 116'
+  - '🇺🇸 US 117'
+  - '🇺🇸 US 118'
+  - '🇺🇸 US 119'
+  - '🇺🇸 US 120'
   - '🇺🇸 US 121'
   - '🇺🇸 US 122'
-  - '🇦🇺 AU 123'
+  - '🇺🇸 US 123'
   - '🇺🇸 US 124'
-  - '🇰🇷 KR 125'
-  - '🇮🇷 IR 126'
-  - '🇯🇵 JP 127'
-  - '🇺🇳 UN 128'
-  - '🇻🇳 VN 129'
-  - '🇧🇾 BY 130'
-  - '🇧🇷 BR 131'
-  - '🇩🇪 DE 132'
-  - '🇮🇷 IR 133'
-  - '🇺🇳 UN 134'
+  - '🇺🇸 US 125'
+  - '🇺🇸 US 126'
+  - '🇺🇸 US 127'
+  - '🇺🇸 US 128'
+  - '🇺🇸 US 129'
+  - '🇺🇸 US 130'
+  - '🇺🇸 US 131'
+  - '🇺🇸 US 132'
+  - '🇺🇸 US 133'
+  - '🇺🇸 US 134'
   - '🇺🇸 US 135'
   - '🇺🇸 US 136'
-  - '🇺🇸 US 137'
-  - '🇺🇸 US 138'
-  - '🇺🇸 US 139'
-  - '🇺🇸 US 140'
-  - '🇺🇸 US 141'
-  - '🇺🇸 US 142'
+  - '🇩🇪 DE 137'
+  - '🇩🇪 DE 138'
+  - '🇩🇪 DE 139'
+  - '🇩🇪 DE 140'
+  - '🇩🇪 DE 141'
+  - '🇩🇪 DE 142'
   - '🇺🇸 US 143'
-  - '🇺🇸 US 144'
+  - '🇰🇷 KR 144'
   - '🇺🇸 US 145'
   - '🇺🇸 US 146'
   - '🇺🇸 US 147'
-  - '🇺🇸 US 148'
-  - '🇺🇸 US 149'
+  - '🇦🇺 AU 148'
+  - '🇧🇷 BR 149'
   - '🇺🇸 US 150'
   - '🇺🇸 US 151'
   - '🇺🇸 US 152'
@@ -4265,8 +3693,8 @@ proxy-groups:
   - '🇺🇸 US 154'
   - '🇺🇸 US 155'
   - '🇺🇸 US 156'
-  - '🇺🇸 US 157'
-  - '🇺🇸 US 158'
+  - '🇺🇳 UN 157'
+  - '🇳🇱 NL 158'
   - '🇺🇸 US 159'
   - '🇺🇸 US 160'
   - '🇺🇸 US 161'
@@ -4282,266 +3710,212 @@ proxy-groups:
   - '🇺🇸 US 171'
   - '🇺🇸 US 172'
   - '🇺🇸 US 173'
-  - '🇺🇸 US 174'
-  - '🇩🇪 DE 175'
+  - '🇬🇧 GB 174'
+  - '🇺🇸 US 175'
   - '🇺🇸 US 176'
-  - '🇩🇪 DE 177'
-  - '🇩🇪 DE 178'
+  - '🇺🇸 US 177'
+  - '🇺🇸 US 178'
   - '🇺🇸 US 179'
-  - '🇺🇳 UN 180'
-  - '🇺🇳 UN 181'
-  - '🇺🇳 UN 182'
-  - '🇺🇳 UN 183'
-  - '🇺🇳 UN 184'
-  - '🇺🇸 US 185'
+  - '🇺🇸 US 180'
+  - '🇺🇸 US 181'
+  - '🇨🇦 CA 182'
+  - '🇨🇦 CA 183'
+  - '🇨🇦 CA 184'
+  - '🇨🇦 CA 185'
   - '🇺🇸 US 186'
-  - '🇺🇳 UN 187'
-  - '🇧🇷 BR 188'
+  - '🇺🇸 US 187'
+  - '🇺🇸 US 188'
   - '🇺🇸 US 189'
   - '🇺🇸 US 190'
   - '🇺🇸 US 191'
   - '🇺🇸 US 192'
-  - '🇰🇷 KR 193'
-  - '🇭🇰 HK 194'
-  - '🇱🇹 LT 195'
-  - '🇦🇺 AU 196'
-  - '🇹🇼 TW 197'
+  - '🇬🇧 GB 193'
+  - '🇬🇧 GB 194'
+  - '🇬🇧 GB 195'
+  - '🇺🇸 US 196'
+  - '🇨🇦 CA 197'
   - '🇺🇸 US 198'
-  - '🇺🇸 US 199'
-  - '🇺🇸 US 200'
-  - '🇸🇪 SE 201'
-  - '🇺🇸 US 202'
+  - '🇪🇸 ES 199'
+  - '🇯🇵 JP 200'
+  - '🇺🇸 US 201'
+  - '🇮🇷 IR 202'
   - '🇺🇸 US 203'
   - '🇺🇸 US 204'
-  - '🇺🇸 US 205'
-  - '🇺🇸 US 206'
-  - '🇺🇸 US 207'
-  - '🇺🇸 US 208'
-  - '🇨🇿 CZ 209'
-  - '🇺🇸 US 210'
+  - '🇩🇰 DK 205'
+  - '🇳🇱 NL 206'
+  - '🇬🇧 GB 207'
+  - '🇬🇧 GB 208'
+  - '🇩🇪 DE 209'
+  - '🇧🇬 BG 210'
   - '🇺🇸 US 211'
-  - '🇬🇧 GB 212'
+  - '🇩🇪 DE 212'
   - '🇺🇸 US 213'
-  - '🇺🇸 US 214'
-  - '🇨🇦 CA 215'
-  - '🇨🇦 CA 216'
-  - '🇨🇦 CA 217'
-  - '🇺🇸 US 218'
-  - '🇺🇸 US 219'
-  - '🇺🇸 US 220'
-  - '🇺🇸 US 221'
-  - '🇺🇸 US 222'
-  - '🇺🇸 US 223'
-  - '🇺🇸 US 224'
-  - '🇺🇸 US 225'
-  - '🇺🇸 US 226'
-  - '🇺🇸 US 227'
-  - '🇺🇸 US 228'
-  - '🇨🇦 CA 229'
-  - '🇺🇸 US 230'
-  - '🇪🇸 ES 231'
-  - '🇺🇸 US 232'
+  - '🇬🇧 GB 214'
+  - '🇬🇧 GB 215'
+  - '🇳🇴 NO 216'
+  - '🇬🇧 GB 217'
+  - '🇩🇪 DE 218'
+  - '🇬🇧 GB 219'
+  - '🇬🇧 GB 220'
+  - '🇬🇧 GB 221'
+  - '🇬🇧 GB 222'
+  - '🇬🇧 GB 223'
+  - '🇬🇧 GB 224'
+  - '🇬🇧 GB 225'
+  - '🇬🇧 GB 226'
+  - '🇬🇧 GB 227'
+  - '🇨🇭 CH 228'
+  - '🇳🇱 NL 229'
+  - '🇬🇧 GB 230'
+  - '🇬🇧 GB 231'
+  - '🇳🇱 NL 232'
   - '🇺🇸 US 233'
-  - '🇺🇸 US 234'
-  - '🇺🇸 US 235'
-  - '🇺🇸 US 236'
-  - '🇪🇸 ES 237'
-  - '🇺🇸 US 238'
-  - '🇨🇦 CA 239'
-  - '🇨🇦 CA 240'
-  - '🇺🇸 US 241'
-  - '🇺🇸 US 242'
-  - '🇺🇸 US 243'
-  - '🇺🇸 US 244'
-  - '🇨🇦 CA 245'
-  - '🇺🇸 US 246'
-  - '🇺🇸 US 247'
-  - '🇨🇦 CA 248'
-  - '🇺🇸 US 249'
-  - '🇺🇸 US 250'
-  - '🇺🇳 UN 251'
+  - '🇬🇧 GB 234'
+  - '🇬🇧 GB 235'
+  - '🇬🇧 GB 236'
+  - '🇬🇧 GB 237'
+  - '🇬🇧 GB 238'
+  - '🇬🇧 GB 239'
+  - '🇮🇷 IR 240'
+  - '🇬🇧 GB 241'
+  - '🇬🇧 GB 242'
+  - '🇳🇱 NL 243'
+  - '🇳🇱 NL 244'
+  - '🇬🇧 GB 245'
+  - '🇬🇧 GB 246'
+  - '🇳🇱 NL 247'
+  - '🇬🇧 GB 248'
+  - '🇬🇧 GB 249'
+  - '🇬🇧 GB 250'
+  - '🇬🇧 GB 251'
   - '🇬🇧 GB 252'
   - '🇬🇧 GB 253'
-  - '🇺🇸 US 254'
-  - '🇺🇸 US 255'
-  - '🇺🇸 US 256'
+  - '🇬🇧 GB 254'
+  - '🇬🇧 GB 255'
+  - '🇬🇧 GB 256'
   - '🇬🇧 GB 257'
   - '🇬🇧 GB 258'
-  - '🇳🇱 NL 259'
-  - '🇪🇸 ES 260'
-  - '🇮🇷 IR 261'
-  - '🇮🇷 IR 262'
+  - '🇬🇧 GB 259'
+  - '🇬🇧 GB 260'
+  - '🇺🇸 US 261'
+  - '🇨🇦 CA 262'
   - '🇫🇷 FR 263'
-  - '🇨🇦 CA 264'
-  - '🇫🇷 FR 265'
-  - '🇬🇧 GB 266'
-  - '🇺🇸 US 267'
-  - '🇩🇪 DE 268'
-  - '🇺🇸 US 269'
+  - '🇬🇧 GB 264'
+  - '🇬🇧 GB 265'
+  - '🇳🇱 NL 266'
+  - '🇨🇦 CA 267'
+  - '🇬🇧 GB 268'
+  - '🇫🇷 FR 269'
   - '🇬🇧 GB 270'
-  - '🇩🇪 DE 271'
+  - '🇬🇧 GB 271'
   - '🇬🇧 GB 272'
   - '🇺🇸 US 273'
-  - '🇫🇷 FR 274'
+  - '🇸🇪 SE 274'
   - '🇨🇦 CA 275'
-  - '🇧🇬 BG 276'
+  - '🇺🇸 US 276'
   - '🇬🇧 GB 277'
-  - '🇩🇪 DE 278'
-  - '🇫🇷 FR 279'
-  - '🇬🇧 GB 280'
-  - '🇳🇱 NL 281'
-  - '🇬🇧 GB 282'
-  - '🇨🇦 CA 283'
-  - '🇬🇧 GB 284'
-  - '🇬🇧 GB 285'
-  - '🇳🇱 NL 286'
-  - '🇺🇳 UN 287'
-  - '🇺🇸 US 288'
+  - '🇬🇧 GB 278'
+  - '🇵🇱 PL 279'
+  - '🇵🇱 PL 280'
+  - '🇨🇿 CZ 281'
+  - '🇨🇦 CA 282'
+  - '🇵🇦 PA 283'
+  - '🇺🇳 UN 284'
+  - '🇫🇷 FR 285'
+  - '🇧🇬 BG 286'
+  - '🇬🇧 GB 287'
+  - '🇳🇿 NZ 288'
   - '🇬🇧 GB 289'
-  - '🇬🇧 GB 290'
+  - '🇺🇸 US 290'
   - '🇬🇧 GB 291'
-  - '🇬🇧 GB 292'
-  - '🇨🇦 CA 293'
-  - '🇳🇱 NL 294'
-  - '🇨🇦 CA 295'
-  - '🇬🇧 GB 296'
-  - '🇺🇸 US 297'
-  - '🇳🇱 NL 298'
-  - '🇳🇱 NL 299'
-  - '🇬🇧 GB 300'
-  - '🇬🇧 GB 301'
-  - '🇬🇧 GB 302'
-  - '🇫🇷 FR 303'
+  - '🇳🇿 NZ 292'
+  - '🇺🇳 UN 293'
+  - '🇬🇧 GB 294'
+  - '🇸🇬 SG 295'
+  - '🇸🇬 SG 296'
+  - '🇸🇬 SG 297'
+  - '🇺🇳 UN 298'
+  - '🇫🇷 FR 299'
+  - '🇰🇷 KR 300'
+  - '🇺🇸 US 301'
+  - '🇺🇸 US 302'
+  - '🇬🇧 GB 303'
   - '🇬🇧 GB 304'
-  - '🇬🇧 GB 305'
-  - '🇬🇧 GB 306'
+  - '🇸🇬 SG 305'
+  - '🇺🇸 US 306'
   - '🇬🇧 GB 307'
-  - '🇬🇧 GB 308'
+  - '🇸🇬 SG 308'
   - '🇬🇧 GB 309'
-  - '🇬🇧 GB 310'
-  - '🇬🇧 GB 311'
-  - '🇬🇧 GB 312'
-  - '🇬🇧 GB 313'
-  - '🇬🇧 GB 314'
-  - '🇬🇧 GB 315'
+  - '🇰🇷 KR 310'
+  - '🇸🇦 SA 311'
+  - '🇰🇷 KR 312'
+  - '🇳🇿 NZ 313'
+  - '🇺🇸 US 314'
+  - '🇳🇿 NZ 315'
   - '🇬🇧 GB 316'
-  - '🇬🇧 GB 317'
-  - '🇬🇧 GB 318'
-  - '🇳🇱 NL 319'
-  - '🇬🇧 GB 320'
-  - '🇫🇷 FR 321'
-  - '🇳🇱 NL 322'
-  - '🇩🇪 DE 323'
-  - '🇬🇧 GB 324'
-  - '🇬🇧 GB 325'
-  - '🇬🇧 GB 326'
-  - '🇬🇧 GB 327'
-  - '🇬🇧 GB 328'
-  - '🇬🇧 GB 329'
-  - '🇬🇧 GB 330'
-  - '🇬🇧 GB 331'
-  - '🇬🇧 GB 332'
-  - '🇬🇧 GB 333'
-  - '🇨🇭 CH 334'
-  - '🇬🇧 GB 335'
-  - '🇬🇧 GB 336'
-  - '🇬🇧 GB 337'
-  - '🇬🇧 GB 338'
-  - '🇬🇧 GB 339'
-  - '🇬🇧 GB 340'
+  - '🇺🇳 UN 317'
+  - '🇨🇦 CA 318'
+  - '🇬🇧 GB 319'
+  - '🇳🇿 NZ 320'
+  - '🇱🇹 LT 321'
+  - '🇱🇹 LT 322'
+  - '🇳🇿 NZ 323'
+  - '🇩🇪 DE 324'
+  - '🇳🇱 NL 325'
+  - '🇨🇿 CZ 326'
+  - '🇩🇪 DE 327'
+  - '🇱🇻 LV 328'
+  - '🇳🇿 NZ 329'
+  - '🇳🇿 NZ 330'
+  - '🇮🇹 IT 331'
+  - '🇰🇷 KR 332'
+  - '🇺🇸 US 333'
+  - '🇸🇬 SG 334'
+  - '🇺🇸 US 335'
+  - '🇸🇬 SG 336'
+  - '🇺🇸 US 337'
+  - '🇺🇸 US 338'
+  - '🇷🇺 RU 339'
+  - '🇸🇬 SG 340'
   - '🇬🇧 GB 341'
-  - '🇵🇦 PA 342'
-  - '🇬🇧 GB 343'
-  - '🇺🇳 UN 344'
-  - '🇬🇧 GB 345'
-  - '🇺🇸 US 346'
-  - '🇵🇱 PL 347'
-  - '🇵🇱 PL 348'
-  - '🇳🇿 NZ 349'
+  - '🇬🇧 GB 342'
+  - '🇺🇸 US 343'
+  - '🇫🇷 FR 344'
+  - '🇨🇦 CA 345'
+  - '🇿🇦 ZA 346'
+  - '🇿🇦 ZA 347'
+  - '🇷🇺 RU 348'
+  - '🇬🇧 GB 349'
   - '🇳🇿 NZ 350'
-  - '🇬🇧 GB 351'
-  - '🇳🇿 NZ 352'
+  - '🇳🇿 NZ 351'
+  - '🇨🇦 CA 352'
   - '🇺🇸 US 353'
-  - '🇳🇿 NZ 354'
-  - '🇳🇿 NZ 355'
-  - '🇳🇿 NZ 356'
-  - '🇳🇿 NZ 357'
-  - '🇳🇿 NZ 358'
+  - '🇺🇸 US 354'
+  - '🇺🇸 US 355'
+  - '🇳🇱 NL 356'
+  - '🇺🇸 US 357'
+  - '🇺🇸 US 358'
   - '🇺🇸 US 359'
-  - '🇺🇸 US 360'
-  - '🇨🇿 CZ 361'
-  - '🇫🇷 FR 362'
-  - '🇳🇿 NZ 363'
-  - '🇳🇴 NO 364'
-  - '🇬🇧 GB 365'
-  - '🇸🇪 SE 366'
+  - '🇺🇳 UN 360'
+  - '🇨🇦 CA 361'
+  - '🇺🇸 US 362'
+  - '🇺🇸 US 363'
+  - '🇺🇸 US 364'
+  - '🇺🇸 US 365'
+  - '🇰🇷 KR 366'
   - '🇺🇸 US 367'
-  - '🇸🇪 SE 368'
-  - '🇬🇧 GB 369'
-  - '🇳🇿 NZ 370'
-  - '🇸🇦 SA 371'
-  - '🇺🇸 US 372'
-  - '🇨🇦 CA 373'
-  - '🇩🇪 DE 374'
-  - '🇺🇸 US 375'
-  - '🇧🇬 BG 376'
-  - '🇱🇹 LT 377'
-  - '🇨🇿 CZ 378'
-  - '🇬🇧 GB 379'
-  - '🇳🇱 NL 380'
-  - '🇬🇧 GB 381'
-  - '🇮🇹 IT 382'
-  - '🇱🇻 LV 383'
-  - '🇺🇸 US 384'
-  - '🇳🇱 NL 385'
-  - '🇺🇸 US 386'
-  - '🇯🇵 JP 387'
-  - '🇬🇧 GB 388'
-  - '🇺🇸 US 389'
-  - '🇬🇧 GB 390'
-  - '🇸🇬 SG 391'
-  - '🇸🇬 SG 392'
-  - '🇺🇸 US 393'
-  - '🇸🇬 SG 394'
-  - '🇸🇬 SG 395'
-  - '🇺🇸 US 396'
-  - '🇸🇬 SG 397'
-  - '🇺🇸 US 398'
-  - '🇺🇸 US 399'
-  - '🇸🇬 SG 400'
-  - '🇺🇸 US 401'
-  - '🇷🇺 RU 402'
-  - '🇬🇧 GB 403'
-  - '🇰🇷 KR 404'
-  - '🇺🇸 US 405'
-  - '🇰🇷 KR 406'
-  - '🇿🇦 ZA 407'
-  - '🇺🇸 US 408'
-  - '🇿🇦 ZA 409'
-  - '🇬🇧 GB 410'
-  - '🇬🇧 GB 411'
-  - '🇸🇬 SG 412'
-  - '🇺🇸 US 413'
-  - '🇺🇸 US 414'
-  - '🇺🇸 US 415'
-  - '🇰🇷 KR 416'
-  - '🇺🇳 UN 417'
-  - '🇺🇸 US 418'
-  - '🇺🇸 US 419'
-  - '🇺🇸 US 420'
-  - '🇺🇸 US 421'
-  - '🇫🇷 FR 422'
-  - '🇫🇷 FR 423'
-  - '🇺🇸 US 424'
-  - '🇺🇸 US 425'
-  - '🇳🇱 NL 426'
-  - '🇺🇸 US 427'
-  - '🇭🇰 HK 428'
-  - '🇺🇸 US 429'
-  - '🇺🇸 US 430'
-  - '🇺🇸 US 431'
-  - '🇺🇳 UN 432'
-  - '🇨🇦 CA 433'
-  - '🇦🇱 AL 434'
+  - '🇺🇸 US 368'
+  - '🇺🇸 US 369'
+  - '🇫🇷 FR 370'
+  - '🇫🇷 FR 371'
+  - '🇸🇪 SE 372'
+  - '🇫🇷 FR 373'
+  - '🇺🇸 US 374'
+  - '🇦🇹 AT 375'
+  - '🇺🇸 US 376'
+  - '🇫🇷 FR 377'
+  - '🇧🇷 BR 378'
+  - '🇺🇸 US 379'
+  - '🇦🇱 AL 380'
 rules:
 - 'MATCH,🌐 Proxy'
